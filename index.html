@@ -3,88 +3,147 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Cartes Problèmes & Solutions</title>
+  <title>Cartes Problèmes &amp; Solutions</title>
   <style>
-    :root { --color-preparation: #6b8e23; --color-semis: #ff8c00; }
+    :root { --color-prep: #6b8e23; --color-semis: #ff8c00; }
     body { font-family:sans-serif; background:#f9f9f9; margin:0; padding:20px; }
     h1 { text-align:center; margin-bottom:1rem; }
-    .grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(280px,1fr)); gap:16px; }
-    .card { background:#fff; border-radius:8px; box-shadow:0 2px 6px rgba(0,0,0,0.1); overflow:hidden; }
-    .card-header { padding:12px; color:#fff; display:flex; justify-content:space-between; align-items:center; }
-    .card-header.preparation { background:var(--color-preparation); }
-    .card-header.semis { background:var(--color-semis); }
-    .card-header img { width:40px; height:40px; border-radius:4px; object-fit:cover; margin-left:8px; }
+    .controls { display:flex; justify-content:center; align-items:center; gap:8px; margin-bottom:1rem; }
+    select { font-size:1rem; padding:4px; }
+    button { padding:6px 12px; font-size:1rem; cursor:pointer; }
+    .card { background:#fff; border-radius:8px; box-shadow:0 2px 6px rgba(0,0,0,0.1); max-width:600px; margin:0 auto; overflow:hidden; }
+    .card-header { padding:12px; color:#fff; display:flex; align-items:center; justify-content:space-between; }
+    .card-header.preparation { background:var(--color-prep); }
+    .card-header.semis      { background:var(--color-semis); }
+    .card-header img        { width:40px; height:40px; object-fit:cover; border-radius:4px; margin-left:8px; }
     .card-body { padding:16px; color:#333; }
     .card-body p { margin:0 0 8px; }
     .card-body ul { margin:0 0 8px; padding-left:20px; }
-    .card-body table { width:100%; border-collapse:collapse; margin-bottom:8px; }
-    .card-body table, .card-body th, .card-body td { border:1px solid #ccc; padding:4px 8px; }
     .card-footer { padding:12px 16px; font-size:0.85rem; color:#666; border-top:1px solid #eee; }
+    .hidden { display:none; }
   </style>
 </head>
 <body>
-  <h1>Problèmes &amp; Solutions</h1>
-  <div class="grid" id="container"></div>
+  <h1>Cartes Problèmes &amp; Solutions</h1>
+
+  <!-- Contrôles -->
+  <div class="controls">
+    <button id="prevBtn">← Précédent</button>
+    <select id="ficheSelect"></select>
+    <button id="nextBtn">Suivant →</button>
+  </div>
+
+  <!-- Carte -->
+  <div class="card">
+    <div id="cardHeader" class="card-header">
+      <strong id="cardTitle"></strong>
+      <img id="cardImage" src="" alt="" class="hidden"/>
+    </div>
+    <div class="card-body">
+      <p><strong>Diagnostic :</strong> <span id="cardDiag"></span></p>
+      <button id="toggleBtn">Voir plus</button>
+      <div id="cardDetails" class="hidden">
+        <p><strong>Problème / Observation :</strong> <span id="cardRecto"></span></p>
+        <div id="cardVerso"></div>
+        <div id="cardHtml"></div>
+      </div>
+    </div>
+    <div id="cardFooter" class="card-footer"></div>
+  </div>
+
   <script>
+    let cards = []
+    let currentIndex = 0
+
+    // Charge les données JSON
     fetch('data.json')
-      .then(r => r.json())
-      .then(cards => {
-        const container = document.getElementById('container');
-        cards.forEach(c => {
-          const card = document.createElement('div');
-          card.className = 'card';
-          // Header
-          const hd = document.createElement('div');
-          hd.className = 'card-header ' + c.theme;
-          hd.innerHTML = `<strong>${c.id} – ${c.titre}</strong>`;
-          if (c.image) {
-            const img = document.createElement('img');
-            img.src = c.image;
-            hd.appendChild(img);
-          }
-          card.appendChild(hd);
-          // Body
-          const bd = document.createElement('div');
-          bd.className = 'card-body';
-          bd.innerHTML = `
-            <p><strong>Problème / Observation :</strong> ${c.recto}</p>
-            <p><strong>Diagnostic :</strong> ${c.diagnostic}</p>`;
-          // Verso arborescent
-          if (c.verso && c.verso.length) {
-            const ul = document.createElement('ul');
-            c.verso.forEach(group => {
-              const liTitle = document.createElement('li');
-              liTitle.innerHTML = `<strong>${group.title} :</strong>`;
-              ul.appendChild(liTitle);
-              const subul = document.createElement('ul');
-              subul.style.listStyle = 'circle';
-              group.steps.forEach(step => {
-                const sli = document.createElement('li');
-                sli.textContent = step;
-                subul.appendChild(sli);
-              });
-              ul.appendChild(subul);
-            });
-            bd.appendChild(ul);
-          }
-          // HTML brut
-          if (c.htmlContent) {
-            const div = document.createElement('div');
-            div.innerHTML = c.htmlContent;
-            bd.appendChild(div);
-          }
-          card.appendChild(bd);
-          // Footer
-          const ft = document.createElement('div');
-          ft.className = 'card-footer';
-          ft.textContent = 'Source : ' + c.source;
-          card.appendChild(ft);
-          container.appendChild(card);
-        });
+      .then(res => res.json())
+      .then(data => {
+        cards = data
+        initControls()
+        renderCard(0)
       })
-      .catch(err => {
-        document.getElementById('container').textContent = 'Erreur : ' + err;
-      });
+      .catch(err => console.error(err))
+
+    function initControls() {
+      const select = document.getElementById('ficheSelect')
+      cards.forEach((c,i) => {
+        const opt = document.createElement('option')
+        opt.value = i
+        opt.textContent = `${c.id} – ${c.titre}`
+        select.appendChild(opt)
+      })
+      select.addEventListener('change', () => {
+        renderCard(+select.value)
+      })
+
+      document.getElementById('prevBtn').addEventListener('click', () => {
+        let idx = (currentIndex - 1 + cards.length) % cards.length
+        renderCard(idx)
+      })
+      document.getElementById('nextBtn').addEventListener('click', () => {
+        let idx = (currentIndex + 1) % cards.length
+        renderCard(idx)
+      })
+
+      document.getElementById('toggleBtn').addEventListener('click', () => {
+        document.getElementById('cardDetails').classList.toggle('hidden')
+        document.getElementById('toggleBtn').textContent =
+          document.getElementById('cardDetails').classList.contains('hidden')
+            ? 'Voir plus' : 'Voir moins'
+      })
+    }
+
+    function renderCard(idx) {
+      currentIndex = idx
+      const c = cards[idx]
+      document.getElementById('ficheSelect').value = idx
+      document.getElementById('cardTitle').textContent = `${c.id} – ${c.titre}`
+
+      // Image
+      const img = document.getElementById('cardImage')
+      if (c.image) {
+        img.src = c.image
+        img.classList.remove('hidden')
+      } else {
+        img.classList.add('hidden')
+      }
+
+      // Diagnostic
+      document.getElementById('cardDiag').textContent = c.diagnostic
+
+      // Cacher le détail
+      document.getElementById('cardDetails').classList.add('hidden')
+      document.getElementById('toggleBtn').textContent = 'Voir plus'
+
+      // Rest of content
+      document.getElementById('cardRecto').textContent = c.recto
+
+      // Verso structuré
+      const versoEl = document.getElementById('cardVerso')
+      versoEl.innerHTML = ''
+      if (c.verso && c.verso.length) {
+        c.verso.forEach(g => {
+          const h4 = document.createElement('p')
+          h4.innerHTML = `<strong>${g.title} :</strong>`
+          versoEl.appendChild(h4)
+          const ul = document.createElement('ul')
+          g.steps.forEach(s => {
+            const li = document.createElement('li')
+            li.textContent = s
+            ul.appendChild(li)
+          })
+          versoEl.appendChild(ul)
+        })
+      }
+
+      // HTML brut (tableaux, formules…)
+      const htmlEl = document.getElementById('cardHtml')
+      htmlEl.innerHTML = c.htmlContent || ''
+
+      // Source
+      document.getElementById('cardFooter').textContent = 'Source : ' + c.source
+    }
   </script>
 </body>
 </html>
