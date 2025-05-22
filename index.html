@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Cartes Problèmes & Solutions</title>
+  <style>
+    :root { --color-preparation: #6b8e23; --color-semis: #ff8c00; }
+    body { font-family:sans-serif; background:#f9f9f9; margin:0; padding:20px; }
+    h1 { text-align:center; margin-bottom:1rem; }
+    .grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(280px,1fr)); gap:16px; }
+    .card { background:#fff; border-radius:8px; box-shadow:0 2px 6px rgba(0,0,0,0.1); overflow:hidden; }
+    .card-header { padding:12px; color:#fff; display:flex; justify-content:space-between; align-items:center; }
+    .card-header.preparation { background:var(--color-preparation); }
+    .card-header.semis { background:var(--color-semis); }
+    .card-header img { width:40px; height:40px; border-radius:4px; object-fit:cover; margin-left:8px; }
+    .card-body { padding:16px; color:#333; }
+    .card-body p { margin:0 0 8px; }
+    .card-body ul { margin:0 0 8px; padding-left:20px; }
+    .card-body table { width:100%; border-collapse:collapse; margin-bottom:8px; }
+    .card-body table, .card-body th, .card-body td { border:1px solid #ccc; padding:4px 8px; }
+    .card-footer { padding:12px 16px; font-size:0.85rem; color:#666; border-top:1px solid #eee; }
+  </style>
+</head>
+<body>
+  <h1>Problèmes &amp; Solutions</h1>
+  <div class="grid" id="container"></div>
+  <script>
+    fetch('data.json')
+      .then(r => r.json())
+      .then(cards => {
+        const container = document.getElementById('container');
+        cards.forEach(c => {
+          const card = document.createElement('div');
+          card.className = 'card';
+          // Header
+          const hd = document.createElement('div');
+          hd.className = 'card-header ' + c.theme;
+          hd.innerHTML = `<strong>${c.id} – ${c.titre}</strong>`;
+          if (c.image) {
+            const img = document.createElement('img');
+            img.src = c.image;
+            hd.appendChild(img);
+          }
+          card.appendChild(hd);
+          // Body
+          const bd = document.createElement('div');
+          bd.className = 'card-body';
+          bd.innerHTML = `
+            <p><strong>Problème / Observation :</strong> ${c.recto}</p>
+            <p><strong>Diagnostic :</strong> ${c.diagnostic}</p>`;
+          // Verso arborescent
+          if (c.verso && c.verso.length) {
+            const ul = document.createElement('ul');
+            c.verso.forEach(group => {
+              const liTitle = document.createElement('li');
+              liTitle.innerHTML = `<strong>${group.title} :</strong>`;
+              ul.appendChild(liTitle);
+              const subul = document.createElement('ul');
+              subul.style.listStyle = 'circle';
+              group.steps.forEach(step => {
+                const sli = document.createElement('li');
+                sli.textContent = step;
+                subul.appendChild(sli);
+              });
+              ul.appendChild(subul);
+            });
+            bd.appendChild(ul);
+          }
+          // HTML brut
+          if (c.htmlContent) {
+            const div = document.createElement('div');
+            div.innerHTML = c.htmlContent;
+            bd.appendChild(div);
+          }
+          card.appendChild(bd);
+          // Footer
+          const ft = document.createElement('div');
+          ft.className = 'card-footer';
+          ft.textContent = 'Source : ' + c.source;
+          card.appendChild(ft);
+          container.appendChild(card);
+        });
+      })
+      .catch(err => {
+        document.getElementById('container').textContent = 'Erreur : ' + err;
+      });
+  </script>
+</body>
+</html>
