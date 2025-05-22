@@ -43,7 +43,7 @@
       {
         "title": "Herse niveleuse en croisement",
         "steps": [
-          "Deux passages croisés à 6 km/h pour fragmenter les mottes, première passe pour briser les gros fragments, seconde pour niveler le sol."
+          "Deux passages croisés à 6 km/h pour fragmenter les mottes : première passe pour briser les gros fragments, seconde pour niveler le sol."
         ]
       },
       {
@@ -60,7 +60,7 @@
       }
     ],
     "htmlContent": "<p><strong>Notes :</strong></p><ul><li>Pour un bon lit de semence, viser que 100 % des mottes soient inférieures à 4 cm, idéalement 90 % entre 1 et 3 cm.</li><li>Sous 5 cm de profondeur (horizon 0–5 cm), les particules doivent être fragmentées (< 2 cm) pour assurer un tassement uniforme.</li></ul>",
-    "source": "Arvalis. (2022). Techniques d’émiettement du sol et préparation du lit de semence.",
+    "source": "Arvalis (2022). Techniques d’émiettement du sol et préparation du lit de semence.",
     "image": ""
   },
   {
@@ -68,7 +68,7 @@
     "theme": "preparation",
     "titre": "Fiche 3 – pH acide (pH < 6,0)",
     "recto": "Le pH du sol, mesuré à 5,6 dans l’horizon 0–30 cm, est insuffisant pour la disponibilité en nutriments (N, P, K) et ralentit la germination et la vigueur initiale des plantules.",
-    "diagnostic": "Test in situ avec pH-mètre portable corroboré par une analyse laboratoire confirmant pH < 6,0.",
+    "diagnostic": "Test in situ avec pH-mètre portable corroboré par une analyse laboratoire (méthode titrimétrique) confirmant pH < 6,0.",
     "verso": [
       {
         "title": "Chaux dolomitique",
@@ -330,20 +330,39 @@
         "steps": [
           "Repasser sur 10 m² pour vérifier la consistance du semis."
         ]
-      },
-     {
+      }
+    ],
+    "source": "Arvalis (2022). Profondeur de semis optimale pour froment.",
+    "image": ""
+  },
+  {
     "id": "013",
     "theme": "semis",
     "titre": "Fiche 13 – Semoir mal réglé",
     "recto": "Mauvais calage entraînant distribution irrégulière (sauts de débit, doublettes) malgré la bonne dose.",
     "diagnostic": "Inspection avant chantier : test de distribution sur planchette, observation de grains sautant ou en continu.",
     "verso": [
-      { "title": "Nettoyage et graissage", "steps": ["Retirer poussières et résidus de méthyluracile, lubrifier les rouleaux et engrenages."] },
-      { "title": "Réglage pression", "steps": ["Vérifier la pression de contact des rouleaux doseurs (300–400 g par grain)."] },
-      { "title": "Vitesse constante", "steps": ["Maintenir 5–7 km/h, surveiller la régularité du tapis."] }
+      {
+        "title": "Nettoyage et graissage",
+        "steps": [
+          "Retirer poussières et résidus de méthyluracile, lubrifier les rouleaux et engrenages."
+        ]
+      },
+      {
+        "title": "Réglage pression",
+        "steps": [
+          "Vérifier la pression de contact des rouleaux doseurs (300–400 g par grain)."
+        ]
+      },
+      {
+        "title": "Vitesse constante",
+        "steps": [
+          "Maintenir 5–7 km/h, surveiller la régularité du tapis."
+        ]
+      }
     ],
     "htmlContent": "<ul><li>Le méthyluracile inhibe la synthèse des parois fongiques lors de la germination, protégeant le semis contre la fonte.</li><li>Surveiller la régularité du tapis pour garantir un lit de semence homogène.</li></ul>",
-    "source": "Manuel Horsch. (2023). Entretien et réglages du semoir.",
+    "source": "Manuel Horsch (2023). Entretien et réglages du semoir.",
     "image": ""
   },
   {
@@ -353,11 +372,26 @@
     "recto": "Utilisation de semences dont le taux de germination est < 90 % ou non traitées, risquant des échecs de levée.",
     "diagnostic": "Vérification du lot de semence : certificat de germination et étiquette graphique du fournisseur.",
     "verso": [
-      { "title": "Semence certifiée", "steps": ["Taux de germination ≥ 95 %, traitement au sedaxane pour protection fongique."] },
-      { "title": "Stockage adéquat", "steps": ["Entreposer à 10–15 °C, humidité < 12 % pour préserver la viabilité."] },
-      { "title": "Test germination", "steps": ["Épreuve de paper-towel à 20 °C sur 100 grains 7 jours avant semis."] }
+      {
+        "title": "Semence certifiée",
+        "steps": [
+          "Taux de germination ≥ 95 %, traitement au sedaxane pour protection fongique."
+        ]
+      },
+      {
+        "title": "Stockage adéquat",
+        "steps": [
+          "Entreposer à 10–15 °C, humidité < 12 % pour préserver la viabilité."
+        ]
+      },
+      {
+        "title": "Test germination",
+        "steps": [
+          "Épreuve de paper-towel à 20 °C sur 100 grains, 7 jours avant semis."
+        ]
+      }
     ],
-    "source": "FMB. (2024). Standards de qualité des semences.",
+    "source": "FMB (2024). Standards de qualité des semences.",
     "image": ""
   },
   {
@@ -367,11 +401,26 @@
     "recto": "Aucune évaluation formelle du semis dans la semaine qui suit, empêchant la correction rapide des erreurs.",
     "diagnostic": "Absence de relevé dans le carnet de bord agricole à J+3 – J+5 ; aucun comptage effectué.",
     "verso": [
-      { "title": "Comptage à J+3", "steps": ["Relever la densité sur 0,5 m² à cinq emplacements, noter variations."] },
-      { "title": "Journal de bord", "steps": ["Consigner dose, PMG, conditions météo, profondeur et régulateur."] },
-      { "title": "Ajustement rapide", "steps": ["Si densité < 300 pl/m², prévoir un semis complémentaire sur les zones déficitaires."] }
+      {
+        "title": "Comptage à J+3",
+        "steps": [
+          "Relever la densité sur 0,5 m² à cinq emplacements, noter variations."
+        ]
+      },
+      {
+        "title": "Journal de bord",
+        "steps": [
+          "Consigner dose, PMG, conditions météo, profondeur et régulateur."
+        ]
+      },
+      {
+        "title": "Ajustement rapide",
+        "steps": [
+          "Si densité < 300 pl/m², prévoir un semis complémentaire sur les zones déficitaires."
+        ]
+      }
     ],
-    "source": "CRA-W. (2023). Procédures de suivi post-semis.",
+    "source": "CRA-W (2023). Procédures de suivi post-semis.",
     "image": ""
   },
   {
@@ -381,11 +430,26 @@
     "recto": "Infiltration et texture variables provoquent levées irrégulières, malgré réglages constants du semoir.",
     "diagnostic": "Carottages rapides (sonde manuelle) montrent des alternances de sable limoneux et d’argile.",
     "verso": [
-      { "title": "Semis variable", "steps": ["Utiliser la fonction GPS et débit variable sur semoir à commande hydraulique."] },
-      { "title": "Niveau uniforme", "steps": ["Recourir à un niveleur laser ou à rouleau type Cambridge pour homogénéiser la surface."] },
-      { "title": "Gestion des différences", "steps": ["Ajuster localement profondeur et dose en fonction des tests de texture."] }
+      {
+        "title": "Semis variable",
+        "steps": [
+          "Utiliser la fonction GPS et débit variable sur semoir à commande hydraulique."
+        ]
+      },
+      {
+        "title": "Niveau uniforme",
+        "steps": [
+          "Recourir à un niveleur laser ou à rouleau type Cambridge pour homogénéiser la surface."
+        ]
+      },
+      {
+        "title": "Gestion des différences",
+        "steps": [
+          "Ajuster localement profondeur et dose en fonction des tests de texture."
+        ]
+      }
     ],
-    "source": "Arvalis. (2023). Variabilité intra-parcellaire et semis à modulation.",
+    "source": "Arvalis (2023). Variabilité intra-parcellaire et semis à modulation.",
     "image": ""
   }
 ]
