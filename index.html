@@ -3,93 +3,85 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Cartes Problèmes &amp; Solutions</title>
+  <title>Cartes Problèmes & Solutions</title>
   <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
   <!-- FontAwesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
   <style>
-    :root {
-      --color-preparation: #F7E3A3; /* doux jaune */
-      --color-semis: #8B5E3C;       /* brun terreux */
-    }
-    body { font-family: 'Montserrat', sans-serif; background: #f9f9f9; margin:0; padding:20px; }
+    :root { --color-preparation: #F7E3A3; --color-semis: #8B5E3C; }
+    body { font-family:'Montserrat',sans-serif; background:#f9f9f9; margin:0; padding:20px; }
     h1 { text-align:center; margin-bottom:1rem; }
     .controls { display:flex; justify-content:center; align-items:center; gap:8px; margin-bottom:1rem; }
-    select, button { font-family: inherit; font-size:1rem; padding:6px 12px; }
-    .card { background:#fff; border-radius:8px; box-shadow:0 2px 6px rgba(0,0,0,0.1); max-width:600px; margin:0 auto; overflow:hidden; transition: transform .2s; }
-    .card:hover { transform: translateY(-4px); }
-    .card-header { padding:12px; color:#333; display:flex; align-items:center; justify-content:space-between; }
-    .card-header.preparation { background: var(--color-preparation); }
-    .card-header.semis      { background: var(--color-semis); color:#fff; }
-    .card-header img        { width:40px; height:40px; object-fit:cover; border-radius:4px; margin-left:8px; }
+    select, button { font-family:inherit; padding:6px 12px; font-size:1rem; }
+    .card-container { perspective:1000px; margin:0 auto; max-width:600px; }
+    .card { width:100%; position:relative; transform-style:preserve-3d; transition:transform .6s; cursor:pointer; }
+    .card.flipped { transform:rotateY(180deg); }
+    .card-face { position:absolute; width:100%; backface-visibility:hidden; border-radius:8px; box-shadow:0 2px 6px rgba(0,0,0,0.1); overflow:hidden; background:#fff; }
+    .card-front, .card-back { min-height:200px; }
+    .card-header { padding:12px; display:flex; justify-content:center; align-items:center; font-weight:600; }
+    .card-header.preparation { background:var(--color-preparation); color:#333; }
+    .card-header.semis      { background:var(--color-semis); color:#fff; }
     .card-body { padding:16px; color:#333; }
-    .card-body p { margin:0 0 8px; }
-    .card-body ul { margin:0 0 8px; padding-left:20px; }
-    .card-body table { width:100%; border-collapse:collapse; margin-bottom:8px; }
-    .card-body table, .card-body th, .card-body td { border:1px solid #ccc; padding:4px 8px; }
-    .card-footer { padding:12px 16px; font-size:0.85rem; color:#666; border-top:1px solid #eee; }
-    .click-toggle { cursor:pointer; color:#007BFF; text-decoration:underline; }
-    .details { max-height: 0; overflow: hidden; transition: max-height 0.4s ease; }
-    .details.open { max-height: 1000px; }
-    .solution-group { margin-bottom:12px; }
-    .solution-group h4 { margin:12px 0 4px; display:flex; align-items:center; gap:6px; }
+    .card-body p, .card-body ul { margin:0 0 8px; }
+    .card-body ul { padding-left:20px; }
+    .card-back { transform:rotateY(180deg); }
+    .solution-group { margin-bottom:12px; opacity:0; }
+    .solution-group.visible { opacity:1; transition:opacity .4s ease; }
+    .card-footer { padding:12px 16px; font-size:0.85rem; color:#666; border-top:1px solid #eee; text-align:right; opacity:0; }
+    .card-footer.visible { opacity:1; transition:opacity .4s ease; transition-delay:1s; }
   </style>
 </head>
 <body>
   <h1>Cartes Problèmes &amp; Solutions</h1>
 
-  <!-- Contrôles -->
   <div class="controls">
     <button id="prevBtn">← Précédent</button>
     <select id="ficheSelect"></select>
     <button id="nextBtn">Suivant →</button>
   </div>
 
-  <!-- Carte -->
-  <div class="card">
-    <div id="cardHeader" class="card-header">
-      <span id="cardTitle"></span>
-      <img id="cardImage" src="" alt="" class="hidden"/>
-    </div>
-    <div class="card-body">
-      <p><strong>Diagnostic :</strong> <span id="cardDiag"></span></p>
-      <p id="toggleBtn" class="click-toggle">clic</p>
-      <div id="cardDetails" class="details">
-        <p><strong>Problème / Observation :</strong> <span id="cardRecto"></span></p>
-        <div id="cardVerso"></div>
-        <div id="cardHtml"></div>
+  <div class="card-container">
+    <div id="card" class="card">
+      <!-- Recto : titre, problème, diagnostic -->
+      <div class="card-face card-front">
+        <div id="frontHeader" class="card-header"></div>
+        <div class="card-body">
+          <p><strong>Problème / Observation :</strong> <span id="frontRecto"></span></p>
+          <p><strong>Diagnostic :</strong> <span id="frontDiag"></span></p>
+        </div>
+      </div>
+      <!-- Verso : solutions + source -->
+      <div class="card-face card-back">
+        <div id="backHeader" class="card-header"></div>
+        <div class="card-body">
+          <div id="backVerso"></div>
+          <div id="backHtml"></div>
+        </div>
+        <div id="backFooter" class="card-footer"></div>
       </div>
     </div>
-    <div id="cardFooter" class="card-footer"></div>
   </div>
 
   <script>
-    let cards = [], currentIndex = 0;
-
-    // Mapping pour icônes selon mots-clés
+    let cards = [], idx = 0;
     const iconMap = {
       'Labour': 'fa-tractor',
       'Rotation': 'fa-sync-alt',
       'Décompactage': 'fa-shovel',
       'Herse': 'fa-rake',
-      'Rouleau': 'fa-gavel',
-      'Chaux': 'fa-flask',
-      'Faux-semis': 'fa-seedling',
-      'Surveillance': 'fa-cloud-sun'
+      'Rouleau': 'fa-gavel'
     };
 
-    // Chargement des données
     fetch('data.json')
       .then(r => r.json())
       .then(data => {
         cards = data;
-        initControls();
-        renderCard(0);
-      })
-      .catch(err => console.error(err));
+        init();
+        render(0);
+      });
 
-    function initControls() {
+    function init() {
       const sel = document.getElementById('ficheSelect');
       cards.forEach((c, i) => {
         const o = document.createElement('option');
@@ -97,55 +89,42 @@
         o.textContent = `${c.id} – ${c.titre}`;
         sel.appendChild(o);
       });
-      sel.addEventListener('change', () => renderCard(+sel.value));
-      document.getElementById('prevBtn').onclick = () => renderCard((currentIndex - 1 + cards.length) % cards.length);
-      document.getElementById('nextBtn').onclick = () => renderCard((currentIndex + 1) % cards.length);
-      document.getElementById('toggleBtn').onclick = () => {
-        const det = document.getElementById('cardDetails');
-        det.classList.toggle('open');
+      sel.onchange = () => render(+sel.value);
+      document.getElementById('prevBtn').onclick = () => render((idx - 1 + cards.length) % cards.length);
+      document.getElementById('nextBtn').onclick = () => render((idx + 1) % cards.length);
+      document.getElementById('card').onclick = () => {
+        document.getElementById('card').classList.toggle('flipped');
+        if (document.getElementById('card').classList.contains('flipped')) showBack();
       };
     }
 
-    function renderCard(idx) {
-      currentIndex = idx;
-      const c = cards[idx];
-      document.getElementById('ficheSelect').value = idx;
-      document.getElementById('cardTitle').textContent = `${c.id} – ${c.titre}`;
+    function render(i) {
+      idx = i;
+      const c = cards[i];
+      document.getElementById('ficheSelect').value = i;
 
-      // Image
-      const img = document.getElementById('cardImage');
-      if (c.image) {
-        img.src = c.image;
-        img.classList.remove('hidden');
-      } else {
-        img.classList.add('hidden');
-      }
-
-      // Diagnostic
-      document.getElementById('cardDiag').textContent = c.diagnostic;
-
-      // Hide details
-      document.getElementById('cardDetails').classList.remove('open');
+      // En-têtes
+      ['frontHeader', 'backHeader'].forEach(h => {
+        const el = document.getElementById(h);
+        el.className = 'card-header ' + c.theme;
+        el.textContent = `${c.id} – ${c.titre}`;
+      });
 
       // Recto
-      document.getElementById('cardRecto').textContent = c.recto;
+      document.getElementById('frontRecto').textContent = c.recto;
+      document.getElementById('frontDiag').textContent = c.diagnostic;
 
-      // Verso structuré avec icônes
-      const versoEl = document.getElementById('cardVerso');
-      versoEl.innerHTML = '';
+      // Verso solutions
+      const bv = document.getElementById('backVerso');
+      bv.innerHTML = '';
       if (c.verso) {
         c.verso.forEach(g => {
           const div = document.createElement('div');
           div.className = 'solution-group';
           const h4 = document.createElement('h4');
           const key = Object.keys(iconMap).find(k => g.title.includes(k));
-          if (key) {
-            h4.innerHTML = `<i class="fas ${iconMap[key]}"></i> ${g.title}`;
-          } else {
-            h4.textContent = g.title;
-          }
+          h4.innerHTML = (key ? `<i class="fas ${iconMap[key]}"></i> ` : '') + g.title;
           div.appendChild(h4);
-
           const ul = document.createElement('ul');
           g.steps.forEach(s => {
             const li = document.createElement('li');
@@ -153,15 +132,26 @@
             ul.appendChild(li);
           });
           div.appendChild(ul);
-          versoEl.appendChild(div);
+          bv.appendChild(div);
         });
       }
 
-      // HTML brut (tableaux, formules…)
-      document.getElementById('cardHtml').innerHTML = c.htmlContent || '';
+      document.getElementById('backHtml').innerHTML = c.htmlContent || '';
+      const footer = document.getElementById('backFooter');
+      footer.textContent = 'Source : ' + c.source;
 
-      // Source
-      document.getElementById('cardFooter').textContent = 'Source : ' + c.source;
+      // reset visibility
+      document.querySelectorAll('.solution-group').forEach(el => el.classList.remove('visible'));
+      footer.classList.remove('visible');
+      document.getElementById('card').classList.remove('flipped');
+    }
+
+    function showBack() {
+      const groups = document.querySelectorAll('.card-back .solution-group');
+      groups.forEach((el, i) => {
+        setTimeout(() => el.classList.add('visible'), i * 300);
+      });
+      setTimeout(() => document.getElementById('backFooter').classList.add('visible'), groups.length * 300);
     }
   </script>
 </body>
