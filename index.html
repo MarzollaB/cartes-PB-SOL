@@ -10,157 +10,76 @@
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
   <style>
     :root {
-      --color-preparation-start: #F7E3A3;
-      --color-preparation-end:   #E8D692;
-      --color-semis-start:        #8B5E3C;
-      --color-semis-end:          #7A5030;
+      --color-prep-start: #F7E3A3;
+      --color-prep-end:   #E8D692;
+      --color-semis-start:#8B5E3C;
+      --color-semis-end:  #7A5030;
     }
-    body {
-      font-family: 'Montserrat', sans-serif;
-      background: #f9f9f9;
-      margin: 0;
-      padding: 20px;
-    }
-    h1 {
-      text-align: center;
-      margin-bottom: 1rem;
-    }
-    .controls {
-      display: flex;
-      justify-content: center;
-      gap: 8px;
-      margin-bottom: 1rem;
-    }
-    select, button {
-      font-family: inherit;
-      padding: 6px 12px;
-      font-size: 1rem;
-    }
-    .card-container {
-      perspective: 1000px;
-      margin: 0 auto;
-      max-width: 600px;
-    }
-    .card {
-      width: 100%;
-      position: relative;
-      transform-style: preserve-3d;
-      margin-bottom: 32px;
-      cursor: pointer;
-      transition: box-shadow .3s;
-    }
-    .card:hover {
-      box-shadow: 0 8px 16px rgba(0,0,0,0.15);
-    }
-    .card.flipped {
-      animation: flipBounce .6s forwards;
-    }
+    body { font-family:'Montserrat',sans-serif; background:#f9f9f9; margin:0; padding:20px; }
+    h1 { text-align:center; margin-bottom:1rem; }
+    .mode-toggle { display:flex; justify-content:center; gap:12px; margin-bottom:1rem; }
+    .mode-toggle button { padding:6px 12px; font-size:1rem; cursor:pointer; }
+    .mode-toggle .active { background:#ddd; }
+    .controls { display:flex; justify-content:center; gap:8px; margin-bottom:1rem; }
+    select, button { font-family:inherit; padding:6px 12px; font-size:1rem; }
+    .card-container { perspective:1000px; margin:0 auto; max-width:600px; }
+    .card { width:100%; position:relative; transform-style:preserve-3d; margin-bottom:32px; cursor:pointer; transition:box-shadow .3s; }
+    .card:hover { box-shadow:0 8px 16px rgba(0,0,0,0.15); }
+    .card.flipped { animation:flipBounce .6s forwards; }
     @keyframes flipBounce {
       0%   { transform: rotateY(0deg); }
       60%  { transform: rotateY(200deg); }
       100% { transform: rotateY(180deg); }
     }
-    .card-face {
-      position: absolute;
-      width: 100%;
-      backface-visibility: hidden;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-      overflow: hidden;
-      background: #fff;
-    }
-    .card-front, .card-back {
-      min-height: 200px;
-    }
-    .card-header {
-      padding: 16px 24px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-weight: 600;
-      text-align: center;
-    }
-    .card-header.preparation {
-      background: linear-gradient(to right, var(--color-preparation-start), var(--color-preparation-end));
-      color: #333;
-    }
-    .card-header.semis {
-      background: linear-gradient(to right, var(--color-semis-start), var(--color-semis-end));
-      color: #fff;
-    }
-    .badge {
-      margin-left: 12px;
-      background: rgba(0,0,0,0.2);
-      color: #fff;
-      border-radius: 12px;
-      padding: 2px 8px;
-      font-size: 0.75rem;
-    }
-    .card-body {
-      padding: 24px;
-      color: #333;
-      text-align: justify;
-      line-height: 1.6;
-    }
-    .card-body p, .card-body ul {
-      margin: 0 0 12px;
-    }
-    .card-body ul {
-      padding-left: 20px;
-    }
-    .card-back {
-      transform: rotateY(180deg);
-    }
-    .solution-group {
-      margin-bottom: 12px;
-      opacity: 0;
-    }
-    .solution-group.visible {
-      opacity: 1;
-      transition: opacity .4s ease;
-    }
-    .card-footer {
-      padding: 12px 16px;
-      font-size: 0.85rem;
-      color: #666;
-      border-top: 1px solid #eee;
-      text-align: right;
-      opacity: 0;
-    }
-    .card-footer.visible {
-      opacity: 1;
-      transition: opacity .4s ease;
-      transition-delay: 1s;
-    }
+    .card-face { position:absolute; width:100%; backface-visibility:hidden; border-radius:8px; box-shadow:0 2px 6px rgba(0,0,0,0.1); overflow:hidden; background:#fff; }
+    .card-front, .card-back { min-height:200px; }
+    .card-header { padding:16px 24px; display:flex; justify-content:center; align-items:center; font-weight:600; text-align:center; }
+    .card-header.preparation { background:linear-gradient(to right,var(--color-prep-start),var(--color-prep-end)); color:#333; }
+    .card-header.semis { background:linear-gradient(to right,var(--color-semis-start),var(--color-semis-end)); color:#fff; }
+    .badge { margin-left:12px; background:rgba(0,0,0,0.2); color:#fff; border-radius:12px; padding:2px 8px; font-size:.75rem; }
+    .card-body { padding:24px; color:#333; text-align:justify; line-height:1.6; }
+    .card-body p, .card-body ul { margin:0 0 12px; }
+    .card-body ul { padding-left:20px; }
+    .card-back { transform:rotateY(180deg); }
+    .solution-group { margin-bottom:12px; opacity:0; }
+    .solution-group.visible { opacity:1; transition:opacity .4s ease; }
+    .card-footer { padding:12px 16px; font-size:.85rem; color:#666; border-top:1px solid #eee; text-align:right; opacity:0; }
+    .card-footer.visible { opacity:1; transition:opacity .4s ease; transition-delay:1s; }
   </style>
 </head>
 <body>
-  <h1>Cartes Problèmes &amp; Solutions</h1>
+  <h1>Cartes Problèmes & Solutions</h1>
 
-  <div class="controls">
-    <button id="prevBtn">← Précédent</button>
+  <div class="mode-toggle">
+    <button id="discoveryBtn" class="active">Mode Découverte</button>
+    <button id="randomBtn">Mode Pioche</button>
+  </div>
+
+  <div id="discoveryControls" class="controls">
     <select id="ficheSelect"></select>
+    <button id="prevBtn">← Précédent</button>
     <button id="nextBtn">Suivant →</button>
+  </div>
+  <div id="randomControls" class="controls" style="display:none;">
+    <button id="drawBtn">Piocher une carte</button>
   </div>
 
   <div class="card-container">
     <div id="card" class="card">
-      <!-- Recto -->
+      <!-- Front -->
       <div class="card-face card-front">
         <div id="frontHeader" class="card-header">
-          <span id="frontTitle"></span>
-          <span id="frontBadge" class="badge"></span>
+          <span id="frontTitle"></span><span id="frontBadge" class="badge"></span>
         </div>
         <div class="card-body">
           <p><strong>Problème / Observation :</strong> <span id="frontRecto"></span></p>
           <p><strong>Diagnostic :</strong> <span id="frontDiag"></span></p>
         </div>
       </div>
-      <!-- Verso -->
+      <!-- Back -->
       <div class="card-face card-back">
         <div id="backHeader" class="card-header">
-          <span id="backTitle"></span>
-          <span id="backBadge" class="badge"></span>
+          <span id="backTitle"></span><span id="backBadge" class="badge"></span>
         </div>
         <div class="card-body">
           <div id="backVerso"></div>
@@ -174,76 +93,99 @@
   <script>
     let cards = [], idx = 0;
     const iconMap = {
-      'Labour':    'fa-tractor',
-      'Rotation':  'fa-sync-alt',
-      'Décompactage':'fa-shovel',
-      'Herse':     'fa-rake',
-      'Rouleau':   'fa-gavel'
+      'Labour': 'fa-tractor',
+      'Rotation': 'fa-sync-alt',
+      'Décompactage': 'fa-shovel',
+      'Herse': 'fa-rake',
+      'Rouleau': 'fa-gavel'
     };
     const themeLabels = { preparation: 'Préparation sol', semis: 'Semis' };
 
+    const discoveryBtn = document.getElementById('discoveryBtn');
+    const randomBtn = document.getElementById('randomBtn');
+    const discControls = document.getElementById('discoveryControls');
+    const randControls = document.getElementById('randomControls');
+
     fetch('data.json')
       .then(r => r.json())
-      .then(data => { cards = data; init(); render(0); });
+      .then(data => {
+        cards = data;
+        init();
+        render(0);
+      });
 
     function init() {
       const sel = document.getElementById('ficheSelect');
-      cards.forEach((c,i)=>{
+      cards.forEach((c,i) => {
         const o = document.createElement('option');
         o.value = i;
         o.textContent = `${c.id} – ${c.titre}`;
         sel.appendChild(o);
       });
-      sel.onchange = ()=>render(+sel.value);
-      document.getElementById('prevBtn').onclick = ()=>render((idx-1+cards.length)%cards.length);
-      document.getElementById('nextBtn').onclick = ()=>render((idx+1)%cards.length);
-      document.getElementById('card').onclick = ()=> {
+      sel.onchange = () => render(+sel.value);
+      document.getElementById('prevBtn').onclick = () => render((idx-1+cards.length)%cards.length);
+      document.getElementById('nextBtn').onclick = () => render((idx+1)%cards.length);
+      document.getElementById('drawBtn').onclick = () => render(Math.floor(Math.random()*cards.length));
+      document.getElementById('card').onclick = () => {
         const cardEl = document.getElementById('card');
         if (!cardEl.classList.contains('flipped')) showBack();
         cardEl.classList.toggle('flipped');
       };
+      discoveryBtn.onclick = () => {
+        discoveryBtn.classList.add('active');
+        randomBtn.classList.remove('active');
+        discControls.style.display = 'flex';
+        randControls.style.display = 'none';
+      };
+      randomBtn.onclick = () => {
+        randomBtn.classList.add('active');
+        discoveryBtn.classList.remove('active');
+        discControls.style.display = 'none';
+        randControls.style.display = 'flex';
+      };
     }
 
     function render(i) {
-      idx = i; const c = cards[i];
+      idx = i;
+      const c = cards[i];
       document.getElementById('ficheSelect').value = i;
-      ['front','back'].forEach(side=>{
+      ['front','back'].forEach(side => {
         document.getElementById(`${side}Title`).textContent = `${c.id} – ${c.titre}`;
         document.getElementById(`${side}Badge`).textContent = themeLabels[c.theme];
-        document.getElementById(`${side}Header`).className = 'card-header '+c.theme;
+        document.getElementById(`${side}Header`).className = 'card-header ' + c.theme;
       });
       document.getElementById('frontRecto').textContent = c.recto;
-      document.getElementById('frontDiag').textContent  = c.diagnostic;
-
+      document.getElementById('frontDiag').textContent = c.diagnostic;
       const bv = document.getElementById('backVerso');
       bv.innerHTML = '';
-      if(c.verso) c.verso.forEach(g=>{
+      if (c.verso) c.verso.forEach(g => {
         const div = document.createElement('div');
         div.className = 'solution-group';
         const h4 = document.createElement('h4');
-        const key = Object.keys(iconMap).find(k=>g.title.includes(k));
-        h4.innerHTML = (key?`<i class="fas ${iconMap[key]}"></i> `:'')+g.title;
+        const key = Object.keys(iconMap).find(k => g.title.includes(k));
+        h4.innerHTML = (key ? `<i class="fas ${iconMap[key]}"></i> ` : '') + g.title;
         div.appendChild(h4);
         const ul = document.createElement('ul');
-        g.steps.forEach(s=>{ const li = document.createElement('li'); li.textContent=s; ul.appendChild(li); });
+        g.steps.forEach(s => {
+          const li = document.createElement('li');
+          li.textContent = s;
+          ul.appendChild(li);
+        });
         div.appendChild(ul);
         bv.appendChild(div);
       });
-
-      document.getElementById('backHtml').innerHTML = c.htmlContent||'';
+      document.getElementById('backHtml').innerHTML = c.htmlContent || '';
       const footer = document.getElementById('backFooter');
-      footer.textContent = 'Source : '+c.source;
-
-      document.querySelectorAll('.solution-group').forEach(el=>el.classList.remove('visible'));
+      footer.textContent = 'Source : ' + c.source;
+      document.querySelectorAll('.solution-group').forEach(el => el.classList.remove('visible'));
       footer.classList.remove('visible');
       document.getElementById('card').classList.remove('flipped');
     }
 
     function showBack() {
       const groups = document.querySelectorAll('.card-back .solution-group');
-      groups.forEach((el,i)=>setTimeout(()=>el.classList.add('visible'), i*300));
-      setTimeout(()=>document.getElementById('backFooter').classList.add('visible'),
-                 groups.length*300);
+      groups.forEach((el,i) => setTimeout(() => el.classList.add('visible'), i * 300));
+      setTimeout(() => document.getElementById('backFooter').classList.add('visible'), groups.length * 300);
     }
   </script>
 </body>
