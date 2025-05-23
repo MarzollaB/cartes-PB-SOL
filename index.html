@@ -1,28 +1,28 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Cartes Problèmes & Solutions</title>
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
-  <!-- FontAwesome -->
+  <!-- Police pro -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet" />
+  <!-- Icônes -->
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
   <style>
     :root { --color-preparation: #F7E3A3; --color-semis: #8B5E3C; }
     body { font-family:'Montserrat',sans-serif; background:#f9f9f9; margin:0; padding:20px; }
     h1 { text-align:center; margin-bottom:1rem; }
-    .controls { display:flex; justify-content:center; align-items:center; gap:8px; margin-bottom:1rem; }
+    .controls { display:flex; justify-content:center; gap:8px; margin-bottom:1rem; }
     select, button { font-family:inherit; padding:6px 12px; font-size:1rem; }
     .card-container { perspective:1000px; margin:0 auto; max-width:600px; }
     .card { width:100%; position:relative; transform-style:preserve-3d; transition:transform .6s; cursor:pointer; }
     .card.flipped { transform:rotateY(180deg); }
-    .card-face { position:absolute; width:100%; backface-visibility:hidden; border-radius:8px; box-shadow:0 2px 6px rgba(0,0,0,0.1); overflow:hidden; background:#fff; }
+    .card-face { position:absolute; width:100%; backface-visibility:hidden; border-radius:8px; box-shadow:0 2px 6px rgba(0,0,0,0.1); background:#fff; }
     .card-front, .card-back { min-height:200px; }
-    .card-header { padding:12px; display:flex; justify-content:center; align-items:center; font-weight:600; }
+    .card-header { padding:12px; display:flex; justify-content:center; align-items:center; font-weight:600; text-align:center; }
     .card-header.preparation { background:var(--color-preparation); color:#333; }
     .card-header.semis      { background:var(--color-semis); color:#fff; }
-    .card-body { padding:16px; color:#333; }
+    .card-body { padding:16px; color:#333; text-align:justify; }
     .card-body p, .card-body ul { margin:0 0 8px; }
     .card-body ul { padding-left:20px; }
     .card-back { transform:rotateY(180deg); }
@@ -93,8 +93,12 @@
       document.getElementById('prevBtn').onclick = () => render((idx - 1 + cards.length) % cards.length);
       document.getElementById('nextBtn').onclick = () => render((idx + 1) % cards.length);
       document.getElementById('card').onclick = () => {
-        document.getElementById('card').classList.toggle('flipped');
-        if (document.getElementById('card').classList.contains('flipped')) showBack();
+        const cardEl = document.getElementById('card');
+        if (!cardEl.classList.contains('flipped')) {
+          render(idx); // ensure fresh content
+          showBack();
+        }
+        cardEl.classList.toggle('flipped');
       };
     }
 
@@ -103,18 +107,15 @@
       const c = cards[i];
       document.getElementById('ficheSelect').value = i;
 
-      // En-têtes
       ['frontHeader', 'backHeader'].forEach(h => {
         const el = document.getElementById(h);
         el.className = 'card-header ' + c.theme;
         el.textContent = `${c.id} – ${c.titre}`;
       });
 
-      // Recto
       document.getElementById('frontRecto').textContent = c.recto;
       document.getElementById('frontDiag').textContent = c.diagnostic;
 
-      // Verso solutions
       const bv = document.getElementById('backVerso');
       bv.innerHTML = '';
       if (c.verso) {
@@ -148,9 +149,7 @@
 
     function showBack() {
       const groups = document.querySelectorAll('.card-back .solution-group');
-      groups.forEach((el, i) => {
-        setTimeout(() => el.classList.add('visible'), i * 300);
-      });
+      groups.forEach((el, i) => setTimeout(() => el.classList.add('visible'), i * 300));
       setTimeout(() => document.getElementById('backFooter').classList.add('visible'), groups.length * 300);
     }
   </script>
