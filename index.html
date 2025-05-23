@@ -17,6 +17,10 @@
     }
     body { font-family:'Montserrat',sans-serif; background:#f9f9f9; margin:0; padding:20px; }
     h1 { text-align:center; margin-bottom:1rem; }
+    .intro { max-width:600px; margin:0 auto 24px; padding:16px; background:#fff; border-radius:8px; box-shadow:0 2px 6px rgba(0,0,0,0.1); }
+    .intro h2 { margin-top:0; text-align:center; }
+    .intro h3 { margin-bottom:4px; }
+    .intro p, .intro ul, .intro ol { margin-bottom:12px; text-align:justify; }
     .mode-toggle { display:flex; justify-content:center; gap:12px; margin-bottom:1rem; }
     .mode-toggle button { padding:6px 12px; font-size:1rem; cursor:pointer; }
     .mode-toggle .active { background:#ddd; }
@@ -35,7 +39,7 @@
     .card-front, .card-back { min-height:200px; }
     .card-header { padding:16px 24px; display:flex; justify-content:center; align-items:center; font-weight:600; text-align:center; }
     .card-header.preparation { background:linear-gradient(to right,var(--color-prep-start),var(--color-prep-end)); color:#333; }
-    .card-header.semis { background:linear-gradient(to right,var(--color-semis-start),var(--color-semis-end)); color:#fff; }
+    .card-header.semis      { background:linear-gradient(to right,var(--color-semis-start),var(--color-semis-end)); color:#fff; }
     .badge { margin-left:12px; background:rgba(0,0,0,0.2); color:#fff; border-radius:12px; padding:2px 8px; font-size:.75rem; }
     .card-body { padding:24px; color:#333; text-align:justify; line-height:1.6; }
     .card-body p, .card-body ul { margin:0 0 12px; }
@@ -48,13 +52,43 @@
   </style>
 </head>
 <body>
-  <h1>Cartes Problèmes & Solutions</h1>
+  <h1>Cartes Problèmes &amp; Solutions</h1>
 
+  <!-- Guide d’utilisation -->
+  <section class="intro">
+    <h2>Guide d’utilisation</h2>
+    <h3>1. Objectif</h3>
+    <p>
+      Cet outil interactif permet d’identifier et de diagnostiquer les principaux
+      problèmes de préparation du sol et de semis, puis d’explorer des solutions
+      pratiques adaptées aux conditions de terrain.
+    </p>
+    <h3>2. Modes de fonctionnement</h3>
+    <ul>
+      <li><strong>Mode Découverte</strong> : choisissez une fiche dans la liste pour étudier un cas précis.</li>
+      <li><strong>Mode Pioche</strong> : tirez une carte aléatoirement pour tester votre réactivité et vos connaissances.</li>
+    </ul>
+    <h3>3. Comment utiliser</h3>
+    <ol>
+      <li>Sélectionnez votre mode de travail (Découverte ou Pioche).</li>
+      <li>Dans Mode Découverte, naviguez via le <strong>menu déroulant</strong> ou les boutons Précédent/Suivant.</li>
+      <li>Dans Mode Pioche, cliquez sur “Piocher une carte” pour révéler un nouveau cas.</li>
+      <li>Cliquez sur la carte pour la retourner et afficher les solutions.</li>
+    </ol>
+    <h3>4. Résultat attendu</h3>
+    <p>
+      À l’issue de cet exercice, vous serez capable de proposer des solutions concrètes
+      aux problèmes évoqués dans les cartes correspondantes.
+    </p>
+  </section>
+
+  <!-- Modes -->
   <div class="mode-toggle">
     <button id="discoveryBtn" class="active">Mode Découverte</button>
     <button id="randomBtn">Mode Pioche</button>
   </div>
 
+  <!-- Contrôles -->
   <div id="discoveryControls" class="controls">
     <select id="ficheSelect"></select>
     <button id="prevBtn">← Précédent</button>
@@ -64,9 +98,10 @@
     <button id="drawBtn">Piocher une carte</button>
   </div>
 
+  <!-- Carte -->
   <div class="card-container">
     <div id="card" class="card">
-      <!-- Front -->
+      <!-- Recto -->
       <div class="card-face card-front">
         <div id="frontHeader" class="card-header">
           <span id="frontTitle"></span><span id="frontBadge" class="badge"></span>
@@ -76,7 +111,7 @@
           <p><strong>Diagnostic :</strong> <span id="frontDiag"></span></p>
         </div>
       </div>
-      <!-- Back -->
+      <!-- Verso -->
       <div class="card-face card-back">
         <div id="backHeader" class="card-header">
           <span id="backTitle"></span><span id="backBadge" class="badge"></span>
@@ -84,8 +119,7 @@
         <div class="card-body">
           <div id="backVerso"></div>
           <div id="backHtml"></div>
-        </div>
-        <div id="backFooter" class="card-footer"></div>
+        </        <div id="backFooter" class="card-footer"></div>
       </div>
     </div>
   </div>
@@ -93,55 +127,51 @@
   <script>
     let cards = [], idx = 0;
     const iconMap = {
-      'Labour': 'fa-tractor',
-      'Rotation': 'fa-sync-alt',
+      'Labour':       'fa-tractor',
+      'Rotation':     'fa-sync-alt',
       'Décompactage': 'fa-shovel',
-      'Herse': 'fa-rake',
-      'Rouleau': 'fa-gavel'
+      'Herse':        'fa-rake',
+      'Rouleau':      'fa-gavel'
     };
     const themeLabels = { preparation: 'Préparation sol', semis: 'Semis' };
 
     const discoveryBtn = document.getElementById('discoveryBtn');
-    const randomBtn = document.getElementById('randomBtn');
-    const discControls = document.getElementById('discoveryControls');
-    const randControls = document.getElementById('randomControls');
+    const randomBtn    = document.getElementById('randomBtn');
+    const discCtrls    = document.getElementById('discoveryControls');
+    const randCtrls    = document.getElementById('randomControls');
 
     fetch('data.json')
       .then(r => r.json())
-      .then(data => {
-        cards = data;
-        init();
-        render(0);
-      });
+      .then(data => { cards = data; init(); render(0); });
 
     function init() {
       const sel = document.getElementById('ficheSelect');
-      cards.forEach((c,i) => {
+      cards.forEach((c, i) => {
         const o = document.createElement('option');
         o.value = i;
         o.textContent = `${c.id} – ${c.titre}`;
         sel.appendChild(o);
       });
-      sel.onchange = () => render(+sel.value);
+      sel.onchange        = () => render(+sel.value);
       document.getElementById('prevBtn').onclick = () => render((idx-1+cards.length)%cards.length);
       document.getElementById('nextBtn').onclick = () => render((idx+1)%cards.length);
       document.getElementById('drawBtn').onclick = () => render(Math.floor(Math.random()*cards.length));
-      document.getElementById('card').onclick = () => {
-        const cardEl = document.getElementById('card');
-        if (!cardEl.classList.contains('flipped')) showBack();
-        cardEl.classList.toggle('flipped');
+      document.getElementById('card').onclick    = () => {
+        const el = document.getElementById('card');
+        if (!el.classList.contains('flipped')) showBack();
+        el.classList.toggle('flipped');
       };
       discoveryBtn.onclick = () => {
         discoveryBtn.classList.add('active');
         randomBtn.classList.remove('active');
-        discControls.style.display = 'flex';
-        randControls.style.display = 'none';
+        discCtrls.style.display = 'flex';
+        randCtrls.style.display = 'none';
       };
       randomBtn.onclick = () => {
         randomBtn.classList.add('active');
         discoveryBtn.classList.remove('active');
-        discControls.style.display = 'none';
-        randControls.style.display = 'flex';
+        discCtrls.style.display = 'none';
+        randCtrls.style.display = 'flex';
       };
     }
 
@@ -150,33 +180,38 @@
       const c = cards[i];
       document.getElementById('ficheSelect').value = i;
       ['front','back'].forEach(side => {
-        document.getElementById(`${side}Title`).textContent = `${c.id} – ${c.titre}`;
-        document.getElementById(`${side}Badge`).textContent = themeLabels[c.theme];
-        document.getElementById(`${side}Header`).className = 'card-header ' + c.theme;
+        document.getElementById(`${side}Title`).textContent  = `${c.id} – ${c.titre}`;
+        document.getElementById(`${side}Badge`).textContent  = themeLabels[c.theme];
+        document.getElementById(`${side}Header`).className  = 'card-header ' + c.theme;
       });
       document.getElementById('frontRecto').textContent = c.recto;
-      document.getElementById('frontDiag').textContent = c.diagnostic;
+      document.getElementById('frontDiag').textContent  = c.diagnostic;
+
       const bv = document.getElementById('backVerso');
       bv.innerHTML = '';
-      if (c.verso) c.verso.forEach(g => {
-        const div = document.createElement('div');
-        div.className = 'solution-group';
-        const h4 = document.createElement('h4');
-        const key = Object.keys(iconMap).find(k => g.title.includes(k));
-        h4.innerHTML = (key ? `<i class="fas ${iconMap[key]}"></i> ` : '') + g.title;
-        div.appendChild(h4);
-        const ul = document.createElement('ul');
-        g.steps.forEach(s => {
-          const li = document.createElement('li');
-          li.textContent = s;
-          ul.appendChild(li);
+      if (c.verso) {
+        c.verso.forEach(g => {
+          const div = document.createElement('div');
+          div.className = 'solution-group';
+          const h4 = document.createElement('h4');
+          const key = Object.keys(iconMap).find(k => g.title.includes(k));
+          h4.innerHTML = (key ? `<i class="fas ${iconMap[key]}"></i> ` : '') + g.title;
+          div.appendChild(h4);
+          const ul = document.createElement('ul');
+          g.steps.forEach(s => {
+            const li = document.createElement('li');
+            li.textContent = s;
+            ul.appendChild(li);
+          });
+          div.appendChild(ul);
+          bv.appendChild(div);
         });
-        div.appendChild(ul);
-        bv.appendChild(div);
-      });
+      }
+
       document.getElementById('backHtml').innerHTML = c.htmlContent || '';
       const footer = document.getElementById('backFooter');
       footer.textContent = 'Source : ' + c.source;
+
       document.querySelectorAll('.solution-group').forEach(el => el.classList.remove('visible'));
       footer.classList.remove('visible');
       document.getElementById('card').classList.remove('flipped');
@@ -184,8 +219,9 @@
 
     function showBack() {
       const groups = document.querySelectorAll('.card-back .solution-group');
-      groups.forEach((el,i) => setTimeout(() => el.classList.add('visible'), i * 300));
-      setTimeout(() => document.getElementById('backFooter').classList.add('visible'), groups.length * 300);
+      groups.forEach((el, i) => setTimeout(() => el.classList.add('visible'), i * 300));
+      setTimeout(() => document.getElementById('backFooter').classList.add('visible'),
+                 groups.length * 300);
     }
   </script>
 </body>
