@@ -17,10 +17,26 @@
     }
     body { font-family:'Montserrat',sans-serif; background:#f9f9f9; margin:0; padding:20px; }
     h1 { text-align:center; margin-bottom:1rem; }
-    .intro { max-width:600px; margin:0 auto 24px; padding:16px; background:#fff; border-radius:8px; box-shadow:0 2px 6px rgba(0,0,0,0.1); }
-    .intro h2 { margin-top:0; text-align:center; }
+    .intro, .app {
+      max-width:600px;
+      margin:0 auto;
+      padding:16px;
+      background:#fff;
+      border-radius:8px;
+      box-shadow:0 2px 6px rgba(0,0,0,0.1);
+    }
+    .intro { text-align:justify; }
+    .intro h2 { text-align:center; }
     .intro h3 { margin-bottom:4px; }
-    .intro p, .intro ul, .intro ol { margin-bottom:12px; text-align:justify; }
+    .intro p, .intro ul, .intro ol { margin-bottom:12px; }
+    .intro button {
+      display:block;
+      margin:16px auto 0;
+      padding:8px 16px;
+      font-size:1rem;
+      cursor:pointer;
+    }
+    .app { display:none; }
     .mode-toggle { display:flex; justify-content:center; gap:12px; margin-bottom:1rem; }
     .mode-toggle button { padding:6px 12px; font-size:1rem; cursor:pointer; }
     .mode-toggle .active { background:#ddd; }
@@ -54,7 +70,7 @@
 <body>
   <h1>Cartes Problèmes &amp; Solutions</h1>
 
-  <!-- Guide d’utilisation -->
+  <!-- Écran d’intro -->
   <section class="intro">
     <h2>Guide d’utilisation</h2>
     <h3>1. Objectif</h3>
@@ -80,46 +96,46 @@
       À l’issue de cet exercice, vous serez capable de proposer des solutions concrètes
       aux problèmes évoqués dans les cartes correspondantes.
     </p>
+    <button id="startBtn">Go</button>
   </section>
 
-  <!-- Modes -->
-  <div class="mode-toggle">
-    <button id="discoveryBtn" class="active">Mode Découverte</button>
-    <button id="randomBtn">Mode Pioche</button>
-  </div>
-
-  <!-- Contrôles -->
-  <div id="discoveryControls" class="controls">
-    <select id="ficheSelect"></select>
-    <button id="prevBtn">← Précédent</button>
-    <button id="nextBtn">Suivant →</button>
-  </div>
-  <div id="randomControls" class="controls" style="display:none;">
-    <button id="drawBtn">Piocher une carte</button>
-  </div>
-
-  <!-- Carte -->
-  <div class="card-container">
-    <div id="card" class="card">
-      <!-- Recto -->
-      <div class="card-face card-front">
-        <div id="frontHeader" class="card-header">
-          <span id="frontTitle"></span><span id="frontBadge" class="badge"></span>
+  <!-- Application principale -->
+  <div class="app">
+    <div class="mode-toggle">
+      <button id="discoveryBtn" class="active">Mode Découverte</button>
+      <button id="randomBtn">Mode Pioche</button>
+    </div>
+    <div id="discoveryControls" class="controls">
+      <select id="ficheSelect"></select>
+      <button id="prevBtn">← Précédent</button>
+      <button id="nextBtn">Suivant →</button>
+    </div>
+    <div id="randomControls" class="controls" style="display:none;">
+      <button id="drawBtn">Piocher une carte</button>
+    </div>
+    <div class="card-container">
+      <div id="card" class="card">
+        <!-- Recto -->
+        <div class="card-face card-front">
+          <div id="frontHeader" class="card-header">
+            <span id="frontTitle"></span><span id="frontBadge" class="badge"></span>
+          </div>
+          <div class="card-body">
+            <p><strong>Problème / Observation :</strong> <span id="frontRecto"></span></p>
+            <p><strong>Diagnostic :</strong> <span id="frontDiag"></span></p>
+          </div>
         </div>
-        <div class="card-body">
-          <p><strong>Problème / Observation :</strong> <span id="frontRecto"></span></p>
-          <p><strong>Diagnostic :</strong> <span id="frontDiag"></span></p>
+        <!-- Verso -->
+        <div class="card-face card-back">
+          <div id="backHeader" class="card-header">
+            <span id="backTitle"></span><span id="backBadge" class="badge"></span>
+          </div>
+          <div class="card-body">
+            <div id="backVerso"></div>
+            <div id="backHtml"></div>
+          </div>
+          <div id="backFooter" class="card-footer"></div>
         </div>
-      </div>
-      <!-- Verso -->
-      <div class="card-face card-back">
-        <div id="backHeader" class="card-header">
-          <span id="backTitle"></span><span id="backBadge" class="badge"></span>
-        </div>
-        <div class="card-body">
-          <div id="backVerso"></div>
-          <div id="backHtml"></div>
-        </        <div id="backFooter" class="card-footer"></div>
       </div>
     </div>
   </div>
@@ -135,10 +151,18 @@
     };
     const themeLabels = { preparation: 'Préparation sol', semis: 'Semis' };
 
-    const discoveryBtn = document.getElementById('discoveryBtn');
-    const randomBtn    = document.getElementById('randomBtn');
-    const discCtrls    = document.getElementById('discoveryControls');
-    const randCtrls    = document.getElementById('randomControls');
+    const introEl       = document.querySelector('.intro');
+    const appEl         = document.querySelector('.app');
+    const startBtn      = document.getElementById('startBtn');
+    const discoveryBtn  = document.getElementById('discoveryBtn');
+    const randomBtn     = document.getElementById('randomBtn');
+    const discCtrls     = document.getElementById('discoveryControls');
+    const randCtrls     = document.getElementById('randomControls');
+
+    startBtn.onclick = () => {
+      introEl.style.display = 'none';
+      appEl.style.display   = 'block';
+    };
 
     fetch('data.json')
       .then(r => r.json())
@@ -152,11 +176,11 @@
         o.textContent = `${c.id} – ${c.titre}`;
         sel.appendChild(o);
       });
-      sel.onchange        = () => render(+sel.value);
+      sel.onchange = () => render(+sel.value);
       document.getElementById('prevBtn').onclick = () => render((idx-1+cards.length)%cards.length);
       document.getElementById('nextBtn').onclick = () => render((idx+1)%cards.length);
       document.getElementById('drawBtn').onclick = () => render(Math.floor(Math.random()*cards.length));
-      document.getElementById('card').onclick    = () => {
+      document.getElementById('card').onclick = () => {
         const el = document.getElementById('card');
         if (!el.classList.contains('flipped')) showBack();
         el.classList.toggle('flipped');
@@ -176,8 +200,7 @@
     }
 
     function render(i) {
-      idx = i;
-      const c = cards[i];
+      idx = i; const c = cards[i];
       document.getElementById('ficheSelect').value = i;
       ['front','back'].forEach(side => {
         document.getElementById(`${side}Title`).textContent  = `${c.id} – ${c.titre}`;
