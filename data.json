@@ -453,3 +453,357 @@
     "image": ""
   }
 ]
+[
+  {
+    "id": "017",
+    "theme": "desherbage",
+    "titre": "Fiche 17 – Pression adventice élevée à la reprise",
+    "recto": "Beaucoup d’adventices levées au début de la végétation, risque de forte concurrence sur froment.",
+    "diagnostic": "Résidus adventices insuffisamment enfouis ou absence de faux-semis, sol ressuyé tardivement favorisant germination après hiver humide.",
+    "verso": [
+      {
+        "title": "Passage mécanique précoce",
+        "justification": "En début de végétation (avant redressement avancé du froment BBCH < 30), l’usage d’une houe rotative légère ou d’une herse étrille détruit les plantules adventices avant qu’elles n’entrent en compétition sévère avec le froment. Cette pratique est validée pour froment d’hiver et froment-pois, à condition de respecter le stade et l’état du sol :contentReference[oaicite:23]{index=23}. Elle limite le recours chimique ultérieur et favorise une croissance homogène du froment.",
+        "steps": [
+          "Lorsque le sol est suffisamment ressuyé, passer une houe rotative légère dès reprise pour détruire les jeunes plantules.",
+          "Si la surface est peu encroutée, réaliser un passage de herse étrille ciblé entre-rangs (avant stade redressement), sans endommager les plantules."
+        ]
+      },
+      {
+        "title": "Faux-semis avant semis principal",
+        "justification": "Répéter un ou deux faux-semis permet d’épuiser la réserve semencière d’adventices, incluant germinations tardives. Cette séquence réduit de manière notable la pression au moment du semis de froment, validée par les protocoles de gestion d’adventices :contentReference[oaicite:24]{index=24}.",
+        "steps": [
+          "Organiser un premier faux-semis lorsque la température du sol atteint ~10 °C, avec herse étrille léger.",
+          "Laisser lever puis repasser 5–7 jours plus tard pour capter germinations différées.",
+          "Documenter les relevés d’adventices pour ajuster le nombre de passages."
+        ]
+      },
+      {
+        "title": "Renforcer la rotation culturale",
+        "justification": "Une rotation incluant cultures racinaires ou intercultures compétitives perturbe le cycle des adventices et favorise leur enfouissement ou épuisement dans le sol. À long terme, cela diminue le stock semencier et la pression initiale avant semis de céréales :contentReference[oaicite:25]{index=25}.",
+        "steps": [
+          "Insérer une culture à forte capacité racinaire (radis fourrager, moutarde) tous les 2–3 ans pour fissurer le sol et enfouir graines adventices.",
+          "Planifier une interculture suivie de faux-semis si calendrier le permet, afin de réduire la réserve semencière."
+        ]
+      },
+      {
+        "title": "Suivi et décision via CADCO",
+        "justification": "Consulter les bulletins CADCO/ULiège permet de connaître les seuils locaux d’intervention et d’éviter des actions inutiles ou trop tardives. Ce suivi réflexif s’appuie sur observations de terrain et comparaisons avec parcelles de référence :contentReference[oaicite:26]{index=26}.",
+        "steps": [
+          "Consulter régulièrement les bulletins CADCO pour évaluer si le niveau d’adventices atteint le seuil d’intervention.",
+          "Enregistrer les observations (densité, espèces) pour ajuster la stratégie dans les saisons suivantes."
+        ]
+      }
+    ],
+    "source": "Livre Blanc « Céréales » (ULiège/Gembloux) ; plaquette CADCO",
+    "image": ""
+  },
+  {
+    "id": "018",
+    "theme": "desherbage",
+    "titre": "Fiche 18 – Encroutement du sol limitant le désherbage",
+    "recto": "Surface encroutée après pluies : dents de la herse étrille inefficaces, adventices protégées sous croûte.",
+    "diagnostic": "Battance de surface qui empêche l’outil mécanique d’atteindre les plantules adventices, créant un refuge sous croûte fine.",
+    "verso": [
+      {
+        "title": "Briser la croûte avant intervention",
+        "justification": "Un outil capable de rompre l’encroutement (herse rotative légère ou rouleau criblé) permet au désherbage mécanique de cibler les plantules adventices. Intervenir dès que le sol est ressuyé évite une nouvelle formation de croûte et améliore le contact semence-sol pour la saison suivante ",
+        "steps": [
+          "Lorsque le sol est ressuyé, passer herse rotative légère ou rouleau criblé pour briser la croûte.",
+          "Choisir une fenêtre météo sans pluie imminente pour éviter reforme rapide de la croûte."
+        ]
+      },
+      {
+        "title": "Faux-semis complémentaire",
+        "justification": "Après bris de croûte, laisser lever les adventices, puis repasser pour épuiser leur réserve semencière. Ce séquençage améliore la préparation du sol et réduit la pression avant semis.",
+        "steps": [
+          "Laisser lever les adventices après bris de croûte, puis effectuer un second passage mécanique.",
+          "Consigner les résultats pour décider si un troisième passage est utile."
+        ]
+      },
+      {
+        "title": "Protection de la surface par couvert",
+        "justification": "Un couvert intercalaire ou mulch amortit l’impact des pluies, limite la battance et la formation de croûte. Sur le long terme, cela stabilise la structure du sol et réduit l’entretien mécanique répété.",
+        "steps": [
+          "Implanter un couvert végétal compétitif en interculture pour protéger la surface.",
+          "Maintenir résidus de culture ou mulch superficiel entre saisons."
+        ]
+      }
+    ],
+    "source": "Guide CADCO désherbage mécanique ; Livre Blanc ULiège",
+    "image": ""
+  },
+  {
+    "id": "019",
+    "theme": "desherbage",
+    "titre": "Fiche 19 – Salissement en culture associée",
+    "recto": "Adventices tenaces levées entre les lignes dans un système froment-pois malgré couvert dense.",
+    "diagnostic": "Préparation ou enfouissement insuffisant avant semis associé et limites mécaniques liées à la sensibilité du pois après redressement.",
+    "verso": [
+      {
+        "title": "Intervention ciblée précoce",
+        "justification": "Avant redressement avancé du froment (BBCH < 30), un passage léger de houe rotative ou de herse étrille permet de détruire les adventices avant que le pois ne soit trop sensible. Cette pratique est validée pour cultures associées moyennant réglages fins :contentReference[oaicite:30]{index=30}.",
+        "steps": [
+          "Avant stade redressement avancé, passer houe rotative légère ou herse étrille entre les lignes, en veillant à ne pas nuire aux plantules de pois.",
+          "Agir uniquement si la pression adventice est jugée critique d’après observations (densité, stade)."
+        ]
+      },
+      {
+        "title": "Faux-semis avant semis associé",
+        "justification": "Épuiser la réserve semencière avant implantation de l’association réduit la concurrence initiale et facilite la mécanique ultérieure, indispensable en parcelles « sales » :contentReference[oaicite:31]{index=31}.",
+        "steps": [
+          "Réaliser un ou deux faux-semis avant semis froment-pois, en ciblant les levées adventices.",
+          "Noter les espèces dominantes pour adapter traitements éventuels."
+        ]
+      },
+      {
+        "title": "Rotation adaptée",
+        "justification": "Alterner avec cultures à enfouissement profond ou intercultures compétitives pour réduire durablement le stock d’adventices. Choisir parcelle et itinéraire en fonction de l’historique pour minimiser la pression :contentReference[oaicite:32]{index=32}.",
+        "steps": [
+          "Insérer cultures racinaires ou couverts compétitifs dans la rotation.",
+          "Planifier semis associé sur parcelles moins infestées ou après réduction effective d’adventices."
+        ]
+      }
+    ],
+    "source": "Livre Blanc « Céréales » (ULiège/Gembloux) ; plaquette CADCO",
+    "image": ""
+  },
+  {
+    "id": "020",
+    "theme": "desherbage",
+    "titre": "Fiche 20 – Levée tardive d’adventices vivaces",
+    "recto": "Apparition tardive de vivaces (chardons, plantains) après semis, concurrençant la culture.",
+    "diagnostic": "Réserve semencière ou organes vivaces non gérés précédemment et conditions favorables à leur régénération.",
+    "verso": [
+      {
+        "title": "Faux-semis étalé",
+        "justification": "Plusieurs faux-semis espacés captent germinations successives des vivaces, épuisant progressivement leur stock. Cette séquence est essentielle pour gérer les adventices vivaces difficiles :contentReference[oaicite:33]{index=33}.",
+        "steps": [
+          "Planifier deux à trois faux-semis avant semis principal, espacés de quelques jours.",
+          "Observer et intervenir mécaniquement dès chaque levée de vivaces."
+        ]
+      },
+      {
+        "title": "Intervention mécanique précoce",
+        "justification": "Avant redressement du froment, passer houe rotative légère pour détruire jeunes plantules de vivaces tant que la culture tolère. Au-delà, l’efficacité chute et le risque pour la plante augmente :contentReference[oaicite:34]{index=34}.",
+        "steps": [
+          "Lorsque le stade du froment le permet (BBCH < 30) et sol ressuyé, passer houe rotative légère.",
+          "Si culture trop avancée, envisager un recours chimique ciblé selon seuil CADCO."
+        ]
+      },
+      {
+        "title": "Rotation longue et approfondie",
+        "justification": "Incorporer interruptions fréquentes du cycle des vivaces via cultures à travail profond en interculture, affaiblissant organes de réserve et réduisant leur capacité de régénération :contentReference[oaicite:35]{index=35}.",
+        "steps": [
+          "Alterner avec cultures à racines profondes et faux-semis en interculture pour détruire organes de réserve.",
+          "Documenter espèces résistantes détectées pour adapter stratégies futures."
+        ]
+      }
+    ],
+    "source": "Bulletin CADCO gestion vivaces ; ULiège",
+    "image": ""
+  },
+  {
+    "id": "021",
+    "theme": "desherbage",
+    "titre": "Fiche 21 – Réglage et entretien du matériel mécanique",
+    "recto": "Passages de houe ou herse peu efficaces malgré interventions répétées.",
+    "diagnostic": "Réglages inadaptés (profondeur, angle, vitesse) ou dents/ressorts usés, sol mal évalué (humide/caillouteux).",
+    "verso": [
+      {
+        "title": "Vérification des réglages",
+        "justification": "Un bon réglage de profondeur et de vitesse assure que l’outil cible les plantules adventices sans briser la culture. Cette exigence est rappelée dans les guides CADCO :contentReference[oaicite:36]{index=36}.",
+        "steps": [
+          "Ajuster la profondeur d’attaque pour atteindre les jeunes adventices sans endommager le froment.",
+          "Régler la vitesse d’avancement pour un équilibre entre efficacité et sécurité de la culture."
+        ]
+      },
+      {
+        "title": "Entretien préventif",
+        "justification": "Dents et ressorts en bon état garantissent pénétration et performance. Un outil bien entretenu limite les interventions répétées et le risque de panne en plein chantier.",
+        "steps": [
+          "Vérifier et remplacer dents usées ou ressorts fatigués avant chaque passage.",
+          "Contrôler roulements et structure générale pour assurer un fonctionnement optimal."
+        ]
+      },
+      {
+        "title": "Choix du moment optimal",
+        "justification": "Intervenir sur sol ressuyé (ni trop humide, ni trop sec) et à un stade BBCH tolérant (avant redressement avancé) maximise l’efficacité et limite les dégâts :contentReference[oaicite:37]{index=37}.",
+        "steps": [
+          "S’assurer que le sol est ressuyé pour éviter bourrage ou croûte.",
+          "Observer le stade des adventices et du froment pour intervenir au meilleur moment."
+        ]
+      }
+    ],
+    "source": "Guide CADCO désherbage mécanique ; retours gembloux",
+    "image": ""
+  },
+  {
+    "id": "022",
+    "theme": "desherbage",
+    "titre": "Fiche 22 – Pression adventice après interculture courte",
+    "recto": "Semis de froment après interculture brève sans faux-semis, forte levée adventice en début de cycle.",
+    "diagnostic": "Interculture insuffisante pour épuiser la réserve semencière, sol perturbé faiblement.",
+    "verso": [
+      {
+        "title": "Interculture fractionnée",
+        "justification": "Plusieurs faux-semis en interculture épuisent la réserve semencière avant semis. Cette pratique améliore nettement la réduction des adventices sur calendriers serrés :contentReference[oaicite:38]{index=38}.",
+        "steps": [
+          "Planifier un premier faux-semis après récolte précédente, laisser lever, puis passage mécanique.",
+          "Si délai restreint, réaliser déchaumage superficiel suivi rapidement d’une houe rotative légère."
+        ]
+      },
+      {
+        "title": "Couvert intermédiaire",
+        "justification": "Un couvert compétitif capte la lumière et l’eau, limitant levée adventice et améliorant la structure du sol pour le semis suivant. Cela s’inscrit dans la logique de gestion durable des ressources :contentReference[oaicite:39]{index=39}.",
+        "steps": [
+          "Implanter un couvert végétal adapté pour réduire levée adventice, puis le détruire avant semis.",
+          "Inclure ce couvert dans la rotation pour enrichir la matière organique."
+        ]
+      },
+      {
+        "title": "Observation renforcée",
+        "justification": "Des relevés hebdomadaires avant et après semis permettent de détecter levées imprévues et d’ajuster rapidement la stratégie. Le carnet de bord favorise l’apprentissage et la mémoire parcellaire.",
+        "steps": [
+          "Effectuer relevés hebdomadaires pour noter densité et stade des adventices.",
+          "Consigner résultats pour améliorer la planification d’interculture suivante."
+        ]
+      }
+    ],
+    "source": "Guide CADCO intercultures ; Livre Blanc rotations",
+    "image": ""
+  },
+  {
+    "id": "023",
+    "theme": "desherbage",
+    "titre": "Fiche 23 – Adventices en bordure envahissant la parcelle",
+    "recto": "Recolonisation rapide par adventices issues des bordures ou fossés adjacents.",
+    "diagnostic": "Flux de graines ou rhizomes depuis bandes non cultivées, absence de barrières compétitives.",
+    "verso": [
+      {
+        "title": "Bandes tampons compétitives",
+        "justification": "Planter une bande végétale résistante et compétitive crée une barrière réduisant l’ensemencement par les adventices voisines. Cette solution est recommandée pour limiter la pression bordure :contentReference[oaicite:40]{index=40}.",
+        "steps": [
+          "Choisir un mélange d’espèces compétitives adapté à la région et semer en bordure.",
+          "Entretenir régulièrement pour éviter que la bande ne devienne source de nouveaux adventices."
+        ]
+      },
+      {
+        "title": "Entretien régulier des bordures",
+        "justification": "Désherbage mécanique ou fauchage fréquent dans les bordures réduit la production de graines et limite la réinfestation de la parcelle. La coopération avec voisins renforce l’efficacité globale.",
+        "steps": [
+          "Effectuer désherbage mécanique ou fauchage régulier le long des bordures.",
+          "Coordonner les actions avec les exploitations voisines pour traiter les sources communes."
+        ]
+      },
+      {
+        "title": "Suivi périodique",
+        "justification": "Inspection régulière des lisières permet de détecter les nouvelles levées tôt et d’agir avant propagation. Tenir un journal d’observations aide à affiner la stratégie à long terme.",
+        "steps": [
+          "Inspecter les lisières toutes les 1–2 semaines et noter les levées observées.",
+          "Adapter la gestion de la bordure selon les espèces détectées et leur dynamique."
+        ]
+      }
+    ],
+    "source": "Bulletin CADCO gestion bordures ; ULiège",
+    "image": ""
+  },
+  {
+    "id": "024",
+    "theme": "desherbage",
+    "titre": "Fiche 24 – Adventices résistantes malgré interventions",
+    "recto": "Certaines adventices persistent malgré plusieurs passages mécaniques.",
+    "diagnostic": "Espèces robustes et/ou stade avancé au moment de l’intervention, conditions météo favorisant levées successives.",
+    "verso": [
+      {
+        "title": "Interventions très précoces",
+        "justification": "Traiter les plantules adverses avant qu’elles ne développent organes de résistance maximise l’efficacité mécanique. La détection fine du stade est cruciale pour réussir :contentReference[oaicite:41]{index=41}.",
+        "steps": [
+          "Observer quotidiennement pour agir dès la petite levée des adventices.",
+          "Passer houe rotative légère ou herse étrille dès que le stade du froment le permet (BBCH < 30)."
+        ]
+      },
+      {
+        "title": "Combinaison de méthodes",
+        "justification": "Associer mécanique et chimique (si seuil CADCO atteint) ainsi que intercultures compétitives brise le cycle des adventices difficiles. Cette approche intégrée est recommandée pour limiter la dépendance aux herbicides :contentReference[oaicite:42]{index=42}.",
+        "steps": [
+          "Après passage mécanique précoce, évaluer la nécessité d’un traitement chimique ciblé selon seuils locaux.",
+          "Planter intercultures pièges ou compétitives entre cultures pour réduire levées ultérieures."
+        ]
+      },
+      {
+        "title": "Rotation approfondie",
+        "justification": "Alterner avec cultures à travail profond et faux-semis en interculture perturbe les organes de réserve des vivaces ou adventices robustes, réduisant leur résilience. Documenter les espèces persistantes pour ajuster les futures rotations :contentReference[oaicite:43]{index=43}.",
+        "steps": [
+          "Insérer cultures à racines profondes et réaliser faux-semis en interculture pour détruire organes de réserve.",
+          "Consigner les espèces récurrentes et adapter la rotation l’année suivante."
+        ]
+      }
+    ],
+    "source": "Bulletin CADCO gestion adventices résistantes ; ULiège",
+    "image": ""
+  },
+  {
+    "id": "025",
+    "theme": "desherbage",
+    "titre": "Fiche 25 – Observation et protocole de décision",
+    "recto": "Incertain quant au moment optimal pour désherbage mécanique ou chimique, absence de protocole de suivi systématique.",
+    "diagnostic": "Pas de relevés hebdomadaires ni consultation régulière des seuils CADCO, crainte d’intervenir trop tôt ou trop tard.",
+    "verso": [
+      {
+        "title": "Établir un protocole de suivi",
+        "justification": "Un plan de relevés hebdomadaires (stade culture, densité et stade des adventices) structure la prise de décision et consolide la mémoire parcellaire. Cette méthode est recommandée dans la phytotechnie pour anticiper et réagir efficacement :contentReference[oaicite:44]{index=44}.",
+        "steps": [
+          "Planifier relevés chaque semaine : noter BBCH du froment, densité et stade des adventices.",
+          "Tenir carnet de bord pour consigner météo, interventions et résultats."
+        ]
+      },
+      {
+        "title": "Consulter bulletins CADCO/ULiège",
+        "justification": "Les bulletins donnent les seuils locaux et les périodes d’intervention recommandées, évitant traitements inutiles ou retardés. Cette pratique favorise la durabilité et la conformité réglementaire.",
+        "steps": [
+          "Suivre régulièrement les bulletins CADCO/ULiège pour connaître les niveaux de nuisibilité.",
+          "Si le seuil est dépassé et conditions mécaniques défavorables, planifier rapidement un traitement chimique ciblé."
+        ]
+      },
+      {
+        "title": "Test local à petite échelle",
+        "justification": "Un essai sur une petite parcelle valide les réglages et le timing avant de déployer sur toute la surface, réduisant les risques d’erreur et optimisant l’efficacité mécanique.",
+        "steps": [
+          "Réaliser un essai de désherbage mécanique limité pour valider pénétration et effet.",
+          "Analyser les résultats pour ajuster profondeur, vitesse et timing."
+        ]
+      }
+    ],
+    "source": "Plaquette CADCO phytotechnie ; ULiège suivi parcelle",
+    "image": ""
+  },
+  {
+    "id": "026",
+    "theme": "desherbage",
+    "titre": "Fiche 26 – Choix variétal et implantation pour compétition adventice",
+    "recto": "Variété ou date de semis inadaptées, limitant la compétitivité initiale face aux adventices.",
+    "diagnostic": "Variété à vigueur de départ faible ou semis hors fenêtre optimale, laissant niches pour adventices.",
+    "verso": [
+      {
+        "title": "Sélection variétale adaptée",
+        "justification": "Choisir variétés à levée rapide et bon tallage assure un couvert dense limitant niches adventices dès l’émergence. Cela s’appuie sur recommandations locales de variétés résistantes à la verse et maladies :contentReference[oaicite:45]{index=45}.",
+        "steps": [
+          "Sélectionner variétés de froment à bon démarrage et résistance aux maladies et verse.",
+          "Vérifier les recommandations régionales pour adéquation parcellaire."
+        ]
+      },
+      {
+        "title": "Optimisation date et densité de semis",
+        "justification": "Semer dans une fenêtre météo favorable garantit un démarrage homogène. Ajuster la densité pour un couvert suffisant sans accroître le risque de verse ou de maladies.",
+        "steps": [
+          "Programmer semis selon prévisions météo et température du sol (~10 °C minimal).",
+          "Ajuster densité cible (ex. 300–350 pieds/m²) pour équilibre couverture/adversité."
+        ]
+      },
+      {
+        "title": "Préparation soignée du lit de semence",
+        "justification": "Un lit homogène assure une levée uniforme, limitant les zones clairsemées propices aux adventices. Intégrer faux-semis si nécessaire pour réduire prélevée adventice pré-semis.",
+        "steps": [
+          "Fragmenter les mottes (> 5 cm) et niveler le sol pour un contact graine-sol
+
