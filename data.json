@@ -451,9 +451,7 @@
     ],
     "source": "Arvalis (2023). Variabilité intra-parcellaire et semis à modulation.",
     "image": ""
-  }
-]
-[
+  },
   {
     "id": "017",
     "theme": "desherbage",
@@ -802,18 +800,17 @@
         ]
       },
       {
-      "title": "Préparation soignée du lit de semence",
-      "justification": "Un lit homogène assure une levée uniforme, limitant les zones clairsemées propices aux adventices. Intégrer un faux-semis si nécessaire pour réduire la pression adventice avant implantation.",
-      "steps": [
-        "Fragmenter les mottes de plus de 5 cm et niveler le sol pour garantir un bon contact graine-sol.",
-        "Effectuer un faux-semis final pour épuiser les levées adventices avant le semis principal."
-      ]
-    }
-  ],
-  "source": "Conseils CADCO variétés & semis ; Livre Blanc ULiège",
-  "image": ""
-}
-[
+        "title": "Préparation soignée du lit de semence",
+        "justification": "Un lit homogène assure une levée uniforme, limitant les zones clairsemées propices aux adventices. Intégrer un faux-semis si nécessaire pour réduire la pression adventice avant implantation.",
+        "steps": [
+          "Fragmenter les mottes de plus de 5 cm et niveler le sol pour garantir un bon contact graine-sol.",
+          "Effectuer un faux-semis final pour épuiser les levées adventices avant le semis principal."
+        ]
+      }
+    ],
+    "source": "Conseils CADCO variétés & semis ; Livre Blanc ULiège",
+    "image": ""
+  },
   {
     "id": "029",
     "theme": "fongicide",
@@ -1167,8 +1164,7 @@
     ],
     "source": "Plaquette phytopathologie UCL ; bulletins CADCO/ULiège",
     "image": ""
-  }
-[
+  },
   {
     "id": "039",
     "theme": "insecticide",
@@ -1434,9 +1430,7 @@
     ],
     "source": "plaquette avertissements CADCO ; Ravageurs du froment.pdf",
     "image": ""
-  }
-]
-[
+  },
   {
     "id": "046",
     "theme": "engrais",
