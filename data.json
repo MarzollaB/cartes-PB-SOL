@@ -542,7 +542,7 @@
     "verso": [
       {
         "title": "Intervention ciblée précoce",
-        "justification": "Avant redressement avancé du froment (BBCH < 30), un passage léger de houe rotative ou de herse étrille permet de détruire les adventices avant que le pois ne soit trop sensible. Cette pratique est validée pour cultures associées moyennant réglages fins :contentReference[oaicite:30]{index=30}.",
+        "justification": "Avant redressement avancé du froment (BBCH < 30), un passage léger de houe rotative ou de herse étrille permet de détruire les adventices avant que le pois ne soit trop sensible. Cette pratique est validée pour cultures associées moyennant réglages fins.",
         "steps": [
           "Avant stade redressement avancé, passer houe rotative légère ou herse étrille entre les lignes, en veillant à ne pas nuire aux plantules de pois.",
           "Agir uniquement si la pression adventice est jugée critique d’après observations (densité, stade)."
@@ -577,7 +577,7 @@
     "verso": [
       {
         "title": "Faux-semis étalé",
-        "justification": "Plusieurs faux-semis espacés captent germinations successives des vivaces, épuisant progressivement leur stock. Cette séquence est essentielle pour gérer les adventices vivaces difficiles :contentReference[oaicite:33]{index=33}.",
+        "justification": "Plusieurs faux-semis espacés captent germinations successives des vivaces, épuisant progressivement leur stock. Cette séquence est essentielle pour gérer les adventices vivaces difficiles.",
         "steps": [
           "Planifier deux à trois faux-semis avant semis principal, espacés de quelques jours.",
           "Observer et intervenir mécaniquement dès chaque levée de vivaces."
@@ -585,7 +585,7 @@
       },
       {
         "title": "Intervention mécanique précoce",
-        "justification": "Avant redressement du froment, passer houe rotative légère pour détruire jeunes plantules de vivaces tant que la culture tolère. Au-delà, l’efficacité chute et le risque pour la plante augmente :contentReference[oaicite:34]{index=34}.",
+        "justification": "Avant redressement du froment, passer houe rotative légère pour détruire jeunes plantules de vivaces tant que la culture tolère. Au-delà, l’efficacité chute et le risque pour la plante augmente.",
         "steps": [
           "Lorsque le stade du froment le permet (BBCH < 30) et sol ressuyé, passer houe rotative légère.",
           "Si culture trop avancée, envisager un recours chimique ciblé selon seuil CADCO."
@@ -593,7 +593,7 @@
       },
       {
         "title": "Rotation longue et approfondie",
-        "justification": "Incorporer interruptions fréquentes du cycle des vivaces via cultures à travail profond en interculture, affaiblissant organes de réserve et réduisant leur capacité de régénération :contentReference[oaicite:35]{index=35}.",
+        "justification": "Incorporer interruptions fréquentes du cycle des vivaces via cultures à travail profond en interculture, affaiblissant organes de réserve et réduisant leur capacité de régénération.",
         "steps": [
           "Alterner avec cultures à racines profondes et faux-semis en interculture pour détruire organes de réserve.",
           "Documenter espèces résistantes détectées pour adapter stratégies futures."
@@ -612,7 +612,7 @@
     "verso": [
       {
         "title": "Vérification des réglages",
-        "justification": "Un bon réglage de profondeur et de vitesse assure que l’outil cible les plantules adventices sans briser la culture. Cette exigence est rappelée dans les guides CADCO :contentReference[oaicite:36]{index=36}.",
+        "justification": "Un bon réglage de profondeur et de vitesse assure que l’outil cible les plantules adventices sans briser la culture. Cette exigence est rappelée dans les guides CADCO.",
         "steps": [
           "Ajuster la profondeur d’attaque pour atteindre les jeunes adventices sans endommager le froment.",
           "Régler la vitesse d’avancement pour un équilibre entre efficacité et sécurité de la culture."
@@ -628,7 +628,7 @@
       },
       {
         "title": "Choix du moment optimal",
-        "justification": "Intervenir sur sol ressuyé (ni trop humide, ni trop sec) et à un stade BBCH tolérant (avant redressement avancé) maximise l’efficacité et limite les dégâts :contentReference[oaicite:37]{index=37}.",
+        "justification": "Intervenir sur sol ressuyé (ni trop humide, ni trop sec) et à un stade BBCH tolérant (avant redressement avancé) maximise l’efficacité et limite les dégâts.",
         "steps": [
           "S’assurer que le sol est ressuyé pour éviter bourrage ou croûte.",
           "Observer le stade des adventices et du froment pour intervenir au meilleur moment."
@@ -647,7 +647,7 @@
     "verso": [
       {
         "title": "Interculture fractionnée",
-        "justification": "Plusieurs faux-semis en interculture épuisent la réserve semencière avant semis. Cette pratique améliore nettement la réduction des adventices sur calendriers serrés :contentReference[oaicite:38]{index=38}.",
+        "justification": "Plusieurs faux-semis en interculture épuisent la réserve semencière avant semis. Cette pratique améliore nettement la réduction des adventices sur calendriers serrés.",
         "steps": [
           "Planifier un premier faux-semis après récolte précédente, laisser lever, puis passage mécanique.",
           "Si délai restreint, réaliser déchaumage superficiel suivi rapidement d’une houe rotative légère."
@@ -655,7 +655,7 @@
       },
       {
         "title": "Couvert intermédiaire",
-        "justification": "Un couvert compétitif capte la lumière et l’eau, limitant levée adventice et améliorant la structure du sol pour le semis suivant. Cela s’inscrit dans la logique de gestion durable des ressources :contentReference[oaicite:39]{index=39}.",
+        "justification": "Un couvert compétitif capte la lumière et l’eau, limitant levée adventice et améliorant la structure du sol pour le semis suivant. Cela s’inscrit dans la logique de gestion durable des ressources.",
         "steps": [
           "Implanter un couvert végétal adapté pour réduire levée adventice, puis le détruire avant semis.",
           "Inclure ce couvert dans la rotation pour enrichir la matière organique."
@@ -682,7 +682,7 @@
     "verso": [
       {
         "title": "Bandes tampons compétitives",
-        "justification": "Planter une bande végétale résistante et compétitive crée une barrière réduisant l’ensemencement par les adventices voisines. Cette solution est recommandée pour limiter la pression bordure :contentReference[oaicite:40]{index=40}.",
+        "justification": "Planter une bande végétale résistante et compétitive crée une barrière réduisant l’ensemencement par les adventices voisines. Cette solution est recommandée pour limiter la pression bordure.",
         "steps": [
           "Choisir un mélange d’espèces compétitives adapté à la région et semer en bordure.",
           "Entretenir régulièrement pour éviter que la bande ne devienne source de nouveaux adventices."
@@ -717,7 +717,7 @@
     "verso": [
       {
         "title": "Interventions très précoces",
-        "justification": "Traiter les plantules adverses avant qu’elles ne développent organes de résistance maximise l’efficacité mécanique. La détection fine du stade est cruciale pour réussir :contentReference[oaicite:41]{index=41}.",
+        "justification": "Traiter les plantules adverses avant qu’elles ne développent organes de résistance maximise l’efficacité mécanique. La détection fine du stade est cruciale pour réussir",
         "steps": [
           "Observer quotidiennement pour agir dès la petite levée des adventices.",
           "Passer houe rotative légère ou herse étrille dès que le stade du froment le permet (BBCH < 30)."
@@ -725,7 +725,7 @@
       },
       {
         "title": "Combinaison de méthodes",
-        "justification": "Associer mécanique et chimique (si seuil CADCO atteint) ainsi que intercultures compétitives brise le cycle des adventices difficiles. Cette approche intégrée est recommandée pour limiter la dépendance aux herbicides :contentReference[oaicite:42]{index=42}.",
+        "justification": "Associer mécanique et chimique (si seuil CADCO atteint) ainsi que intercultures compétitives brise le cycle des adventices difficiles. Cette approche intégrée est recommandée pour limiter la dépendance aux herbicides",
         "steps": [
           "Après passage mécanique précoce, évaluer la nécessité d’un traitement chimique ciblé selon seuils locaux.",
           "Planter intercultures pièges ou compétitives entre cultures pour réduire levées ultérieures."
@@ -733,7 +733,7 @@
       },
       {
         "title": "Rotation approfondie",
-        "justification": "Alterner avec cultures à travail profond et faux-semis en interculture perturbe les organes de réserve des vivaces ou adventices robustes, réduisant leur résilience. Documenter les espèces persistantes pour ajuster les futures rotations :contentReference[oaicite:43]{index=43}.",
+        "justification": "Alterner avec cultures à travail profond et faux-semis en interculture perturbe les organes de réserve des vivaces ou adventices robustes, réduisant leur résilience. Documenter les espèces persistantes pour ajuster les futures rotations.",
         "steps": [
           "Insérer cultures à racines profondes et réaliser faux-semis en interculture pour détruire organes de réserve.",
           "Consigner les espèces récurrentes et adapter la rotation l’année suivante."
@@ -752,7 +752,7 @@
     "verso": [
       {
         "title": "Établir un protocole de suivi",
-        "justification": "Un plan de relevés hebdomadaires (stade culture, densité et stade des adventices) structure la prise de décision et consolide la mémoire parcellaire. Cette méthode est recommandée dans la phytotechnie pour anticiper et réagir efficacement :contentReference[oaicite:44]{index=44}.",
+        "justification": "Un plan de relevés hebdomadaires (stade culture, densité et stade des adventices) structure la prise de décision et consolide la mémoire parcellaire. Cette méthode est recommandée dans la phytotechnie pour anticiper et réagir efficacement.",
         "steps": [
           "Planifier relevés chaque semaine : noter BBCH du froment, densité et stade des adventices.",
           "Tenir carnet de bord pour consigner météo, interventions et résultats."
@@ -787,7 +787,7 @@
     "verso": [
       {
         "title": "Sélection variétale adaptée",
-        "justification": "Choisir variétés à levée rapide et bon tallage assure un couvert dense limitant niches adventices dès l’émergence. Cela s’appuie sur recommandations locales de variétés résistantes à la verse et maladies :contentReference[oaicite:45]{index=45}.",
+        "justification": "Choisir variétés à levée rapide et bon tallage assure un couvert dense limitant niches adventices dès l’émergence. Cela s’appuie sur recommandations locales de variétés résistantes à la verse et maladies.",
         "steps": [
           "Sélectionner variétés de froment à bon démarrage et résistance aux maladies et verse.",
           "Vérifier les recommandations régionales pour adéquation parcellaire."
@@ -802,8 +802,981 @@
         ]
       },
       {
-        "title": "Préparation soignée du lit de semence",
-        "justification": "Un lit homogène assure une levée uniforme, limitant les zones clairsemées propices aux adventices. Intégrer faux-semis si nécessaire pour réduire prélevée adventice pré-semis.",
+      "title": "Préparation soignée du lit de semence",
+      "justification": "Un lit homogène assure une levée uniforme, limitant les zones clairsemées propices aux adventices. Intégrer un faux-semis si nécessaire pour réduire la pression adventice avant implantation.",
+      "steps": [
+        "Fragmenter les mottes de plus de 5 cm et niveler le sol pour garantir un bon contact graine-sol.",
+        "Effectuer un faux-semis final pour épuiser les levées adventices avant le semis principal."
+      ]
+    }
+  ],
+  "source": "Conseils CADCO variétés & semis ; Livre Blanc ULiège",
+  "image": ""
+}
+[
+  {
+    "id": "029",
+    "theme": "fongicide",
+    "titre": "Fiche 29 – Septoriose détectée en feuillage bas avant épiaison",
+    "recto": "Taches ovales brunes sur feuilles inférieures, ponctuations noires (pycnides) visibles à la loupe.",
+    "diagnostic": "Septoria tritici/nodorum activée par résidus mal enfouis, semis précoces, hiver doux et printemps humide favorisant humidité prolongée sur feuilles (≥ 15 jours) jusqu’à l’épiaison.",
+    "verso": [
+      {
+        "title": "Traitement ciblé à l’épiaison",
+        "justification": "Un traitement fongicide à l’épiaison réduit la dissémination précoce et protège les étages supérieurs avant remontée de l’inoculum. Les combinaisons de triazoles et partenaires limitent le développement et retardent la résistance.",
         "steps": [
-          "Fragmenter les mottes (> 5 cm) et niveler le sol pour un contact graine-sol
-
+          "Surveiller le stade BBCH : intervenir dès détection significative sur feuilles supérieures F3–F2.",
+          "Appliquer combinaison recommandée (par ex. prothioconazole + partenaire), en alternant les modes d’action pour limiter résistances.",
+          "Respecter conditions d’application (feuilles humides mais pas pluie imminente, dosage conforme, buse adaptée)."
+        ]
+      },
+      {
+        "title": "Réduction de l’inoculum résiduel",
+        "justification": "Enfouir ou détruire les résidus de culture limite l’inoculum primaire l’an suivant. La rotation longue et le travail adapté réduisent les sources de spores.",
+        "steps": [
+          "Après récolte, détruire ou enfouir paille et chaumes rapidement.",
+          "Planifier une rotation incluant cultures non-hôtes pour briser le cycle."
+        ]
+      },
+      {
+        "title": "Choix variétal et date de semis",
+        "justification": "Variétés tolérantes réduisent pression fongique et semis modéré évite cycles supplémentaires d’inoculum en automne. Semis trop précoce favorise cycles multiples.",
+        "steps": [
+          "Sélectionner variétés avec bonne tolérance à la septoriose selon recommandations locales.",
+          "Éviter semis excessivement précoces permettant un cycle automnal prolongé."
+        ]
+      }
+    ],
+    "source": "Maladies du froment (ULiège/UCL) ; plaquette phytopathologie UCL",
+    "image": ""
+  },
+  {
+    "id": "030",
+    "theme": "fongicide",
+    "titre": "Fiche 30 – Oïdium détecté sur feuilles hautes à l’épiaison",
+    "recto": "Feutrage blanc sur limbes, puis gris avec points noirs (cléistothèces) sur feuilles supérieures et possible sur glumes si épiaison contaminée.",
+    "diagnostic": "Conditions sèches et ensoleillées alternant avec humidité relative élevée (> 80%), densité de végétation élevée et apports azotés favorisent développement d’Erysiphe graminis.",
+    "verso": [
+      {
+        "title": "Intervention fongicide à l’épiaison",
+        "justification": "L’épiaison est stade clé pour limiter propagation vers épis et production de cléistothèces. Seules dernières feuilles contaminées justifient le traitement, pour préserver efficacité fongicide et limiter résistances.",
+        "steps": [
+          "Inspecter feuilles supérieures (F1–F2) et épis pour confirmer contamination significative.",
+          "Appliquer produit recommandé (cyflufenamide, spiroxamine, etc.) selon bulletin local, en respectant dose et conditions météo (HR, vent).",
+          "Alterner familles de molécules pour limiter l’émergence de souches résistantes."
+        ]
+      },
+      {
+        "title": "Gestion de la densité et de la fertilisation azotée",
+        "justification": "Réduire la densité et modérer l’azote limite l’environnement favorable à l’oïdium (végétation dense, humidité dans le couvert). Cela diminue la fréquence d’intervention nécessaire.",
+        "steps": [
+          "Ajuster densité de semis pour équilibre couverture/ventilation.",
+          "Limiter apports azotés tardifs favorisant feuillage dense."
+        ]
+      },
+      {
+        "title": "Choix variétal",
+        "justification": "Variétés plus résistantes à l’oïdium réduisent gravité et fréquence de traitement. Ce critère doit être intégré au choix initial de la culture.",
+        "steps": [
+          "Sélectionner variétés avec niveau de résistance connu à l’oïdium.",
+          "Consulter les listes annuelles de variétés résistantes."
+        ]
+      }
+    ],
+    "source": "Maladies du froment UCL ; plaquette phytopathologie UCL",
+    "image": ""
+  },
+  {
+    "id": "031",
+    "theme": "fongicide",
+    "titre": "Fiche 31 – Rouille jaune signalée en foyers au tallage-montaison",
+    "recto": "Pustules jaunes alignées entre nervures sur feuilles inférieures, propagation rapide en foyers circulaires.",
+    "diagnostic": "Printemps frais, couvert humide et venteux favorise Puccinia striiformis ; inoculum issu de repousses ou cultures voisines, survie hivernale possible.",
+    "verso": [
+      {
+        "title": "Traitement fongicide dès détection de foyer",
+        "justification": "Intervenir précocement (1er–2e nœud) évite extension rapide du foyer et perte de rendement (jusqu’à 40 %). L’utilisation de triazoles adaptées (époxiconazole > cyproconazole) est recommandée selon bulletin local.",
+        "steps": [
+          "Surveiller régulièrement parcelle et bordures pour détecter foyers (taches alignées).",
+          "Appliquer traitement dès identification de foyer, en respectant dose, stade et conditions météo (humectation).",
+          "Alterner familles de molécules pour prévenir résistance."
+        ]
+      },
+      {
+        "title": "Réduction de l’inoculum initial",
+        "justification": "Éliminer repousses de blé et adventices hébergeant Puccinia limite départ d’épidémie au printemps suivant. Une gestion stricte des repousses est essentielle.",
+        "steps": [
+          "Supprimer ou détruire repousses avant tallage.",
+          "Prévoir rotation pour réduire présence d’hôtes alternatifs."
+        ]
+      },
+      {
+        "title": "Choix variétal et semis",
+        "justification": "Variétés résistantes ou modérément sensibles réduisent gravité et ralentissent épidémie. Semis plus tardif peut réduire cycles automnaux et inoculum hivernal.",
+        "steps": [
+          "Choisir variétés avec résistance à la rouille jaune.",
+          "Évaluer date de semis selon bulletin régional pour limiter exposition."
+        ]
+      }
+    ],
+    "source": "Maladies du froment UCL ; plaquette avertissements phytopathologie",
+    "image": ""
+  },
+  {
+    "id": "032",
+    "theme": "fongicide",
+    "titre": "Fiche 32 – Rouille brune identifiée au redressement-épiaison",
+    "recto": "Pustules brunes/oranges sur face supérieure des feuilles, suivi de téleutosores en fin de saison.",
+    "diagnostic": "Puccinia recondita favorisé par humidité sur feuilles (6–8 h), température 5–25 °C ; spores disséminées par vent, inoculum résiduel sur résidus.",
+    "verso": [
+      {
+        "title": "Fongicide préventif ou curatif à l’épiaison",
+        "justification": "Traitement au stade DF ou épiaison selon pression observée limite sporulation et infection des feuilles supérieures. Combinaisons strobilurines + triazoles ou triazoles seules selon résistances et bulletin local.",
+        "steps": [
+          "Observer pression locale : densité de pustules et conditions météo favorables.",
+          "Appliquer produit recommandé (ex. époxiconazole + partenaire) en respectant dose, stade et fenêtre météo.",
+          "Alterner substances pour préserver sensibilité du champignon."
+        ]
+      },
+      {
+        "title": "Gestion des résidus",
+        "justification": "Enfouir ou détruire résidus limite inoculum primaire l’année suivante. Une rotation et travail du sol adaptés réduisent propagation future.",
+        "steps": [
+          "Après récolte, broyer et enfouir paille et chaumes rapidement.",
+          "Privilégier rotation longue pour réduire stationnarité de Puccinia."
+        ]
+      },
+      {
+        "title": "Choix variétal",
+        "justification": "Variétés avec bon niveau de résistance à la rouille brune minimisent gravité et fréquence des applications. Intégration dans décision cultivarale renforce durabilité.",
+        "steps": [
+          "Sélectionner variétés résistantes selon liste annuelle.",
+          "Éviter semis trop denses favorisant microclimat humide."
+        ]
+      }
+    ],
+    "source": "Maladies du froment UCL ; plaquette phytopathologie UCL",
+    "image": ""
+  },
+  {
+    "id": "033",
+    "theme": "fongicide",
+    "titre": "Fiche 33 – Piétin-verse détecté au tallage (1 cm au-dessus plateau de tallage)",
+    "recto": "Taches ocellées brunes sur gaines au tallage, progression possible vers tige, risque d’échaudage et verse.",
+    "diagnostic": "Pseudo-cercosporella herpotrichoides activé par résidus infectés, hiver doux et humide, semis précoces et densité élevée favorisent développement.",
+    "verso": [
+      {
+        "title": "Traitement semences et protection au stade 1er nœud",
+        "justification": "Traitement semences (silthiopham) limite infection initiale ; un fongicide au stade 1er nœud freine piétin-verse et réduit incidence de fusariose secondaire. Cette approche est préconisée lorsque pression historique est élevée.",
+        "steps": [
+          "Utiliser semences traitées au silthiopham si parcelle à risque élevé.",
+          "Surveiller tallage et appliquer fongicide au stade 1er nœud si symptômes visibles ou pression connue."
+        ]
+      },
+      {
+        "title": "Réduction de l’inoculum et rotation",
+        "justification": "Enfouir chaumes infectés et allonger rotation limite inoculum primaire. Éviter précédent à forte teneur en N et semis précoces diminue risque.",
+        "steps": [
+          "Après récolte, enfouir ou détruire résidus infectés.",
+          "Planifier rotation incluse non-céréales pour rompre cycle."
+        ]
+      },
+      {
+        "title": "Choix variétal et densité",
+        "justification": "Cultivars moins sensibles et densité modérée réduisent humidité au tallage et développement de la maladie. Adapter densité évite microclimat propice à piétin-verse.",
+        "steps": [
+          "Choisir variétés présentant tolérance au piétin-verse.",
+          "Éviter semis précoces trop denses."
+        ]
+      }
+    ],
+    "source": "Maladies du froment UCL ; plaquette phytopathologie UCL",
+    "image": ""
+  },
+  {
+    "id": "034",
+    "theme": "fongicide",
+    "titre": "Fiche 34 – Fusariose épi (Fusarium spp.) identifiée à la floraison",
+    "recto": "Symptômes sur épis (blanchiment, échaudage) et risque mycotoxines si conditions humides à floraison.",
+    "diagnostic": "Inoculum présent sur résidus, conditions humides à floraison, variétés sensibles et dose azotée élevée favorisent infection.",
+    "verso": [
+      {
+        "title": "Traitement à la floraison",
+        "justification": "Fongicide ciblé à la floraison limite infection et accumulation de mycotoxines. Prothioconazole, tebuconazole ou metconazole sont recommandés selon bulletin local.",
+        "steps": [
+          "Surveiller conditions météo et stade BBCH 61–69 pour planifier application.",
+          "Appliquer produit adapté aux Fusarium, en respectant dose et conditions (humectation, vent faible)."
+        ]
+      },
+      {
+        "title": "Gestion des résidus et rotation",
+        "justification": "Réduire inoculum en enfouissant résidus infectés et éviter succession blé–maïs ou blé–blé, limitant propagation de Fusarium d’année en année.",
+        "steps": [
+          "Après moisson, enfouir paille infectée profondément.",
+          "Planifier rotation évitant cultures fortement sensibles (ex. maïs sous conditions favorables)."
+        ]
+      },
+      {
+        "title": "Choix variétal et fertilisation équilibrée",
+        "justification": "Variétés moins sensibles et gestion modérée de l’azote réduisent risque d’échaudage et infection. Une fertilisation équilibrée réduit la vigueur excessive du couvert favorisant humidité intercalaire.",
+        "steps": [
+          "Sélectionner variétés avec tolérance connue aux Fusarium.",
+          "Modérer apports azotés avant floraison pour éviter feuillage trop dense."
+        ]
+      }
+    ],
+    "source": "Maladies du froment UCL ; plaquette phytopathologie UCL",
+    "image": ""
+  },
+  {
+    "id": "035",
+    "theme": "fongicide",
+    "titre": "Fiche 35 – Rhizoctone observé au tallage",
+    "recto": "Taches claires étendues sur gaines, coussinets mycéliens sur 1er entre-nœud, mais rendement peu impacté.",
+    "diagnostic": "Rhizoctonia cerealis présent dans résidus, conditions météo favorables mais maladie rarement justifiant traitement en végétation.",
+    "verso": [
+      {
+        "title": "Pas de traitement spécifique en végétation",
+        "justification": "Rhizoctone n’affecte généralement pas le rendement de façon significative, et aucun produit agréé n’est recommandé en cours de végétation. La priorité reste piétin-verse si co-présent.",
+        "steps": [
+          "Confirmer diagnostic pour distinguer de piétin-verse.",
+          "Ne pas planifier de fongicide spécifique ; si piétin-verse présent, traiter au stade 1er nœud."
+        ]
+      },
+      {
+        "title": "Gestion préventive par rotation",
+        "justification": "Rotation longue et enfouissement des résidus limitent inoculum de Rhizoctonia dans le sol. Attention à ne pas favoriser alternance de cultures sensibles.",
+        "steps": [
+          "Enfouir ou détruire résidus de céréales infectés.",
+          "Planifier rotation incluant cultures non-hôtes."
+        ]
+      },
+      {
+        "title": "Soins culturaux généraux",
+        "justification": "Maintenir bon approvisionnement minéral et structure de sol favorise vigueur des plants et tolérance aux infections mineures. Cela limite impact global des maladies du pied.",
+        "steps": [
+          "Assurer fertilisation équilibrée, notamment K et Mg.",
+          "Éviter tassement et stress hydrique pour améliorer résistance globale."
+        ]
+      }
+    ],
+    "source": "Plaquette phytopathologie UCL ; Maladies du froment UCL",
+    "image": ""
+  },
+  {
+    "id": "036",
+    "theme": "fongicide",
+    "titre": "Fiche 36 – Helminthosporiose détectée après floraison",
+    "recto": "Taches jaunes elliptiques parallèles aux nervures sur feuilles supérieures, poussière noire (conidies) en conditions humides.",
+    "diagnostic": "Pyrenophora tritici-repentis favorisée par résidus mal enfouis, blé après blé, forte humidité et températures élevées post-floraison.",
+    "verso": [
+      {
+        "title": "Intervention fongicide si forte pression",
+        "justification": "Un traitement à la fin de floraison ou début remplissage peut réduire progression vers feuilles hautes, mais rentabilité variable. Produits contenant prothioconazole ou propiconazole sont recommandés selon bulletin local.",
+        "steps": [
+          "Évaluer intensité des symptômes et impact potentiel sur photosynthèse des étages supérieurs.",
+          "Appliquer fongicide adapté si justification agronomique et économique validée."
+        ]
+      },
+      {
+        "title": "Réduction de l’inoculum résiduel",
+        "justification": "Enfouir résidus malades et éviter succession blé–blé limitent sources primaires de spores. Une rotation adéquate et travail du sol adapté réduisent fréquence de la maladie.",
+        "steps": [
+          "Après récolte, enfouir ou détruire résidus infectés.",
+          "Planifier rotation incluant cultures non-hôtes et travail du sol pour exposer résidus au soleil."
+        ]
+      },
+      {
+        "title": "Choix variétal",
+        "justification": "Variétés tolérantes à l’helminthosporiose réduisent dommages foliaires et fréquence d’intervention. Intégrer ce critère dans sélection variétale annuelle.",
+        "steps": [
+          "Sélectionner variétés avec tolérance connue à la maladie.",
+          "Consulter listes régionales pour variétés adaptées."
+        ]
+      }
+    ],
+    "source": "Maladies du froment UCL ; plaquette phytopathologie UCL",
+    "image": ""
+  },
+  {
+    "id": "037",
+    "theme": "fongicide",
+    "titre": "Fiche 37 – Protection préventive en contexte à haut risque multiple",
+    "recto": "Contexte combiné : résidus abondants de plusieurs cultures favorisant inoculum multiple, conditions météo instables avec alternance humidité et températures modérées.",
+    "diagnostic": "Pression multi-maladies (septoriose + rouille + oïdium) possible en cas de succession de résidus et météo propice, nécessitant plan intégré de protection.",
+    "verso": [
+      {
+        "title": "Stratégie de surveillance active",
+        "justification": "Combiner relevés hebdomadaires de symptômes, bulletin CADCO/ULiège et conditions météo permet d’anticiper pics épidémiques et déclencher interventions ciblées. Cette démarche intégrée optimise usage fongicide et limite résistances.",
+        "steps": [
+          "Planifier relevés hebdomadaires sur parcelle et parcelles témoins pour identifier premiers foyers.",
+          "Croiser observations avec bulletins régionaux et prévisions météo (humectation, température)."
+        ]
+      },
+      {
+        "title": "Choix de mélange fongicide adapté",
+        "justification": "Utiliser associations de molécules couvrant plusieurs pathogènes (triazoles + partenaires) selon spectre et stade de la culture. Alternance de modes d’action prévient résistances et optimise efficacité sous pression multiple.",
+        "steps": [
+          "Sélectionner produit/mélange couvrant pathogènes attendus (ex. combinaison efficace contre septoriose et rouilles).",
+          "Programmer application au stade clé (dernier feuille ou épiaison) selon pression principale."
+        ]
+      },
+      {
+        "title": "Gestion culturale complémentaire",
+        "justification": "Réduire inoculum via enfouissement de résidus variés, rotation diversifiée et absence de cultures-souches proches limite risques épidémiques. L’intégration des intercultures et choix variétal renforce durabilité du plan.",
+        "steps": [
+          "Enfouir ou détruire résidus de toutes cultures antérieures présentant inoculum.",
+          "Planifier rotation diversifiée et utiliser variétés résistantes combinées à gestion de fertilisation et densité."
+        ]
+      }
+    ],
+    "source": "Maladies du froment UCL ; plaquette CADCO/ULiège",
+    "image": ""
+  },
+  {
+    "id": "038",
+    "theme": "fongicide",
+    "titre": "Fiche 38 – Évaluation post-traitement et suivi de l’efficacité",
+    "recto": "Après intervention fongicide, incertitude sur réussite et nécessité d’un second traitement ou ajustement futur.",
+    "diagnostic": "Conditions météo post-application ou stade de la culture peuvent compromettre efficacité ; émergence potentielle de résistances nécessite suivi rigoureux.",
+    "verso": [
+      {
+        "title": "Contrôle post-application",
+        "justification": "Vérifier chute ou stagnation des symptômes sur feuilles traitées confirme efficacité ou signale besoin d’ajustement. Un suivi visuel et, si possible, échantillonnage en laboratoire valide action fongicide.",
+        "steps": [
+          "Inspecter parcelle 7–10 jours après application pour observer évolution des symptômes.",
+          "Si symptômes progressent malgré traitement, noter variétés, conditions et molécules utilisées."
+        ]
+      },
+      {
+        "title": "Analyse de résistance",
+        "justification": "En cas d’échec répété sur même pathogène et molécule, envisager tests en laboratoire pour détecter résistances. Ajuster futur plan de lutte en conséquence.",
+        "steps": [
+          "Prélever échantillons de feuilles ou spores pour analyse de sensibilité si accessible.",
+          "Adapter prochaines applications en alternant ou changeant de mode d’action."
+        ]
+      },
+      {
+        "title": "Retour d’expérience et documentation",
+        "justification": "Consigner résultats de traitement, conditions météo et observations enrichit la mémoire parcellaire et affine stratégies futures. Un historique solide facilite décisions plus précises les saisons suivantes.",
+        "steps": [
+          "Tenir carnet de bord avec date, produit, dose, conditions météo et résultats.",
+          "Utiliser les données pour planifier les rotations, choix variétal et calendrier des traitements."
+        ]
+      }
+    ],
+    "source": "Plaquette phytopathologie UCL ; bulletins CADCO/ULiège",
+    "image": ""
+  }
+[
+  {
+    "id": "039",
+    "theme": "insecticide",
+    "titre": "Fiche 39 – Mouche grise (Delia coarctata) : décision de traitement de semences",
+    "recto": "Présence de pontes de mouche grise en fin d’été dans la parcelle précédente (betterave), risque de larves détruisant le plateau de tallage du froment.",
+    "diagnostic": "Risque lié au précédent betterave ou chicorée, densité de pontes mesurée élevée. Hiver doux ou printemps froid retardant développement du froment augmente la vulnérabilité des plantules.",
+    "verso": [
+      {
+        "title": "Estimation du risque avant semis",
+        "justification": "L’estimation des pontes permet de juger l’opportunité du traitement de semences. Une méthodologie standardisée (prélèvements de sol fin août, 10 coups de pelle en zones de betterave) permet d’évaluer le nombre d’œufs et d’estimer la pression larvaire.",
+        "steps": [
+          "Fin août-début septembre, prélever des échantillons de sol dans la parcelle de betterave selon protocole CADCO (10 coupes de 1 dm² × 3 cm de profondeur).",
+          "Analyser en laboratoire le nombre d’œufs de mouche grise par échantillon.",
+          "Comparer aux seuils régionaux (historiques CADCO) pour décider du besoin de traitement de semences."
+        ]
+      },
+      {
+        "title": "Traitement de semences si seuil dépassé",
+        "justification": "Quand la densité de pontes est suffisante pour menacer le tallage, un habillage chimique du semis reste la technique fiable pour protéger le plateau de tallage contre les larves. Ceci évite des levées compromises et pertes de rendement potentielles.",
+        "steps": [
+          "Choisir semences traitées avec insecticide autorisé contre mouche grise selon réglementation belge.",
+          "Vérifier proportion de semences traitées et homogénéité du traitement pour garantir protection uniforme.",
+          "Planifier semis dès que la température du sol est favorable (~ > 6–8 °C), afin de réduire durée d’exposition au risque larvaire."
+        ]
+      },
+      {
+        "title": "Gestion culturale préventive",
+        "justification": "Modifier la préparation du sol (éliminer creux où les larves se développent) et varier les précédents peut réduire la pression mouche grise à long terme. Une rotation évitant betterave ou cultures favorables limite les pontes futures.",
+        "steps": [
+          "Assurer préparation soignée du lit de semence, sans creux profonds propices à la nymphose (travail superficiel et nivelage).",
+          "Alterner avec précédents moins favorables (éviter systématiquement betterave ou pomme de terre sur la même parcelle).",
+          "Consigner historique parcellaire et retours d’observations pour adapter rotations futures."
+        ]
+      }
+    ],
+    "source": "Ravageurs du froment.pdf ; plaquette avertissements CADCO",
+    "image": ""
+  },
+  {
+    "id": "040",
+    "theme": "insecticide",
+    "titre": "Fiche 40 – Limaces grises (Deroceras reticulatum) : surveillance et appâts",
+    "recto": "Feuilles effilochées en début de culture, plantules rongées, levée compromise si infestations élevées (> 5 % plantules atteintes).",
+    "diagnostic": "Été pluvieux précédant semis, couvert dense du précédent favorisant survie, parcelle légère ou caillouteuse. Risque confirmé si piégeage après semis > 10 limaces/m².",
+    "verso": [
+      {
+        "title": "Piégeage post-semis",
+        "justification": "Le dénombrement des limaces sous pièges plastiques avec granulés-appâts permet d’estimer le risque réel. Seuil de 10 limaces/m² guide la décision d’intervention.",
+        "steps": [
+          "Juste après semis, installer 10 pièges (feuilles en plastique + granulés-appâts) répartis dans la parcelle sur sol humide.",
+          "Le lendemain, compter limaces sous chaque piège pour estimer densité moyenne.",
+          "Si ≥ 10 limaces/m², prévoir traitement appâts ; sinon, différer et surveiller."
+        ]
+      },
+      {
+        "title": "Épandage ciblé de granulés-appâts",
+        "justification": "En cas de densité élevée, un épandage de granulés anti-limaces en surface protège le semis. Faire précocement limite dégâts sur plantules.",
+        "steps": [
+          "Choisir granulé-appât homologué, appliquer sur sol humide en début de culture.",
+          "Respecter dose recommandée et conditions météo (éviter lessivage immédiat par fortes pluies).",
+          "Observer après intervention pour évaluer réduction de limaces et dommages."
+        ]
+      },
+      {
+        "title": "Mesures agronomiques complémentaires",
+        "justification": "Travail superficiel en interculture pour exposer limaces à sécheresse/soleil réduit populations. Couvrir parcelle jusqu’au semis (résidus) peut abriter limaces : équilibre nécessaire.",
+        "steps": [
+          "Recycler le travail superficiel avant semis pour réduire abris et exposer limaces.",
+          "Adapter hauteur de résidus du précédent, éviter couverts trop épais favorisant limaces.",
+          "Planifier rotations évitant successions prolongées favorables."
+        ]
+      }
+    ],
+    "source": "Ravageurs du froment.pdf ; plaquette avertissements CADCO",
+    "image": ""
+  },
+  {
+    "id": "041",
+    "theme": "insecticide",
+    "titre": "Fiche 41 – Taupin (Agriotes spp.) et oscinie (Oscinella frit) : traitement de semences",
+    "recto": "Tiges sectionnées ou gaine perforée en plantule, jaunissement de la feuille centrale au tallage, levée partielle ou retardée.",
+    "diagnostic": "Précédent prairie ou repousses de céréales, semis tardif ou sol mal préparé favorise nymphose des taupins et pontes d’oscinie. Risque confirmé par historique parcellaire et conditions météo.",
+    "verso": [
+      {
+        "title": "Préparation du sol pour réduire nymphose",
+        "justification": "Surface nivelée sans creux limite zones de développement des larves de taupin et d’oscinie. Une préparation soignée réduit pression à long terme.",
+        "steps": [
+          "Assurer nivelage et éviter creux profonds où les larves peuvent s’abriter.",
+          "Éviter semis tardif si possible, semer dans fenêtre météo favorable.",
+          "Consigner précédents (prairie, repousses) pour anticiper risque."
+        ]
+      },
+      {
+        "title": "Traitement de semences quand justifié",
+        "justification": "Lorsque l’historique et/ou observations indiquent pression élevée, un habillage insecticide protège la plantule contre taupin et oscinie. Cette pratique est justifiée si risque économique avéré.",
+        "steps": [
+          "Choisir semences traitées avec substance autorisée pour ces ravageurs selon réglementation belge.",
+          "Vérifier application homogène sur graines et rate de couverture adéquate.",
+          "Planifier semis rapidement pour limiter exposition des semences non protégées."
+        ]
+      },
+      {
+        "title": "Rotation et gestion du précédent",
+        "justification": "Alterner avec cultures non propices aux taupins, éviter successions prairie–froment fréquentes. Une rotation bien planifiée réduit la population larvaire à moyen terme.",
+        "steps": [
+          "Planifier rotation évitant prairies prolongées ou cultures favorables à pontes.",
+          "Intégrer intercultures déterrantes (radis fourrager) pour perturber nymphose.",
+          "Surveiller parcelle à chaque campagne pour ajuster stratégie."
+        ]
+      }
+    ],
+    "source": "Ravageurs du froment.pdf ; plaquette avertissements CADCO",
+    "image": ""
+  },
+  {
+    "id": "042",
+    "theme": "insecticide",
+    "titre": "Fiche 42 – Corbeau/freux : protection de semis par répulsifs",
+    "recto": "Plantules arrachées ou semences consommées par corvidés au semis, levée inégale ou échec localisé.",
+    "diagnostic": "Semis isolé, tardif, situé en bordure ; forte présence de corvidés (Corvus frugilegus). Les semences non protégées exposées attirent oiseaux.",
+    "verso": [
+      {
+        "title": "Prévention au semis",
+        "justification": "Des semis groupés et le recouvrement rapide limitent l’exposition aux oiseaux. L’usage d’épouvantails ou filets peut réduire les prélèvements, mais efficacité variable selon contexte.",
+        "steps": [
+          "Planifier semis groupés plutôt que linéaires très étendus pour réduire zones ciblées.",
+          "Recouvrir semences soigneusement et rapidement pour limiter exposition.",
+          "Installer épouvantails mobiles ou dispositifs sonores/visuels si forte pression."
+        ]
+      },
+      {
+        "title": "Traitement de semences et répulsifs",
+        "justification": "En complément, enrober semences de répulsif autorisé (goût ou odeur) peut décourager oiseaux. Cette technique reste secondaire et doit respecter réglementation.",
+        "steps": [
+          "Vérifier existence de traitement de semences à action répulsive homologué.",
+          "Appliquer selon protocole fabricant et réglementation, en concertation avec services compétents.",
+          "Évaluer efficacité sur zone test avant généralisation."
+        ]
+      },
+      {
+        "title": "Gestion parcellaire",
+        "justification": "Réduire attractivité du voisinage (zones de nourriture proches) ou coopérer avec voisins pour diminuer populations locales. Un paysage moins favorable aux corvidés limite dégâts.",
+        "steps": [
+          "Identifier zones attractives (déchets, points d’eau) et, si possible, réduire présence proche du champ.",
+          "Coordonner actions avec voisins (partage d’informations sur pression oiseaux).",
+          "Consigner observations pour adapter semis futurs (dates, méthodes)."
+        ]
+      }
+    ],
+    "source": "Ravageurs du froment.pdf ; plaquette avertissements CADCO",
+    "image": ""
+  },
+  {
+    "id": "043",
+    "theme": "insecticide",
+    "titre": "Fiche 43 – Pucerons en fin de montaison : décision d’intervention",
+    "recto": "Pullulation de pucerons en fin de montaison, risque de mauvais remplissage du grain et vecteur potentiel de virus (jaunisse nanisante).",
+    "diagnostic": "Semis précoce, hiver doux, printemps précoce favorisant pucerons. Pression modérée fréquente, mais mortalité naturelle par auxiliaires souvent suffisante.",
+    "verso": [
+      {
+        "title": "Surveillance et seuils d’intervention",
+        "justification": "Les populations de pucerons se suivent via relevés CADCO : intervention si densité et proportion virulifères dépassent seuils (par ex. > 5 % plantes infectées en automne ou > 2 % mi-novembre). Pour froment, risque de jaunisse nanisante très rare, donc intervention rarement justifiée.",
+        "steps": [
+          "Réaliser relevés réguliers sur parcelle témoin et dans culture dès levée jusqu’à fin montaison.",
+          "Consulter bulletins CADCO sur proportion infectées et pression naturelle (parasites, prédateurs).",
+          "Si seuils virulifères dépassés, envisager traitement ; sinon différer et laisser auxiliaires agir."
+        ]
+      },
+      {
+        "title": "Méthodes biologiques et agronomiques",
+        "justification": "Favoriser auxiliaires (coccinelles, syrphes) par maintien de phytose de bordure et éviter insecticide préventif inutile. Une fertilisation équilibrée limite pullulations massives.",
+        "steps": [
+          "Maintenir flore auxiliaire (bandes fleuries, haies) à proximité pour promouvoir prédateurs de pucerons.",
+          "Éviter excès d’azote qui favorise pullulations.",
+          "Ne pas appliquer insecticide si populations de pucerons en déclin naturel."
+        ]
+      },
+      {
+        "title": "Traitement foliaire si justifié",
+        "justification": "Si seuils atteints et prédation insuffisante, un insecticide sélectif (pyréthrinoïde ou autre molécule autorisée) peut être appliqué, de préférence couplé à un traitement fongicide à l’épiaison. Choix et timing doivent respecter rentabilité (200–600 kg/ha de gain possible mais variable) et minimiser impact auxiliaires.",
+        "steps": [
+          "Vérifier présence majoritaire d’espèces ciblées et absence d’auxiliaires en forte activité.",
+          "Choisir produit homologué selon espèce et conditions météo (vent, température).",
+          "Appliquer au stade optimal (souvent autour de l’épiaison), en envisageant couplage fongicide si opportun mais sans systématisme.",
+          "Documenter rendement et observations pour affiner décisions futures."
+        ]
+      }
+    ],
+    "source": "Ravageurs du froment.pdf ; plaquette avertissements CADCO",
+    "image": ""
+  },
+  {
+    "id": "044",
+    "theme": "insecticide",
+    "titre": "Fiche 44 – Cécidomyie orange de l’épi : surveillance et traitement",
+    "recto": "Vols d’adultes au moment de l’épiaison, larves groupées dans fleurs ou contre grain en formation, risque d’avortement d’épillets.",
+    "diagnostic": "Présence confirmée d’adultes volants le soir sur épi, densité élevée juste à épiaison coïncidant avec ponte, potentiel de pertes de rendement si nombreuses larves.",
+    "verso": [
+      {
+        "title": "Observation au moment de l’épiaison",
+        "justification": "Identifier présence d’adultes en vol et pontes via inspections en fin de journée. Une détection précoce guide décision de pulvérisation, car fenêtre d’efficacité étroite.",
+        "steps": [
+          "Inspecter parcelle à l’épiaison (BBCH 51–59) en fin de journée pour observer adultes posés sur épillets.",
+          "Examiner épis pour présence de larves dans fleurs ou contre grain en début de formation."
+        ]
+      },
+      {
+        "title": "Décision de pulvérisation ciblée",
+        "justification": "Si vols massifs et risque avortement élevé, un insecticide foliaire peut réduire ponte. Toutefois, rentabilité doit être évaluée selon intensité et coûts. Les traitements doivent viser période courte autour de l’épiaison.",
+        "steps": [
+          "Si présence significative d’adultes et densité de larves potentielle menace rendement, appliquer pulvérisation avec produit autorisé pour cécidomyie.",
+          "Respecter conditions météo (calme, pas de pluie imminente) pour maximiser efficacité.",
+          "Limiter zones traitées si foyers localisés pour préserver auxiliaires ailleurs."
+        ]
+      },
+      {
+        "title": "Approche intégrée",
+        "justification": "Combiner surveillance et limitation du précédent (éviter cultures favorables proches), favoriser auxiliaires et n’intervenir qu’en cas de risque fort. Cette méthode évite traitements inutiles et protège biodiversité.",
+        "steps": [
+          "Consigner historique de vols d’années précédentes pour anticiper risque.",
+          "Maintenir haies ou bandes fleuries pour auxiliaires potentiels.",
+          "Tester efficacité après traitement et documenter pour affiner futures décisions."
+        ]
+      }
+    ],
+    "source": "plaquette avertissements CADCO ; Ravageurs du froment.pdf",
+    "image": ""
+  },
+  {
+    "id": "045",
+    "theme": "insecticide",
+    "titre": "Fiche 45 – Criocères et autres ravageurs d’épi : évaluation de rentabilité",
+    "recto": "Présence de criocères, mineuses ou thrips à l’épiaison, mais leur nuisibilité moyenne ou mal connue rend difficile la décision.",
+    "diagnostic": "Observations sporadiques d’autres ravageurs d’épi sans seuils clairement établis ; incertitude scientifique sur impact réel sur rendement.",
+    "verso": [
+      {
+        "title": "Surveillance rigoureuse et documentation",
+        "justification": "Recueillir données locales sur présence et densité, couplées à suivi essais, pour déterminer si ces ravageurs occasionnent un impact économique. Sans preuve de nuisance majeure, éviter traitements systématiques.",
+        "steps": [
+          "Installer observatoires (filets ou relevés visuels) à épiaison pour noter présence de criocères, mineuses, thrips.",
+          "Consigner fréquence, stade de culture et conditions météo associées.",
+          "Analyser en comparant parcelles non traitées pour évaluer impact sur rendement."
+        ]
+      },
+      {
+        "title": "Intervention ponctuelle si données justifient",
+        "justification": "Si études locales montrent perte significative liée à un ravageur précis à un stade donné, un traitement ciblé peut être envisagé. Toujours évaluer rentabilité (gains 200–600 kg/ha incertains).",
+        "steps": [
+          "Basé sur données historiques et essais, décider si seuil de traitement est atteint.",
+          "Sélectionner produit adapté à l’espèce identifiée, en respectant conditions et règles minimisant impact auxiliaires.",
+          "Limiter intervention à zones touchées pour éviter dérive et protéger biodiversité."
+        ]
+      },
+      {
+        "title": "Promotion d’auxiliaires et pratiques agronomiques",
+        "justification": "Favoriser biodiversité (prédateurs et parasitoïdes) et pratiques culturales réduisant refuge (rotation, gestion de résidus) limite pressions à moyen terme sans insecticide systématique.",
+        "steps": [
+          "Maintenir ou créer habitats pour auxiliaires (bandes fleuries, haies).",
+          "Limiter usage d’insecticides larges spectres pour ne pas décimer auxiliaires.",
+          "Documenter et partager retours d’expérience pour affiner stratégies collectives."
+        ]
+      }
+    ],
+    "source": "plaquette avertissements CADCO ; Ravageurs du froment.pdf",
+    "image": ""
+  }
+]
+[
+  {
+    "id": "046",
+    "theme": "engrais",
+    "titre": "Fiche 46 – Profil azoté du sol insuffisant en sortie d’hiver",
+    "recto": "Profil en azote minéral mesuré faible (< 40 kg Nmin/ha à 90 cm) avant reprise végétative, risque de carence rapide du froment.",
+    "diagnostic": "Sol ayant perdu Nmin par lessivage hivernal ou précédent à faible restitution, minéralisation lente de la matière organique ; faible réserve azotée détectée lors d’analyses de sol en février.",
+    "verso": [
+      {
+        "title": "Ajustement de la première fraction",
+        "justification": "Une première fraction d’azote adaptée à un profil bas permet d’éviter carence et retard de tallage. Il est déconseillé de surdoser pour ne pas provoquer lessivage : on déduit l’azote restitué en sortie d’hiver pour calibrer la première application.",
+        "steps": [
+          "Consulter l’analyse de sol de sortie d’hiver (profil Nmin jusqu’à 90 cm).",
+          "Calculer N à apporter en première fraction en fonction de la réserve mesurée et des besoins prévisionnels (en kg N/ha).",
+          "Appliquer l’engrais juste avant une période favorable de pluies légères pour favoriser la mise à disposition sans lessivage."
+        ]
+      },
+      {
+        "title": "Suivi de la minéralisation",
+        "justification": "La minéralisation de l’humus et des résidus continue après sortie d’hiver ; intégrer cette dynamique dans le plan de fumure permet de moduler la deuxième fraction. Le rythme d’absorption du froment intensifie après stade redressement, parallèlement à la minéralisation mais souvent insuffisant pour couvrir tous les besoins.",
+        "steps": [
+          "Mettre en place un suivi de l’évolution du couvert et observer coloration des feuilles pour détecter signes précoces de déficit.",
+          "Réévaluer la deuxième fraction en tenant compte de l’estimation de minéralisation nette entre première et deuxième application.",
+          "Documenter les observations (stade BBCH, vert de la feuille) pour ajuster les fractions ultérieures."
+        ]
+      },
+      {
+        "title": "Amendements organiques ou verts",
+        "justification": "Lorsque la réserve est faible, un apport de matière organique préalable (compost, fumier) ou un couvert intermédiaire enfoui peut améliorer la réserve d’azote à moyen terme. Cependant, la minéralisation de ces sources est plus lente et doit être planifiée au moins un an avant.",
+        "steps": [
+          "Prévoir, hors période critique, incorporation de compost ou fumier en interculture précédente pour augmenter MO et potentiel de minéralisation.",
+          "Implanter un couvert azoté (légumineuse) avant froment puis détruire au bon moment pour libérer N progressivement.",
+          "Tenir compte du délai de minéralisation et ne pas attendre un effet immédiat sur la sortie d’hiver suivante sans planification antérieure."
+        ]
+      }
+    ],
+    "source": "Livre Blanc Céréales (ULiège/Gembloux) ; Centres Pilotes CePiCOP ; CRA-W / CARAH",
+    "image": ""
+  },
+  {
+    "id": "047",
+    "theme": "engrais",
+    "titre": "Fiche 47 – Excès d’azote disponible provoquant risques sanitaires et environnementaux",
+    "recto": "Profil Nmin élevé en sortie d’hiver (> 80 kg Nmin/ha), risque de lessivage si apport supplémentaire non modulé, et tassement de végétation favorisant maladies.",
+    "diagnostic": "Sol riche en Nmin issu de précédent à forte restitution (culture azotée ou résidus mal enfouis), conditions humides limitant absorption rapide, indication d’une fumure prudente nécessaire.",
+    "verso": [
+      {
+        "title": "Réduction ou report de première fraction",
+        "justification": "Lorsque la réserve est élevée, diminuer la première fraction, voire reporter partiellement au redressement, limite lessivage et atténue excès de végétation au tallage. Les parcelles clairsemées doivent recevoir moins d’azote initialement pour éviter gaspillage.",
+        "steps": [
+          "Analyser la quantité de Nmin mesurée et estimer fraction à réduire par rapport à la référence habituelle.",
+          "Si profil très riche, reporter une partie de l’azote à la deuxième fraction (redressement) pour coïncider avec le besoin croissant du froment.",
+          "Planifier application en période de faible risque de pluie intense pour éviter lessivage."
+        ]
+      },
+      {
+        "title": "Surveillance du couvert et des maladies",
+        "justification": "Un excès d’azote favorise végétation dense, humidité dans le couvert et risque accru de maladies fongiques (septoriose, rouilles). Ajuster la fumure pour réduire ce risque et améliorer aération du couvert.",
+        "steps": [
+          "Surveiller densité et hauteur du couvert, adapter la fertilisation de redressement si le feuillage est déjà vigoureux.",
+          "Mettre en œuvre observation régulière des symptômes de maladies pour décider d’éventuelles mesures sanitaires.",
+          "Consigner les effets sur rendement et maladies pour affiner fumure future."
+        ]
+      },
+      {
+        "title": "Gestion de l’environnement et pollution potentielle",
+        "justification": "Limiter l’excès d’azote réduit risque de lessivage vers les nappes et d’émissions d’ammoniac. Une fumure raisonnée contribue à la durabilité agronomique et environnementale.",
+        "steps": [
+          "Adapter les doses en fonction du profil et des besoins réels du froment pour éviter excès résiduel.",
+          "Préférer des fractions d’azote synchronisées avec l’absorption de la plante plutôt que des apports massifs en une fois.",
+          "Documenter les pratiques et résultats pour démontrer la conformité aux exigences environnementales."
+        ]
+      }
+    ],
+    "source": "Livre Blanc Céréales ; Centres Pilotes CePiCOP ; Sillon Belge CADCO",
+    "image": ""
+  },
+  {
+    "id": "048",
+    "theme": "engrais",
+    "titre": "Fiche 48 – Fractionnement de la fumure azotée selon stades BBCH",
+    "recto": "Plan de fumure non fractionné ou mal réparti : apport unique trop tôt ou trop tard, entraînant inefficacité ou carence tardive.",
+    "diagnostic": "Absence de stratégie de fractions azotées : la plante absorbe peu en début, puis très intensément au redressement et dernière feuille ; un apport unique ne synchronise pas les besoins et cause pertes ou carence.",
+    "verso": [
+      {
+        "title": "Fraction au tallage (BBCH 21–29)",
+        "justification": "Cette première fraction (souvent 30–50 kg N/ha) stimule le tallage sans excès de végétation. Elle doit être modulée selon profil Nmin et densité de semis pour éviter gaspillage ou carence initiale.",
+        "steps": [
+          "Évaluer profil Nmin et densité observée au tallage pour ajuster la dose initiale.",
+          "Appliquer avant phase de tallage active, en période où le sol libère progressivement de l’azote minéralisé.",
+          "Noter réaction du froment (nombre de talles, vert de la feuille) pour ajustement."
+        ]
+      },
+      {
+        "title": "Fraction au redressement (BBCH 30–32)",
+        "justification": "Deuxième fraction (souvent 40–60 kg N/ha) coïncide avec forte absorption pour soutenir croissance et former épillets. Une application bien synchronisée optimise conversion en rendement.",
+        "steps": [
+          "Surveiller stade redressement et vert de la feuille pour timing précis.",
+          "Appliquer lorsque la demande de N est élevée et que la minéralisation naturelle ne suffit plus.",
+          "Documenter réaction et tenir compte des conditions météo (sol ressuyé, pluie modérée attendue)."
+        ]
+      },
+      {
+        "title": "Fraction à dernière feuille (BBCH 37–39)",
+        "justification": "Troisième fraction (souvent 50–75 kg N/ha) soutient remplissage du grain et teneur protéique. Elle doit tenir compte du profil résiduel après les deux premières fractions et potentiel de minéralisation tardive.",
+        "steps": [
+          "Évaluer réserve restante après la deuxième fraction (analyse ou expérience locale).",
+          "Appliquer juste avant montée de la dernière feuille, en période où le froment absorbe intensément pour le grain.",
+          "Veiller à conditions météo favorables pour assimilation (pluie légère après application)."
+        ]
+      }
+    ],
+    "source": "Livre Blanc Céréales (factionnement) ; ORBi ULiège ; CARAH recommandations historiques",
+    "image": ""
+  },
+  {
+    "id": "049",
+    "theme": "engrais",
+    "titre": "Fiche 49 – Fertilisation organique et utilisation de matières organiques",
+    "recto": "Absence ou usage inadapté de matière organique comme source d’azote : minéralisation insuffisante ou retardée.",
+    "diagnostic": "Compost ou fumier appliqué sans tenir compte du taux de minéralisation ; variabilité de libération de N et potentiel d’effet retardé peu synchronisé avec besoin du froment.",
+    "verso": [
+      {
+        "title": "Estimation du potentiel de minéralisation",
+        "justification": "Comprendre la vitesse de décomposition et libération d’azote permet de planifier les apports organiques en amont de la culture. Les matières organiques doivent être appliquées suffisamment tôt pour libérer N au moment du besoin.",
+        "steps": [
+          "Analyser le type de matière organique (C/N, degré de compostage) pour estimer délai de minéralisation.",
+          "Appliquer fumier ou compost en interculture précédente au moins 6–12 mois avant semis pour maximiser effet à la reprise.",
+          "Suivre évolution du Nmin dans le sol après incorporation pour ajuster fertilisation minérale complémentaire."
+        ]
+      },
+      {
+        "title": "Apport de lisier ou digestat",
+        "justification": "Les effluents peuvent fournir N plus rapidement que les matières solides, mais risquent de lessivage si mal synchronisés. Planifier application avant période de minéralisation active et selon conditions météo réduit pertes.",
+        "steps": [
+          "Déterminer disponibilité de N dans le lisier (analyse) et estimer fraction utile pour la culture suivante.",
+          "Appliquer en sortie d’hiver ou début tallage si sol ressuyé et pluie légère prévue pour incorporation immédiate.",
+          "Éviter apports avant fortes pluies pour limiter lessivage."
+        ]
+      },
+      {
+        "title": "Couvert et culture intermédiaire légumineuse",
+        "justification": "Un couvert de légumineuse fixe de l’azote atmosphérique et libère N à la destruction, améliorant réserve pour le froment suivant. Cette stratégie durable diminue dépendance aux engrais minéraux.",
+        "steps": [
+          "Semer un couvert à base de légumineuses (féverole, vetch) après récolte précédente et le détruire au moment opportun pour restituer N.",
+          "Évaluer biomasse et minéralisation prévue pour ajuster fumure minérale du froment.",
+          "Documenter les effets sur rendement et ajuster la gestion des couverts futurs."
+        ]
+      }
+    ],
+    "source": "Livre Blanc Céréales (foumture organique) ; ORBi ULiège ; Centres Pilotes CePiCOP",
+    "image": ""
+  },
+  {
+    "id": "050",
+    "theme": "engrais",
+    "titre": "Fiche 50 – Ajustement selon précédent cultural et résidus",
+    "recto": "Mauvaise prise en compte de l’azote résiduel du précédent, provoquant sur- ou sous-fertilisation.",
+    "diagnostic": "Précédent légumineuse ou protéagineux non déduit de la fumure, ou précédent riche en Nmin mal évalué. Absence d’historique précis ou d’analyse de sol post-récolte.",
+    "verso": [
+      {
+        "title": "Estimation de l’azote résiduel",
+        "justification": "Confronter l’historique du précédent (culture azotée, décomposition des résidus) avec analyses de sol permet de moduler la fumure du froment. Un précédent riche en N doit réduire la dose minérale pour éviter excès.",
+        "steps": [
+          "Recueillir données sur précédent (espèce, restitution résiduelle, date et mode de destruction des résidus).",
+          "Réaliser analyse de sol après récolte précédente pour évaluer Nmin résiduel.",
+          "Adapter la fumure initiale du froment en fonction de cette estimation."
+        ]
+      },
+      {
+        "title": "Gestion des résidus de récolte",
+        "justification": "Enfouir ou exporter les résidus modifie le potentiel de minéralisation. Une incorporation superficielle favorise libération plus rapide, utile si besoin anticipé, sinon exporter ou stocker pour ajuster.",
+        "steps": [
+          "Décider selon besoin N : enfouir paille/chaume si on veut libérer N ; exporter si risque d’excès.",
+          "Appliquer travail du sol adapté (fragmentation) pour favoriser minéralisation si incorporation choisie.",
+          "Consigner la gestion des résidus pour mémoire parcellaire."
+        ]
+      },
+      {
+        "title": "Rotation future et anticipation",
+        "justification": "Planifier la suite de la rotation en tenant compte de la fumure actuelle permet d’équilibrer les apports sur plusieurs années. Une stratégie long terme évite accumulations ou épuisements N non souhaités.",
+        "steps": [
+          "Établir plan de rotation pluriannuel incluant cultures exigeantes et moins exigeantes en N.",
+          "Intégrer couverts ou cultures légumineuses pour reconstituer réserve organique et N sur parcelle.",
+          "Réévaluer chaque année l’impact de la fumure et du précédent sur la réserve azotée."
+        ]
+      }
+    ],
+    "source": "Livre Blanc Céréales ; ORBi ULiège ; CRA-W / CARAH",
+    "image": ""
+  },
+  {
+    "id": "051",
+    "theme": "engrais",
+    "titre": "Fiche 51 – Fertilisation et qualité protéique du grain",
+    "recto": "Objectif qualité meunerie (indice de Zélény, teneur en protéines) non atteint malgré fumure azotée standard.",
+    "diagnostic": "Dose ou timing d’azote inadapté pour atteindre teneur protéique cible ; variabilité climatique ou dilution due à rendement élevé non pris en compte.",
+    "verso": [
+      {
+        "title": "Fraction tardive pour protéines",
+        "justification": "Une fraction à dernière feuille bien synchronisée favorise élévation de la teneur en protéines. Toutefois, un excès peut nuire à la qualité panification (gluten), donc calibrer précisément selon objectif et conditions.",
+        "steps": [
+          "Évaluer prix du marché et objectif protéique pour ajuster la troisième fraction (BBCH 37–39).",
+          "Appliquer fraction tardive après observation de vigueur du couvert et potentiel de rendement.",
+          "Suivre teneur en protéines via analyses post-récolte pour corriger stratégie suivante."
+        ]
+      },
+      {
+        "title": "Interactions eau-azote",
+        "justification": "Conditions humides ou sèches affectent assimilation et dilution des protéines. Prendre en compte prévisions météo pour planifier fraction tardive ou adapter dose globale.",
+        "steps": [
+          "Consulter prévisions pluviométriques avant application tardive pour éviter lessivage ou inefficacité en sécheresse extrême.",
+          "Si conditions sèches, réduire fraction tardive pour prévenir stress hydrique, ou préférer apport organique antérieur.",
+          "Documenter retour sur qualité protéique et conditions météo pour affiner."
+        ]
+      },
+      {
+        "title": "Choix variétal adapté à fumure",
+        "justification": "Certaines variétés présentent réponse différente à l’azote pour protéines ; sélectionner variétés performantes sous fumure standard ou augmentée optimise rapport rendement/qualité.",
+        "steps": [
+          "Consulter liste variétale avec comportement protéique connu selon fumure.",
+          "Adapter plan de fumure à la variété choisie pour atteindre cible protéique sans excès d’azote.",
+          "Suivre résultats analytiques et ajuster choix variétal ou fumure future."
+        ]
+      }
+    ],
+    "source": "PROTECT’eau ; ORBi ULiège ; Centres Pilotes CePiCOP",
+    "image": ""
+  },
+  {
+    "id": "052",
+    "theme": "engrais",
+    "titre": "Fiche 52 – Fertilisation adaptée en culture associée froment-pois",
+    "recto": "Gestion de l’azote compliquée en association : apport exogène peut réduire fixation du pois ou provoquer déséquilibre.",
+    "diagnostic": "Le pois fixe l’azote atmosphérique et libère pour le froment ; apport minéral mal synchronisé peut inhiber fixation ou causer excès pour le froment :contentReference[oaicite:24]{index=24}.",
+    "verso": [
+      {
+        "title": "Réduction de la fumure minérale initiale",
+        "justification": "Le pois fournit une partie de l’azote à la culture, d’où une moindre fumure minérale en début. Respecter équilibre pour ne pas freiner la fixation symbiotique du pois tout en soutenant le froment.",
+        "steps": [
+          "Évaluer biomasse de pois et stade de fixation d’azote avant tallage du froment.",
+          "Appliquer une fraction minérale réduite en début (tallage) et réévaluer selon état de la culture et analyse foliaire.",
+          "Observer coloration et croissance du froment pour décider de la deuxième fraction."
+        ]
+      },
+      {
+        "title": "Suivi de la fixation et minéralisation",
+        "justification": "Contrôler l’activité rhizobienne du pois et minéralisation des résidus permet d’ajuster fumure du froment sans perturber le pois. Une observation régulière assure synchronisation optimale.",
+        "steps": [
+          "Observer nodosités du pois en sortie d’hiver pour évaluer fixation active.",
+          "Adapter deuxième fraction (redressement) selon disponibilité azotée libérée par le pois et besoins croissants du froment.",
+          "Documenter interaction pour affiner stratégies futures."
+        ]
+      },
+      {
+        "title": "Choix d’espèces et date de destruction du pois",
+        "justification": "Détermination du stade et modalité de destruction du pois affecte libération d’azote pour le froment. Une destruction trop précoce ou tardive peut désynchroniser l’apport.",
+        "steps": [
+          "Planifier destruction du couvert pois au stade optimal (avant floraison du pois) pour maximiser libération d’azote au moment voulu.",
+          "Utiliser méthode (fauchage, roulage) minimisant perturbation excessive tout en libérant N au bon moment.",
+          "Suivre libération via observation du vert de la feuille du froment et ajuster fumure minérale en conséquence."
+        ]
+      }
+    ],
+    "source": "Livre Blanc Céréales (ULiège/Gembloux) ; ORBi ULiège",
+    "image": ""
+  },
+  {
+    "id": "053",
+    "theme": "engrais",
+    "titre": "Fiche 53 – Adaptation de la fumure en conditions climatiques extrêmes",
+    "recto": "Année pluvieuse ou sèche modifiant disponibilité et absorption d’azote, perturbant plan de fumure standard.",
+    "diagnostic": "Pluies abondantes entraînant lessivage ou sécheresse réduisant absorption ; conditions extrêmes nécessitent réévaluation dynamique pour éviter carence ou pertes.",
+    "verso": [
+      {
+        "title": "Réévaluation en cas de pluie excessive",
+        "justification": "Après épisodes pluvieux intenses, vérifier perte potentielle d’azote minéral et envisager apport supplémentaire lorsque sol ressuyé et culture tolère, pour restaurer réserves perdues sans gaspillage excessif.",
+        "steps": [
+          "Après pluies, analyser si possible Nmin résiduel ou observer signes de carence (jaunissement).",
+          "Planifier apport complémentaire en fraction adaptée, en période de météo plus stable.",
+          "Documenter effets pour anticiper ajustements futurs en saisons humides."
+        ]
+      },
+      {
+        "title": "Réévaluation en cas de sécheresse",
+        "justification": "En période sèche, la minéralisation est freinée et l’absorption limitée ; éviter fumure excessive qui restera inutilisée. Reporter ou réduire les fractions jusqu’à amélioration des conditions.",
+        "steps": [
+          "Surveiller humidité du sol (taux d’eau) avant application ; si sol trop sec, différer fumure.",
+          "Appliquer lorsque conditions améliorées (pluie prévue) pour synchroniser absorption et réduire volatilisation ou immobilisation.",
+          "Consigner observations pour planifier fumure adaptative en climat variable."
+        ]
+      },
+      {
+        "title": "Utilisation de formulations adaptées",
+        "justification": "Engrais à libération contrôlée ou nitrates à faible lessivage peuvent améliorer efficacité sous conditions extrêmes. Choisir formulation selon risque de lessivage ou volatilisation.",
+        "steps": [
+          "Sélectionner engrais à libération lente ou avec inhibiteur de nitrification si risque de lessivage élevé.",
+          "En climat sec, privilégier formes nitrates plus solubles mais appliquer lorsque sol peut absorber.",
+          "Comparer coûts et bénéfices selon conditions et documenter pour décisions futures."
+        ]
+      }
+    ],
+    "source": "Centres Pilotes CePiCOP ; ORBi ULiège ; Livre Blanc 2025",
+    "image": ""
+  },
+  {
+    "id": "054",
+    "theme": "engrais",
+    "titre": "Fiche 54 – Suivi post-fumure et retour d’expérience",
+    "recto": "Incertitude sur l’efficacité des apports azotés, besoin d’un protocole de suivi pour améliorer stratégie future.",
+    "diagnostic": "Absence de suivi régulier (analyse de sol après fumure, observation de la plante, rendement/protéine), empêchant ajustements précis :contentReference[oaicite:32]{index=32}.",
+    "verso": [
+      {
+        "title": "Analyse foliaire et posture de suivi",
+        "justification": "L’analyse de la teneur foliaire en azote ou chlorophylle (NDVI) peut indiquer si la fumure a satisfait les besoins, permettant ajustement en cours de cycle ou pour saisons suivantes.",
+        "steps": [
+          "Mettre en place prélèvements foliaires à stades clés (redressement, dernière feuille) pour mesurer statut azoté.",
+          "Utiliser outils (capteurs, drone) si disponibles pour cartographier zones déficitaires ou excès.",
+          "Adapter fraction suivante ou plan futur en fonction des résultats."
+        ]
+      },
+      {
+        "title": "Comparaison rendement/qualité vs fumure appliquée",
+        "justification": "Documenter rendement et teneur protéique par rapport aux doses appliquées fournit indicateurs pour affiner le plan de fumure. Un historique pluriannuel permet modéliser réponse du froment à l’azote.",
+        "steps": [
+          "Collecter données rendement, teneur protéique, indice Zélény après récolte.",
+          "Comparer avec fumure appliquée et conditions météo pour évaluer efficacité et rentabilité.",
+          "Enregistrer ces données pour ajuster fumure dans saisons suivantes."
+        ]
+      },
+      {
+        "title": "Retour d’information dans la mémoire parcellaire",
+        "justification": "Tenir un carnet de bord agronomique structuré intégrant fumure, observations, analyses et résultats améliore la prise de décision. Cette mémoire aide à anticiper variations annuelles et à planifier rotations/fertilisations adaptées.",
+        "steps": [
+          "Structurer un document ou base de données reprenant analyses de sol, hist. de fumure, rendement et qualité.",
+          "Revoir annuellement les stratégies en réunion d’équipe ou avec conseillers pour affiner.",
+          "Ajuster recommandations internes selon retour d’expérience et partager avec pairs pour améliorer pratiques collectives."
+        ]
+      }
+    ],
+    "source": "ORBi ULiège ; Centres Pilotes CePiCOP ; Livre Blanc Céréales",
+    "image": ""
+  }
+]
