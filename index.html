@@ -10,10 +10,22 @@
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
   <style>
     :root {
-      --color-prep-start: #F7E3A3;
-      --color-prep-end:   #E8D692;
-      --color-semis-start:#8B5E3C;
-      --color-semis-end:  #7A5030;
+      /* Couleurs pour chaque thème : adapter selon vos choix */
+      --color-prep-start:       #F7E3A3;
+      --color-prep-end:         #E8D692;
+      --color-semis-start:      #8B5E3C;
+      --color-semis-end:        #7A5030;
+      --color-desherbage-start: #A3D9A5;
+      --color-desherbage-end:   #86C47F;
+      --color-fongicide-start:  #E3A3A3;
+      --color-fongicide-end:    #D69292;
+      --color-insecticide-start:#A3C7E3;
+      --color-insecticide-end:  #92B0D6;
+      --color-engrais-start:    #D9E3A3;
+      --color-engrais-end:      #C4D686;
+      --color-recolte-start:    #F0C987;
+      --color-recolte-end:      #E0B16A;
+      /* Vous pouvez ajuster ces couleurs pour correspondre à votre charte */
     }
     body { font-family:'Montserrat',sans-serif; background:#f9f9f9; margin:0; padding:20px; }
     h1 { text-align:center; margin-bottom:1rem; }
@@ -54,8 +66,35 @@
     .card-face { position:absolute; width:100%; backface-visibility:hidden; border-radius:8px; box-shadow:0 2px 6px rgba(0,0,0,0.1); overflow:hidden; background:#fff; }
     .card-front, .card-back { min-height:200px; }
     .card-header { padding:16px 24px; display:flex; justify-content:center; align-items:center; font-weight:600; text-align:center; }
-    .card-header.preparation { background:linear-gradient(to right,var(--color-prep-start),var(--color-prep-end)); color:#333; }
-    .card-header.semis      { background:linear-gradient(to right,var(--color-semis-start),var(--color-semis-end)); color:#fff; }
+    /* Styles par thème : on ajoute une règle pour chaque thème */
+    .card-header.preparation {
+      background:linear-gradient(to right, var(--color-prep-start), var(--color-prep-end));
+      color:#333;
+    }
+    .card-header.semis {
+      background:linear-gradient(to right, var(--color-semis-start), var(--color-semis-end));
+      color:#fff;
+    }
+    .card-header.desherbage {
+      background:linear-gradient(to right, var(--color-desherbage-start), var(--color-desherbage-end));
+      color:#333;
+    }
+    .card-header.fongicide {
+      background:linear-gradient(to right, var(--color-fongicide-start), var(--color-fongicide-end));
+      color:#333;
+    }
+    .card-header.insecticide {
+      background:linear-gradient(to right, var(--color-insecticide-start), var(--color-insecticide-end));
+      color:#fff;
+    }
+    .card-header.engrais {
+      background:linear-gradient(to right, var(--color-engrais-start), var(--color-engrais-end));
+      color:#333;
+    }
+    .card-header.recolte {
+      background:linear-gradient(to right, var(--color-recolte-start), var(--color-recolte-end));
+      color:#333;
+    }
     .badge { margin-left:12px; background:rgba(0,0,0,0.2); color:#fff; border-radius:12px; padding:2px 8px; font-size:.75rem; }
     .card-body { padding:24px; color:#333; text-align:justify; line-height:1.6; }
     .card-body p, .card-body ul { margin:0 0 12px; }
@@ -148,8 +187,19 @@
       'Décompactage': 'fa-shovel',
       'Herse':        'fa-rake',
       'Rouleau':      'fa-gavel'
+      // Vous pouvez étendre si nécessaire pour d'autres titres/keywords
     };
-    const themeLabels = { preparation: 'Préparation sol', semis: 'Semis' };
+    // Mapping de tous les thèmes présents dans votre JSON
+    const themeLabels = {
+      preparation: 'Préparation sol',
+      semis:       'Semis',
+      desherbage:  'Désherbage',
+      fongicide:   'Fongicide',
+      insecticide: 'Insecticide',
+      engrais:     'Engrais',
+      recolte:     'Récolte'
+      // Si vous aviez d'autres thèmes, ajoutez-les ici de la même façon
+    };
 
     const introEl       = document.querySelector('.intro');
     const appEl         = document.querySelector('.app');
@@ -164,12 +214,30 @@
       appEl.style.display   = 'block';
     };
 
+    // Attention : le nom de fichier doit correspondre à votre fichier commité dans GitHub
     fetch('data.json')
-      .then(r => r.json())
-      .then(data => { cards = data; init(); render(0); });
+      .then(r => {
+        if (!r.ok) {
+          console.error('Échec chargement data.json:', r.status, r.statusText);
+          throw new Error('Impossible de charger data.json');
+        }
+        return r.json();
+      })
+      .then(data => {
+        cards = data;
+        init();
+        if (cards.length > 0) {
+          render(0);
+        }
+      })
+      .catch(err => {
+        console.error('Erreur lors de la récupération du JSON :', err);
+        // Vous pouvez afficher un message d'erreur dans l'UI si nécessaire
+      });
 
     function init() {
       const sel = document.getElementById('ficheSelect');
+      sel.innerHTML = ''; // au cas où
       cards.forEach((c, i) => {
         const o = document.createElement('option');
         o.value = i;
@@ -200,41 +268,64 @@
     }
 
     function render(i) {
-      idx = i; const c = cards[i];
-      document.getElementById('ficheSelect').value = i;
+      idx = i;
+      const c = cards[i];
+      // Mettre à jour la sélection
+      const sel = document.getElementById('ficheSelect');
+      sel.value = i;
+
+      // Titre et badge (libellé du thème)
       ['front','back'].forEach(side => {
-        document.getElementById(`${side}Title`).textContent  = `${c.id} – ${c.titre}`;
-        document.getElementById(`${side}Badge`).textContent  = themeLabels[c.theme];
-        document.getElementById(`${side}Header`).className  = 'card-header ' + c.theme;
+        const titleEl = document.getElementById(`${side}Title`);
+        const badgeEl = document.getElementById(`${side}Badge`);
+        const headerEl = document.getElementById(`${side}Header`);
+        titleEl.textContent = `${c.id} – ${c.titre}`;
+        // Si le thème n'est pas dans themeLabels, on affiche la clé brute
+        badgeEl.textContent = themeLabels[c.theme] || c.theme || '';
+        // On adapte la classe pour le style CSS
+        headerEl.className = 'card-header ' + c.theme;
       });
+
+      // Contenu recto
       document.getElementById('frontRecto').textContent = c.recto;
       document.getElementById('frontDiag').textContent  = c.diagnostic;
 
+      // Contenu verso : solutions
       const bv = document.getElementById('backVerso');
       bv.innerHTML = '';
-      if (c.verso) {
+      if (c.verso && Array.isArray(c.verso)) {
         c.verso.forEach(g => {
           const div = document.createElement('div');
           div.className = 'solution-group';
           const h4 = document.createElement('h4');
+          // Recherche d'une icône selon iconMap (par mot-clé dans le titre)
           const key = Object.keys(iconMap).find(k => g.title.includes(k));
-          h4.innerHTML = (key ? `<i class="fas ${iconMap[key]}"></i> ` : '') + g.title;
+          if (key) {
+            h4.innerHTML = `<i class="fas ${iconMap[key]}"></i> ` + g.title;
+          } else {
+            h4.textContent = g.title;
+          }
           div.appendChild(h4);
           const ul = document.createElement('ul');
-          g.steps.forEach(s => {
-            const li = document.createElement('li');
-            li.textContent = s;
-            ul.appendChild(li);
-          });
+          if (Array.isArray(g.steps)) {
+            g.steps.forEach(s => {
+              const li = document.createElement('li');
+              li.textContent = s;
+              ul.appendChild(li);
+            });
+          }
           div.appendChild(ul);
           bv.appendChild(div);
         });
       }
-
+      // htmlContent si présent
       document.getElementById('backHtml').innerHTML = c.htmlContent || '';
-      const footer = document.getElementById('backFooter');
-      footer.textContent = 'Source : ' + c.source;
 
+      // Footer source
+      const footer = document.getElementById('backFooter');
+      footer.textContent = 'Source : ' + (c.source || '');
+
+      // Retirer anciennes animations / classes
       document.querySelectorAll('.solution-group').forEach(el => el.classList.remove('visible'));
       footer.classList.remove('visible');
       document.getElementById('card').classList.remove('flipped');
@@ -243,8 +334,10 @@
     function showBack() {
       const groups = document.querySelectorAll('.card-back .solution-group');
       groups.forEach((el, i) => setTimeout(() => el.classList.add('visible'), i * 300));
-      setTimeout(() => document.getElementById('backFooter').classList.add('visible'),
-                 groups.length * 300);
+      setTimeout(() => {
+        const footer = document.getElementById('backFooter');
+        footer.classList.add('visible');
+      }, groups.length * 300);
     }
   </script>
 </body>
