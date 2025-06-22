@@ -3,29 +3,27 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Cartes Problèmes & Solutions</title>
+  <title>Cartes Problèmes &amp; Solutions</title>
   <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet" />
   <!-- FontAwesome -->
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
   <style>
     :root {
-      /* Couleurs pour chaque thème : adapter selon vos choix */
-      --color-prep-start:       #F7E3A3;
-      --color-prep-end:         #E8D692;
-      --color-semis-start:      #8B5E3C;
-      --color-semis-end:        #7A5030;
-      --color-desherbage-start: #A3D9A5;
-      --color-desherbage-end:   #86C47F;
-      --color-fongicide-start:  #E3A3A3;
-      --color-fongicide-end:    #D69292;
-      --color-insecticide-start:#A3C7E3;
-      --color-insecticide-end:  #92B0D6;
-      --color-engrais-start:    #D9E3A3;
-      --color-engrais-end:      #C4D686;
-      --color-recolte-start:    #F0C987;
-      --color-recolte-end:      #E0B16A;
-      /* Vous pouvez ajuster ces couleurs pour correspondre à votre charte */
+      --color-prep-start: #E07A5F;
+      --color-prep-end:   #E07A5F;
+      --color-semis-start:#F2CC8F;
+      --color-semis-end:  #F2CC8F;
+      --color-herbicide-start: #81B29A;
+      --color-herbicide-end:   #81B29A;
+      --color-fongicide-start: #81B29A;
+      --color-fongicide-end:   #81B29A;
+      --color-insecticide-start: #81B29A;
+      --color-insecticide-end:   #81B29A;
+      --color-engrais-start: #F4F1DE;
+      --color-engrais-end:   #F4F1DE;
+      --color-recolte-start: #2E4057;
+      --color-recolte-end:   #2E4057;
     }
     body { font-family:'Montserrat',sans-serif; background:#f9f9f9; margin:0; padding:20px; }
     h1 { text-align:center; margin-bottom:1rem; }
@@ -66,35 +64,13 @@
     .card-face { position:absolute; width:100%; backface-visibility:hidden; border-radius:8px; box-shadow:0 2px 6px rgba(0,0,0,0.1); overflow:hidden; background:#fff; }
     .card-front, .card-back { min-height:200px; }
     .card-header { padding:16px 24px; display:flex; justify-content:center; align-items:center; font-weight:600; text-align:center; }
-    /* Styles par thème : on ajoute une règle pour chaque thème */
-    .card-header.preparation {
-      background:linear-gradient(to right, var(--color-prep-start), var(--color-prep-end));
-      color:#333;
-    }
-    .card-header.semis {
-      background:linear-gradient(to right, var(--color-semis-start), var(--color-semis-end));
-      color:#fff;
-    }
-    .card-header.desherbage {
-      background:linear-gradient(to right, var(--color-desherbage-start), var(--color-desherbage-end));
-      color:#333;
-    }
-    .card-header.fongicide {
-      background:linear-gradient(to right, var(--color-fongicide-start), var(--color-fongicide-end));
-      color:#333;
-    }
-    .card-header.insecticide {
-      background:linear-gradient(to right, var(--color-insecticide-start), var(--color-insecticide-end));
-      color:#fff;
-    }
-    .card-header.engrais {
-      background:linear-gradient(to right, var(--color-engrais-start), var(--color-engrais-end));
-      color:#333;
-    }
-    .card-header.recolte {
-      background:linear-gradient(to right, var(--color-recolte-start), var(--color-recolte-end));
-      color:#333;
-    }
+    .card-header.preparation { background:linear-gradient(to right,var(--color-prep-start),var(--color-prep-end)); color:#333; }
+    .card-header.semis      { background:linear-gradient(to right,var(--color-semis-start),var(--color-semis-end)); color:#333; }
+    .card-header.herbicide  { background:linear-gradient(to right,var(--color-herbicide-start),var(--color-herbicide-end)); color:#fff; }
+    .card-header.fongicide  { background:linear-gradient(to right,var(--color-fongicide-start),var(--color-fongicide-end)); color:#fff; }
+    .card-header.insecticide{ background:linear-gradient(to right,var(--color-insecticide-start),var(--color-insecticide-end)); color:#fff; }
+    .card-header.engrais    { background:linear-gradient(to right,var(--color-engrais-start),var(--color-engrais-end)); color:#333; }
+    .card-header.recolte    { background:linear-gradient(to right,var(--color-recolte-start),var(--color-recolte-end)); color:#fff; }
     .badge { margin-left:12px; background:rgba(0,0,0,0.2); color:#fff; border-radius:12px; padding:2px 8px; font-size:.75rem; }
     .card-body { padding:24px; color:#333; text-align:justify; line-height:1.6; }
     .card-body p, .card-body ul { margin:0 0 12px; }
@@ -104,6 +80,28 @@
     .solution-group.visible { opacity:1; transition:opacity .4s ease; }
     .card-footer { padding:12px 16px; font-size:.85rem; color:#666; border-top:1px solid #eee; text-align:right; opacity:0; }
     .card-footer.visible { opacity:1; transition:opacity .4s ease; transition-delay:1s; }
+
+    /* Styles pour les selects thème/fiche */
+    .select-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0.5rem;
+      margin-bottom: 1rem;
+    }
+    .select-container label {
+      font-weight: 500;
+    }
+    #themeSelect, #ficheSelect {
+      padding: 6px 10px;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    #themeSelect:disabled, #ficheSelect:disabled {
+      background: #eee;
+      cursor: not-allowed;
+    }
   </style>
 </head>
 <body>
@@ -120,14 +118,15 @@
     </p>
     <h3>2. Modes de fonctionnement</h3>
     <ul>
-      <li><strong>Mode Découverte</strong> : choisissez une fiche dans la liste pour étudier un cas précis.</li>
-      <li><strong>Mode Pioche</strong> : tirez une carte aléatoirement pour tester votre réactivité et vos connaissances.</li>
+      <li><strong>Mode Découverte</strong> : choisissez un thème puis une fiche dans la liste pour étudier un cas précis.</li>
+      <li><strong>Mode Pioche</strong> : choisissez d’abord un thème, puis cliquez sur “Piocher une carte” pour tester votre réactivité et vos connaissances.</li>
     </ul>
     <h3>3. Comment utiliser</h3>
     <ol>
-      <li>Sélectionnez votre mode de travail (Découverte ou Pioche).</li>
-      <li>Dans Mode Découverte, naviguez via le <strong>menu déroulant</strong> ou les boutons Précédent/Suivant.</li>
-      <li>Dans Mode Pioche, cliquez sur “Piocher une carte” pour révéler un nouveau cas.</li>
+      <li>Cliquez sur “Go” pour accéder à l’application.</li>
+      <li>Sélectionnez un thème dans le menu “Thème”.</li>
+      <li>Dans Mode Découverte, choisissez ensuite une fiche dans le menu “Fiche”.</li>
+      <li>Dans Mode Pioche, après avoir choisi un thème, cliquez sur “Piocher une carte”.</li>
       <li>Cliquez sur la carte pour la retourner et afficher les solutions.</li>
     </ol>
     <h3>4. Résultat attendu</h3>
@@ -144,14 +143,39 @@
       <button id="discoveryBtn" class="active">Mode Découverte</button>
       <button id="randomBtn">Mode Pioche</button>
     </div>
+
+    <!-- CONTROLS Mode Découverte -->
     <div id="discoveryControls" class="controls">
-      <select id="ficheSelect"></select>
+      <div class="select-container">
+        <label for="themeSelect">Thème&nbsp;:</label>
+        <select id="themeSelect">
+          <option value="">-- Choisir un thème --</option>
+          <!-- Rempli dynamiquement -->
+        </select>
+      </div>
+      <div class="select-container">
+        <label for="ficheSelect">Fiche&nbsp;:</label>
+        <select id="ficheSelect" disabled>
+          <option value="">-- Choisir d’abord un thème --</option>
+        </select>
+      </div>
       <button id="prevBtn">← Précédent</button>
       <button id="nextBtn">Suivant →</button>
     </div>
+
+    <!-- CONTROLS Mode Pioche -->
     <div id="randomControls" class="controls" style="display:none;">
+      <div class="select-container">
+        <label for="themeSelectRandom">Thème&nbsp;:</label>
+        <select id="themeSelectRandom">
+          <option value="">-- Choisir un thème --</option>
+          <!-- Rempli dynamiquement -->
+        </select>
+      </div>
       <button id="drawBtn">Piocher une carte</button>
     </div>
+
+    <!-- Zone des cartes -->
     <div class="card-container">
       <div id="card" class="card">
         <!-- Recto -->
@@ -180,25 +204,43 @@
   </div>
 
   <script>
-    let cards = [], idx = 0;
-    const iconMap = {
-      'Labour':       'fa-tractor',
-      'Rotation':     'fa-sync-alt',
-      'Décompactage': 'fa-shovel',
-      'Herse':        'fa-rake',
-      'Rouleau':      'fa-gavel'
-      // Vous pouvez étendre si nécessaire pour d'autres titres/keywords
-    };
-    // Mapping de tous les thèmes présents dans votre JSON
+    let cards = [], idx = null;
+    // Ordre et labels des thèmes
+    const themeOrder = [
+      'preparation',
+      'semis',
+      'herbicide',
+      'fongicide',
+      'insecticide',
+      'engrais',
+      'recolte'
+    ];
     const themeLabels = {
       preparation: 'Préparation sol',
       semis:       'Semis',
-      desherbage:  'Désherbage',
+      herbicide:   'Désherbage',
       fongicide:   'Fongicide',
       insecticide: 'Insecticide',
-      engrais:     'Engrais',
+      engrais:     'Apport d’azote',
       recolte:     'Récolte'
-      // Si vous aviez d'autres thèmes, ajoutez-les ici de la même façon
+    };
+    const themeColors = {
+      preparation: '#E07A5F',
+      semis:       '#F2CC8F',
+      herbicide:   '#81B29A',
+      fongicide:   '#81B29A',
+      insecticide: '#81B29A',
+      engrais:     '#F4F1DE',
+      recolte:     '#2E4057'
+    };
+    const legendChar = {
+      preparation: 'P',
+      semis:       'S',
+      herbicide:   'D',
+      fongicide:   'F',
+      insecticide: 'I',
+      engrais:     'N',
+      recolte:     'R'
     };
 
     const introEl       = document.querySelector('.intro');
@@ -209,123 +251,243 @@
     const discCtrls     = document.getElementById('discoveryControls');
     const randCtrls     = document.getElementById('randomControls');
 
+    const themeSelect      = document.getElementById('themeSelect');
+    const ficheSelect      = document.getElementById('ficheSelect');
+    const themeSelectRandom= document.getElementById('themeSelectRandom');
+
     startBtn.onclick = () => {
       introEl.style.display = 'none';
       appEl.style.display   = 'block';
     };
 
-    // Attention : le nom de fichier doit correspondre à votre fichier commité dans GitHub
+    // Charger data.json
     fetch('data.json')
-      .then(r => {
-        if (!r.ok) {
-          console.error('Échec chargement data.json:', r.status, r.statusText);
-          throw new Error('Impossible de charger data.json');
-        }
-        return r.json();
-      })
+      .then(r => r.json())
       .then(data => {
         cards = data;
         init();
-        if (cards.length > 0) {
-          render(0);
-        }
-      })
-      .catch(err => {
-        console.error('Erreur lors de la récupération du JSON :', err);
-        // Vous pouvez afficher un message d'erreur dans l'UI si nécessaire
+        // Aucun affichage de fiche tant que thème non choisi
+        clearCard();
       });
 
     function init() {
-      const sel = document.getElementById('ficheSelect');
-      sel.innerHTML = ''; // au cas où
-      cards.forEach((c, i) => {
-        const o = document.createElement('option');
-        o.value = i;
-        o.textContent = `${c.id} – ${c.titre}`;
-        sel.appendChild(o);
+      // Remplir themeSelect (Mode Découverte) et themeSelectRandom (Mode Pioche)
+      themeOrder.forEach(th => {
+        // Découverte
+        const opt = document.createElement('option');
+        opt.value = th;
+        opt.textContent = themeLabels[th];
+        themeSelect.appendChild(opt);
+        // Pioche
+        const opt2 = document.createElement('option');
+        opt2.value = th;
+        opt2.textContent = themeLabels[th];
+        themeSelectRandom.appendChild(opt2);
       });
-      sel.onchange = () => render(+sel.value);
-      document.getElementById('prevBtn').onclick = () => render((idx-1+cards.length)%cards.length);
-      document.getElementById('nextBtn').onclick = () => render((idx+1)%cards.length);
-      document.getElementById('drawBtn').onclick = () => render(Math.floor(Math.random()*cards.length));
+      themeSelect.onchange = onThemeChange;
+      ficheSelect.onchange = () => {
+        const val = ficheSelect.value;
+        if (val !== '') {
+          render(+val);
+        } else {
+          clearCard();
+        }
+      };
+      themeSelectRandom.onchange = () => {
+        // Rien de spécial ici, le tirage ne se fait que si thème choisi
+      };
+
+      document.getElementById('prevBtn').onclick = () => {
+        if (idx === null) return;
+        const prevIdx = (idx - 1 + cards.length) % cards.length;
+        // Vérifier qu’il correspond au thème actuel
+        const currentTheme = themeSelect.value;
+        if (currentTheme) {
+          // naviguer dans les fiches du thème
+          const pool = cards
+            .map((c, i) => ({c,i}))
+            .filter(({c}) => c.theme === currentTheme)
+            .map(({i}) => i);
+          if (pool.length === 0) return;
+          // trouver position de idx dans pool
+          const pos = pool.indexOf(idx);
+          let newPos;
+          if (pos === -1) {
+            newPos = 0;
+          } else {
+            newPos = (pos - 1 + pool.length) % pool.length;
+          }
+          render(pool[newPos]);
+        }
+      };
+      document.getElementById('nextBtn').onclick = () => {
+        if (idx === null) return;
+        const currentTheme = themeSelect.value;
+        if (currentTheme) {
+          const pool = cards
+            .map((c, i) => ({c,i}))
+            .filter(({c}) => c.theme === currentTheme)
+            .map(({i}) => i);
+          if (pool.length === 0) return;
+          const pos = pool.indexOf(idx);
+          let newPos;
+          if (pos === -1) {
+            newPos = 0;
+          } else {
+            newPos = (pos + 1) % pool.length;
+          }
+          render(pool[newPos]);
+        }
+      };
+      document.getElementById('drawBtn').onclick = handleDraw;
+
       document.getElementById('card').onclick = () => {
         const el = document.getElementById('card');
         if (!el.classList.contains('flipped')) showBack();
         el.classList.toggle('flipped');
       };
+
       discoveryBtn.onclick = () => {
         discoveryBtn.classList.add('active');
         randomBtn.classList.remove('active');
         discCtrls.style.display = 'flex';
         randCtrls.style.display = 'none';
+        clearCard();
       };
       randomBtn.onclick = () => {
         randomBtn.classList.add('active');
         discoveryBtn.classList.remove('active');
         discCtrls.style.display = 'none';
         randCtrls.style.display = 'flex';
+        clearCard();
       };
+    }
+
+    function onThemeChange(e) {
+      const chosenTheme = e.target.value;
+      // Colorer le select et ficheSelect selon thème
+      if (chosenTheme && themeColors[chosenTheme]) {
+        themeSelect.style.backgroundColor = themeColors[chosenTheme];
+        themeSelect.style.color = '#333';
+        ficheSelect.style.backgroundColor = themeColors[chosenTheme];
+        ficheSelect.style.color = '#333';
+      } else {
+        themeSelect.style.backgroundColor = '';
+        themeSelect.style.color = '';
+        ficheSelect.style.backgroundColor = '';
+        ficheSelect.style.color = '';
+      }
+      // Remplir ficheSelect
+      ficheSelect.innerHTML = '';
+      if (!chosenTheme) {
+        ficheSelect.disabled = true;
+        const opt = document.createElement('option');
+        opt.value = '';
+        opt.textContent = '-- Choisir d’abord un thème --';
+        ficheSelect.appendChild(opt);
+        clearCard();
+        return;
+      }
+      const filtered = cards.filter(c => c.theme === chosenTheme);
+      if (filtered.length === 0) {
+        ficheSelect.disabled = true;
+        const opt = document.createElement('option');
+        opt.value = '';
+        opt.textContent = 'Aucune fiche pour ce thème';
+        ficheSelect.appendChild(opt);
+        clearCard();
+      } else {
+        ficheSelect.disabled = false;
+        const defaultOpt = document.createElement('option');
+        defaultOpt.value = '';
+        defaultOpt.textContent = '-- Choisir une fiche --';
+        ficheSelect.appendChild(defaultOpt);
+        filtered.forEach(c => {
+          const globalIndex = cards.indexOf(c);
+          const o = document.createElement('option');
+          o.value = globalIndex;
+          o.textContent = `${c.id} – ${c.titre}`;
+          ficheSelect.appendChild(o);
+        });
+        clearCard();
+      }
+    }
+
+    function handleDraw() {
+      const chosenTheme = themeSelectRandom.value;
+      if (!chosenTheme) {
+        alert('Choisissez d’abord un thème pour piocher');
+        return;
+      }
+      const pool = cards.filter(c => c.theme === chosenTheme);
+      if (pool.length === 0) {
+        alert('Aucune fiche disponible pour ce thème');
+        return;
+      }
+      const choix = pool[Math.floor(Math.random() * pool.length)];
+      const globalIdx = cards.indexOf(choix);
+      // Bascule en Mode Pioche si besoin
+      if (discoveryBtn.classList.contains('active')) {
+        randomBtn.click();
+      }
+      render(globalIdx);
+    }
+
+    function clearCard() {
+      idx = null;
+      document.getElementById('frontTitle').textContent = '';
+      document.getElementById('frontBadge').textContent = '';
+      document.getElementById('frontRecto').textContent = '';
+      document.getElementById('frontDiag').textContent = '';
+      document.getElementById('backTitle').textContent = '';
+      document.getElementById('backBadge').textContent = '';
+      document.getElementById('backVerso').innerHTML = '';
+      document.getElementById('backHtml').innerHTML = '';
+      document.getElementById('backFooter').textContent = '';
+      document.getElementById('card').classList.remove('flipped');
     }
 
     function render(i) {
       idx = i;
       const c = cards[i];
-      // Mettre à jour la sélection
-      const sel = document.getElementById('ficheSelect');
-      sel.value = i;
-
-      // Titre et badge (libellé du thème)
+      // Afficher dans les selects (Mode Découverte)
+      if (themeSelect.value === c.theme) {
+        ficheSelect.value = i;
+      }
+      // Header
       ['front','back'].forEach(side => {
-        const titleEl = document.getElementById(`${side}Title`);
-        const badgeEl = document.getElementById(`${side}Badge`);
-        const headerEl = document.getElementById(`${side}Header`);
-        titleEl.textContent = `${c.id} – ${c.titre}`;
-        // Si le thème n'est pas dans themeLabels, on affiche la clé brute
-        badgeEl.textContent = themeLabels[c.theme] || c.theme || '';
-        // On adapte la classe pour le style CSS
-        headerEl.className = 'card-header ' + c.theme;
+        document.getElementById(`${side}Title`).textContent  = `${c.id} – ${c.titre}`;
+        document.getElementById(`${side}Badge`).textContent  = themeLabels[c.theme];
+        document.getElementById(`${side}Header`).className  = 'card-header ' + c.theme;
       });
-
-      // Contenu recto
       document.getElementById('frontRecto').textContent = c.recto;
       document.getElementById('frontDiag').textContent  = c.diagnostic;
 
-      // Contenu verso : solutions
       const bv = document.getElementById('backVerso');
       bv.innerHTML = '';
-      if (c.verso && Array.isArray(c.verso)) {
+      if (c.verso) {
         c.verso.forEach(g => {
           const div = document.createElement('div');
           div.className = 'solution-group';
           const h4 = document.createElement('h4');
-          // Recherche d'une icône selon iconMap (par mot-clé dans le titre)
-          const key = Object.keys(iconMap).find(k => g.title.includes(k));
-          if (key) {
-            h4.innerHTML = `<i class="fas ${iconMap[key]}"></i> ` + g.title;
-          } else {
-            h4.textContent = g.title;
-          }
+          const key = Object.keys(legendChar).find(k => g.title.toLowerCase().includes(k));
+          h4.innerHTML = (key ? `<i class="fas fa-gear"></i> ` : '') + g.title;
           div.appendChild(h4);
           const ul = document.createElement('ul');
-          if (Array.isArray(g.steps)) {
-            g.steps.forEach(s => {
-              const li = document.createElement('li');
-              li.textContent = s;
-              ul.appendChild(li);
-            });
-          }
+          g.steps.forEach(s => {
+            const li = document.createElement('li');
+            li.textContent = s;
+            ul.appendChild(li);
+          });
           div.appendChild(ul);
           bv.appendChild(div);
         });
       }
-      // htmlContent si présent
       document.getElementById('backHtml').innerHTML = c.htmlContent || '';
-
-      // Footer source
       const footer = document.getElementById('backFooter');
       footer.textContent = 'Source : ' + (c.source || '');
 
-      // Retirer anciennes animations / classes
+      // Masquer les solution-group, footer
       document.querySelectorAll('.solution-group').forEach(el => el.classList.remove('visible'));
       footer.classList.remove('visible');
       document.getElementById('card').classList.remove('flipped');
@@ -334,10 +496,8 @@
     function showBack() {
       const groups = document.querySelectorAll('.card-back .solution-group');
       groups.forEach((el, i) => setTimeout(() => el.classList.add('visible'), i * 300));
-      setTimeout(() => {
-        const footer = document.getElementById('backFooter');
-        footer.classList.add('visible');
-      }, groups.length * 300);
+      setTimeout(() => document.getElementById('backFooter').classList.add('visible'),
+                 groups.length * 300);
     }
   </script>
 </body>
