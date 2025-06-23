@@ -1791,7 +1791,7 @@
       },
       {
         "title": "Observation visuelle du stade de maturité",
-        "justification": "Compléter la mesure d’humidité par l’observation des épis et de la plante (couleur dorée, grain ferme sur pression du pouce) pour confirmer la maturité. Cette vérification agronomique permet d’éviter les erreurs liées aux mesures ponctuelles :contentReference[oaicite:1]{index=1}.",
+        "justification": "Compléter la mesure d’humidité par l’observation des épis et de la plante (couleur dorée, grain ferme sur pression du pouce) pour confirmer la maturité. Cette vérification agronomique permet d’éviter les erreurs liées aux mesures ponctuelles.",
         "steps": [
           "Examiner l’aspect général du champ : perte de vert dans les tiges et feuilles, glumes brunies.",
           "Tester la fermeté du grain en pressant un grain entre pouce et index : le grain doit être ferme mais pas trop dur (indication de maturité physiologique).",
@@ -1800,7 +1800,7 @@
       },
       {
         "title": "Anticipation des risques climatiques",
-        "justification": "Planifier la moisson en tenant compte des prévisions de pluie ou de conditions humides qui détériorent le grain et augmentent les pertes. Récolter avant une période pluvieuse limite l’absorption d’eau par les grains et prévient la verse prolongée :contentReference[oaicite:2]{index=2}.",
+        "justification": "Planifier la moisson en tenant compte des prévisions de pluie ou de conditions humides qui détériorent le grain et augmentent les pertes. Récolter avant une période pluvieuse limite l’absorption d’eau par les grains et prévient la verse prolongée.",
         "steps": [
           "Consulter les prévisions météo à court terme pour éviter de débuter la moisson juste avant une pluie.",
           "Organiser la logistique (matériel, main-d’œuvre) pour intervenir rapidement dès conditions favorables.",
@@ -1819,7 +1819,7 @@
     "verso": [
       {
         "title": "Décision selon seuils d’humidité",
-        "justification": "Si l’humidité est comprise entre 15,5 % et 16,5 %, prévoir ventilation continue jusqu’à 15 % avant entreposage. Au-dessus, envisager séchage forcé en silo ou cellule pour éviter dégradation sanitaire :contentReference[oaicite:3]{index=3}.",
+        "justification": "Si l’humidité est comprise entre 15,5 % et 16,5 %, prévoir ventilation continue jusqu’à 15 % avant entreposage. Au-dessus, envisager séchage forcé en silo ou cellule pour éviter dégradation sanitaire.",
         "steps": [
           "Mesurer l’humidité à la moissonneuse : si < 15,5 %, moissonner sans autre précaution majeure.",
           "Si entre 15,5 % et 16,5 %, moissonner si possibilité de ventilation nocturne ou continue jusqu’à 15 %.",
@@ -1828,7 +1828,7 @@
       },
       {
         "title": "Ventilation et refroidissement post-récolte",
-        "justification": "La ventilation nocturne ou continue permet de réduire la température et l’humidité du grain jusqu’à la norme de stockage (15 %), limitant l’activité microbienne et insectes. Un refroidissement rapide préserve la qualité technologique :contentReference[oaicite:4]{index=4}.",
+        "justification": "La ventilation nocturne ou continue permet de réduire la température et l’humidité du grain jusqu’à la norme de stockage (15 %), limitant l’activité microbienne et insectes. Un refroidissement rapide préserve la qualité technologique.",
         "steps": [
           "Mettre en route la ventilation dès la réception du grain si l’humidité le justifie, en privilégiant les nuits fraîches.",
           "Contrôler la température de la masse de grain pour maintenir autour de 12 °C, réduisant la respiration et la perte de poids.",
@@ -1837,7 +1837,7 @@
       },
       {
         "title": "Séchage mécanique si nécessaire",
-        "justification": "Lorsque les capacités naturelles de ventilation ne suffisent pas (grain très humide, temps humide), utiliser un séchoir pour abaisser l’humidité à < 14 % avant stockage. Veiller à réguler la température de séchage pour ne pas altérer la qualité protéique :contentReference[oaicite:5]{index=5}.",
+        "justification": "Lorsque les capacités naturelles de ventilation ne suffisent pas (grain très humide, temps humide), utiliser un séchoir pour abaisser l’humidité à < 14 % avant stockage. Veiller à réguler la température de séchage pour ne pas altérer la qualité protéique.",
         "steps": [
           "Planifier le séchage en silo ou séchoir mobile si grain > 16,5 % et risque de moisissures élevé.",
           "Séchage à température modérée (< 80–90 °C) pour préserver la qualité : prélever régulièrement pour ajuster.",
@@ -1856,7 +1856,7 @@
     "verso": [
       {
         "title": "Hauteur de coupe adaptée",
-        "justification": "Ajuster la hauteur pour éviter trop basse qui embarque des impuretés et trop haute qui laisse des épis non récoltés. Tenir compte de la verse éventuelle et de l’état du sol pour optimiser la récolte sans pertes :contentReference[oaicite:6]{index=6}.",
+        "justification": "Ajuster la hauteur pour éviter trop basse qui embarque des impuretés et trop haute qui laisse des épis non récoltés. Tenir compte de la verse éventuelle et de l’état du sol pour optimiser la récolte sans pertes.",
         "steps": [
           "Tester différentes hauteurs au début de la parcelle : observer pertes d’épis et impuretés dans la récolte.",
           "Adapter la hauteur selon état du champ (verse, résidus de chaumes) pour capturer le maximum d’épis mûrs.",
@@ -1865,7 +1865,7 @@
       },
       {
         "title": "Réglage du rotor et battage",
-        "justification": "Réduire la vitesse du rotor si le grain est fragile (humide) pour éviter écrasement, ou l’augmenter si grain sec difficile à détacher. Un battage trop violent génère des bris de grains, affectant la qualité et augmentant les particules fines :contentReference[oaicite:7]{index=7}.",
+        "justification": "Réduire la vitesse du rotor si le grain est fragile (humide) pour éviter écrasement, ou l’augmenter si grain sec difficile à détacher. Un battage trop violent génère des bris de grains, affectant la qualité et augmentant les particules fines.",
         "steps": [
           "Surveiller l’aspect du grain sur le tapis de séparation : ajuster la vitesse du rotor pour optimiser séparation sans bris excessif.",
           "Vérifier la propreté du grain : trop de déchets indique un battage insuffisant ou une mauvaise séparation.",
@@ -1874,7 +1874,7 @@
       },
       {
         "title": "Vitesse d’avancement et répartition du chargement",
-        "justification": "Maintenir une vitesse stable adaptée à l’état de la culture : trop rapide augmente les pertes, trop lent réduit l’efficacité. Répartir uniformément la récolte dans le tapis améliore la séparation et limite les rejets :contentReference[oaicite:8]{index=8}.",
+        "justification": "Maintenir une vitesse stable adaptée à l’état de la culture : trop rapide augmente les pertes, trop lent réduit l’efficacité. Répartir uniformément la récolte dans le tapis améliore la séparation et limite les rejets.",
         "steps": [
           "Ajuster la vitesse selon densité du couvert et conditions de récolte : avancer moins vite dans zones à verse ou humidité élevée.",
           "Vérifier la répartition du matériel récolté sur l’ensemble du rotor pour éviter surcharge locale.",
@@ -1893,7 +1893,7 @@
     "verso": [
       {
         "title": "Évaluation systématique des pertes",
-        "justification": "Mesurer les pertes dès le début de la moisson (paniers sous la moissonneuse, contrôle visuel) pour ajuster rapidement les réglages. Une évaluation régulière suit l’évolution du champ et conditions variables :contentReference[oaicite:9]{index=9}.",
+        "justification": "Mesurer les pertes dès le début de la moisson (paniers sous la moissonneuse, contrôle visuel) pour ajuster rapidement les réglages. Une évaluation régulière suit l’évolution du champ et conditions variables.",
         "steps": [
           "Installer filets ou paniers pour collecter le grain tombé derrière la moissonneuse sur des zones tests.",
           "Mesurer ces pertes (kg/ha) et comparer aux seuils acceptables pour le matériel utilisé.",
@@ -1902,7 +1902,7 @@
       },
       {
         "title": "Entretien préventif du matériel",
-        "justification": "Des composants usés (lames, tapis, grilles) augmentent les pertes par mauvaise coupe ou séparation. Un entretien régulier assure la performance et réduit les risques de pannes en pleine moisson :contentReference[oaicite:10]{index=10}.",
+        "justification": "Des composants usés (lames, tapis, grilles) augmentent les pertes par mauvaise coupe ou séparation. Un entretien régulier assure la performance et réduit les risques de pannes en pleine moisson.",
         "steps": [
           "Vérifier et remplacer les lames de coupe avant la campagne de moisson.",
           "Nettoyer et ajuster les grilles et cribles pour optimiser le flux de grain.",
@@ -1911,7 +1911,7 @@
       },
       {
         "title": "Adaptation aux variations de parcelle",
-        "justification": "Les variations de densité, verse ou humidité nécessitent des réglages locaux variables. Réagir rapidement aux changements de conditions dans la parcelle améliore l’efficience globale :contentReference[oaicite:11]{index=11}.",
+        "justification": "Les variations de densité, verse ou humidité nécessitent des réglages locaux variables. Réagir rapidement aux changements de conditions dans la parcelle améliore l’efficience globale.",
         "steps": [
           "Surveiller l’état du champ (zones basses/humides, zones de verse) et ajuster les réglages au passage dans ces zones.",
           "Former l’équipe de moisson pour reconnaître ces variations et intervenir sans perte de temps.",
@@ -1930,7 +1930,7 @@
     "verso": [
       {
         "title": "Contrôle initial et nettoyage",
-        "justification": "Nettoyer le grain pour retirer impuretés et débris avant stockage réduit les sources de chaleur et d’humidité qui favorisent la dégradation. Cette étape préliminaire améliore l’efficacité du séchage et limite les infestations :contentReference[oaicite:12]{index=12}.",
+        "justification": "Nettoyer le grain pour retirer impuretés et débris avant stockage réduit les sources de chaleur et d’humidité qui favorisent la dégradation. Cette étape préliminaire améliore l’efficacité du séchage et limite les infestations.",
         "steps": [
           "Utiliser une trieuse ou aspirateur pour éliminer pailles, poussières et grains cassés.",
           "Vérifier l’humidité résiduelle post-harvest et décider séchage ou ventilation.",
@@ -1939,7 +1939,7 @@
       },
       {
         "title": "Ventilation continue et suivi",
-        "justification": "Maintenir une température basse (< 12 °C) et une humidité stable évite l’activité microbienne et les insectes. Un suivi régulier (sondages de température et humidité) permet de détecter rapidement les anomalies :contentReference[oaicite:13]{index=13}.",
+        "justification": "Maintenir une température basse (< 12 °C) et une humidité stable évite l’activité microbienne et les insectes. Un suivi régulier (sondages de température et humidité) permet de détecter rapidement les anomalies.",
         "steps": [
           "Programmer la ventilation pour maintenir la température de masse proche de 12 °C.",
           "Effectuer sondages hebdomadaires du grain stocké pour détecter points chauds ou zones humides.",
@@ -1948,7 +1948,7 @@
       },
       {
         "title": "Séchage complémentaire si besoin",
-        "justification": "Si l’humidité demeure supérieure à 15 % malgré ventilation, procéder à un séchage mécanique modéré pour atteindre le taux de stockage sans détériorer la qualité. Ajuster la température pour préserver la valeur protéique et technologique :contentReference[oaicite:14]{index=14}.",
+        "justification": "Si l’humidité demeure supérieure à 15 % malgré ventilation, procéder à un séchage mécanique modéré pour atteindre le taux de stockage sans détériorer la qualité. Ajuster la température pour préserver la valeur protéique et technologique.",
         "steps": [
           "Planifier l’usage de séchoir à air chaud ou infra-rouge selon disponibilité et volume.",
           "Mettre en place cycles de séchage modérés (< 80 °C) avec contrôles d’humidité réguliers.",
@@ -1967,7 +1967,7 @@
     "verso": [
       {
         "title": "Échantillonnage standardisé",
-        "justification": "Prélever un échantillon représentatif selon protocole (200–400 grains pour semences, plusieurs kg pour qualité meunerie) permet d’évaluer la teneur en protéines, le pouvoir germinatif ou les paramètres technologiques avec fiabilité :contentReference[oaicite:15]{index=15}.",
+        "justification": "Prélever un échantillon représentatif selon protocole (200–400 grains pour semences, plusieurs kg pour qualité meunerie) permet d’évaluer la teneur en protéines, le pouvoir germinatif ou les paramètres technologiques avec fiabilité.",
         "steps": [
           "Pour semences : prélever 200–400 grains selon taille du lot, suivre protocole de germination en labo (dormance, température).",
           "Pour meunerie : constituer échantillon de plusieurs kg pour analyses protéiques et tests de panification (Zélény, Hagberg).",
@@ -1976,7 +1976,7 @@
       },
       {
         "title": "Triage et séparation",
-        "justification": "Éliminer les grains cassés, contaminés ou de faible poids améliore la qualité globale et le pouvoir germinatif. Des trieuses optiques ou par densité peuvent être utilisées selon l’objectif :contentReference[oaicite:16]{index=16}.",
+        "justification": "Éliminer les grains cassés, contaminés ou de faible poids améliore la qualité globale et le pouvoir germinatif. Des trieuses optiques ou par densité peuvent être utilisées selon l’objectif.",
         "steps": [
           "Utiliser trieuse optique pour retirer grains décolorés, contaminés (moisissures).",
           "Effectuer tri par densité ou flottation pour séparer grains légers ou vides.",
@@ -1985,7 +1985,7 @@
       },
       {
         "title": "Analyses technologiques et décision de commercialisation",
-        "justification": "Interpréter les résultats (protéine, Hagberg, P/L) pour orienter la vente vers les filières adaptées (panification, alimentation bétail, semences). Cette étape garantit le respect des contrats et la valorisation optimale du produit :contentReference[oaicite:17]{index=17}.",
+        "justification": "Interpréter les résultats (protéine, Hagberg, P/L) pour orienter la vente vers les filières adaptées (panification, alimentation bétail, semences). Cette étape garantit le respect des contrats et la valorisation optimale du produit.",
         "steps": [
           "Envoyer échantillon en laboratoire pour analyses complètes (protéine, force de gluten, chute de Hagberg).",
           "Comparer aux critères des contrats disponibles et décider de la destination du lot.",
@@ -2004,7 +2004,7 @@
     "verso": [
       {
         "title": "Évaluation du volume de résidus",
-        "justification": "Quantifier la quantité de paille pour décider de la méthode de gestion : trop de résidus peut gêner le semis, mais les résidus apportent matière organique. Cette évaluation guide l’enfouissement ou l’exportation :contentReference[oaicite:18]{index=18}.",
+        "justification": "Quantifier la quantité de paille pour décider de la méthode de gestion : trop de résidus peut gêner le semis, mais les résidus apportent matière organique. Cette évaluation guide l’enfouissement ou l’exportation.",
         "steps": [
           "Estimer la biomasse de paille (t/ha) après moisson via relevés terrain.",
           "Comparer à la capacité de l’équipement de déchiquetage et d’enfouissement disponible.",
@@ -2013,7 +2013,7 @@
       },
       {
         "title": "Techniques de broyage et enfouissement",
-        "justification": "Broyer la paille avant enfouissement accélère la décomposition et réduit l’effet obstacle au semis suivant. Un enfouissement superficiel prévient l’accumulation d’inoculum de maladies transmises par résidus :contentReference[oaicite:19]{index=19}.",
+        "justification": "Broyer la paille avant enfouissement accélère la décomposition et réduit l’effet obstacle au semis suivant. Un enfouissement superficiel prévient l’accumulation d’inoculum de maladies transmises par résidus.",
         "steps": [
           "Passer broyeur ou destructeur de chaumes pour fragmenter la paille (< 5 cm).",
           "Enfouir superficiellement selon conditions de sol (déchaumage léger) pour favoriser la minéralisation sans perturber la structure profonde.",
@@ -2022,7 +2022,7 @@
       },
       {
         "title": "Interculture ou semis direct suivant",
-        "justification": "Planifier un couvert de légumineuses ou mélange multispecies après récolte peut protéger le sol, capter les résidus restants et améliorer la matière organique pour le semis suivant. Cette pratique favorise la structure du sol et limite lessivage :contentReference[oaicite:20]{index=20}.",
+        "justification": "Planifier un couvert de légumineuses ou mélange multispecies après récolte peut protéger le sol, capter les résidus restants et améliorer la matière organique pour le semis suivant. Cette pratique favorise la structure du sol et limite lessivage.",
         "steps": [
           "Implanter un couvert adapté (légumineuse ou mélange) rapidement après moisson pour capter l’azote résiduel et protéger le sol.",
           "Détruire le couvert au bon moment avant semis principal pour libérer nutriments et assurer un lit de semence propre.",
@@ -2041,7 +2041,7 @@
     "verso": [
       {
         "title": "Choix de fenêtre météo",
-        "justification": "Attendre une accalmie ou une bonne dessiccation naturelle avant de moissonner permet de réduire l’humidité du grain et éviter les bourrages. Si l’accalmie est courte, planifier un passage rapide pour limiter l’exposition aux pluies prolongées :contentReference[oaicite:21]{index=21}.",
+        "justification": "Attendre une accalmie ou une bonne dessiccation naturelle avant de moissonner permet de réduire l’humidité du grain et éviter les bourrages. Si l’accalmie est courte, planifier un passage rapide pour limiter l’exposition aux pluies prolongées.",
         "steps": [
           "Suivre strictement les prévisions météo pour identifier la fenêtre la plus sèche possible.",
           "Si possible, récolter tôt le matin après sécheresse nocturne, mais surveiller l’humidité du grain avant entrée en silo.",
@@ -2050,7 +2050,7 @@
       },
       {
         "title": "Réglages spécifiques du matériel",
-        "justification": "Adapter la vitesse d’avancement plus lente et régler la hauteur de coupe plus élevée pour éviter tasser la moissonneuse dans la boue et réduire les impuretés humides. Cela limite les pannes et pertes dans des conditions humides :contentReference[oaicite:22]{index=22}.",
+        "justification": "Adapter la vitesse d’avancement plus lente et régler la hauteur de coupe plus élevée pour éviter tasser la moissonneuse dans la boue et réduire les impuretés humides. Cela limite les pannes et pertes dans des conditions humides.",
         "steps": [
           "Réduire la vitesse d’avancement pour éviter bourrage de paille humide et grain collant.",
           "Augmenter légèrement la hauteur de coupe pour éviter l’aspiration de boue et d’impuretés.",
@@ -2059,7 +2059,7 @@
       },
       {
         "title": "Gestion post-moisson humide",
-        "justification": "Prévoir un séchage prolongé ou ventilation accrue en silo pour abaisser l’humidité du grain après moisson humide. Documenter la durée et l’intensité du séchage pour ajuster les pratiques futures selon la saison :contentReference[oaicite:23]{index=23}.",
+        "justification": "Prévoir un séchage prolongé ou ventilation accrue en silo pour abaisser l’humidité du grain après moisson humide. Documenter la durée et l’intensité du séchage pour ajuster les pratiques futures selon la saison.",
         "steps": [
           "Mettre immédiatement en silo aménagé pour ventilation continue si grain humide.",
           "Planifier la durée de ventilation ou séchage mécanique selon le taux d’humidité initial mesuré.",
@@ -2078,7 +2078,7 @@
     "verso": [
       {
         "title": "Intervention rapide après verse",
-        "justification": "Récolter dès que possible pour éviter la pourriture des épis couchés et limiter la repousse ou montée d’humidité. Une moisson rapide réduit les pertes dues aux intempéries ultérieures :contentReference[oaicite:24]{index=24}.",
+        "justification": "Récolter dès que possible pour éviter la pourriture des épis couchés et limiter la repousse ou montée d’humidité. Une moisson rapide réduit les pertes dues aux intempéries ultérieures.",
         "steps": [
           "Planifier la moisson dès constat de verse sévère, en profitant d’une fenêtre météo favorable.",
           "Organiser une équipe et logistique pour intervenir rapidement malgré les difficultés de terrain.",
@@ -2087,7 +2087,7 @@
       },
       {
         "title": "Réglages adaptés pour verse",
-        "justification": "Augmenter la hauteur de coupe et ralentir l’avancement pour éviter de ramasser trop de débris et de ramer dans la paille couchée. Ajuster les batteurs pour faciliter la séparation du grain dans des conditions difficiles :contentReference[oaicite:25]{index=25}.",
+        "justification": "Augmenter la hauteur de coupe et ralentir l’avancement pour éviter de ramasser trop de débris et de ramer dans la paille couchée. Ajuster les batteurs pour faciliter la séparation du grain dans des conditions difficiles.",
         "steps": [
           "Relever la barre de coupe au maximum pour éviter les paquets de paille couchée.",
           "Réduire la vitesse d’avancement pour permettre au matériel de mieux agir sur épis couchés.",
@@ -2096,7 +2096,7 @@
       },
       {
         "title": "Gestion des résidus et semis suivant",
-        "justification": "Après moisson de parcelles versées, évaluer la quantité de paille au sol avant semis suivant. La paille couchée peut nécessiter un broyage plus poussé ou un enfouissement pour préparer le lit de semence :contentReference[oaicite:26]{index=26}.",
+        "justification": "Après moisson de parcelles versées, évaluer la quantité de paille au sol avant semis suivant. La paille couchée peut nécessiter un broyage plus poussé ou un enfouissement pour préparer le lit de semence.",
         "steps": [
           "Broyer ou gérer la paille couchée avec un broyeur puissant ou un rouleau déchaumeur adapté.",
           "Évaluer l’impact sur la structure du sol (risque de battance) avant préparation du lit de semence suivant.",
