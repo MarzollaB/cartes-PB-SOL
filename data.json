@@ -498,7 +498,7 @@
   },
   {
     "id": "018",
-    "theme": "desherbage",
+    "theme": "herbicide",
     "titre": "Fiche 18 – Encroutement du sol limitant le désherbage",
     "recto": "Surface encroutée après pluies : dents de la herse étrille inefficaces, adventices protégées sous croûte.",
     "diagnostic": "Battance de surface qui empêche l’outil mécanique d’atteindre les plantules adventices, créant un refuge sous croûte fine.",
@@ -533,7 +533,7 @@
   },
   {
     "id": "019",
-    "theme": "desherbage",
+    "theme": "herbicide",
     "titre": "Fiche 19 – Salissement en culture associée",
     "recto": "Adventices tenaces levées entre les lignes dans un système froment-pois malgré couvert dense.",
     "diagnostic": "Préparation ou enfouissement insuffisant avant semis associé et limites mécaniques liées à la sensibilité du pois après redressement.",
@@ -568,7 +568,7 @@
   },
   {
     "id": "020",
-    "theme": "desherbage",
+    "theme": "herbicide",
     "titre": "Fiche 20 – Levée tardive d’adventices vivaces",
     "recto": "Apparition tardive de vivaces (chardons, plantains) après semis, concurrençant la culture.",
     "diagnostic": "Réserve semencière ou organes vivaces non gérés précédemment et conditions favorables à leur régénération.",
@@ -603,7 +603,7 @@
   },
   {
     "id": "021",
-    "theme": "desherbage",
+    "theme": "herbicide",
     "titre": "Fiche 21 – Réglage et entretien du matériel mécanique",
     "recto": "Passages de houe ou herse peu efficaces malgré interventions répétées.",
     "diagnostic": "Réglages inadaptés (profondeur, angle, vitesse) ou dents/ressorts usés, sol mal évalué (humide/caillouteux).",
@@ -638,7 +638,7 @@
   },
   {
     "id": "022",
-    "theme": "desherbage",
+    "theme": "herbicide",
     "titre": "Fiche 22 – Pression adventice après interculture courte",
     "recto": "Semis de froment après interculture brève sans faux-semis, forte levée adventice en début de cycle.",
     "diagnostic": "Interculture insuffisante pour épuiser la réserve semencière, sol perturbé faiblement.",
@@ -673,7 +673,7 @@
   },
   {
     "id": "023",
-    "theme": "desherbage",
+    "theme": "herbicide",
     "titre": "Fiche 23 – Adventices en bordure envahissant la parcelle",
     "recto": "Recolonisation rapide par adventices issues des bordures ou fossés adjacents.",
     "diagnostic": "Flux de graines ou rhizomes depuis bandes non cultivées, absence de barrières compétitives.",
@@ -708,7 +708,7 @@
   },
   {
     "id": "024",
-    "theme": "desherbage",
+    "theme": "herbicide",
     "titre": "Fiche 24 – Adventices résistantes malgré interventions",
     "recto": "Certaines adventices persistent malgré plusieurs passages mécaniques.",
     "diagnostic": "Espèces robustes et/ou stade avancé au moment de l’intervention, conditions météo favorisant levées successives.",
@@ -743,7 +743,7 @@
   },
   {
     "id": "025",
-    "theme": "desherbage",
+    "theme": "herbicide",
     "titre": "Fiche 25 – Observation et protocole de décision",
     "recto": "Incertain quant au moment optimal pour désherbage mécanique ou chimique, absence de protocole de suivi systématique.",
     "diagnostic": "Pas de relevés hebdomadaires ni consultation régulière des seuils CADCO, crainte d’intervenir trop tôt ou trop tard.",
@@ -778,7 +778,7 @@
   },
   {
     "id": "026",
-    "theme": "desherbage",
+    "theme": "herbicide",
     "titre": "Fiche 26 – Choix variétal et implantation pour compétition adventice",
     "recto": "Variété ou date de semis inadaptées, limitant la compétitivité initiale face aux adventices.",
     "diagnostic": "Variété à vigueur de départ faible ou semis hors fenêtre optimale, laissant niches pour adventices.",
